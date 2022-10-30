@@ -59,7 +59,6 @@ body {
    margin: 0 auto;
    font-family: "Outfit", sans-serif;
    line-height: 1.6;
-   padding: 1rem;
    background-color: var(--color-dark);
    color: var(--color-font);
 }
