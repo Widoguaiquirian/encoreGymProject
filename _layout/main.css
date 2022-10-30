@@ -264,6 +264,7 @@ nav ul li a:hover {
    width: 100%;
    padding: 1rem 0;
    left: 0;
+   transition-delay: 0.6s;
 }
 
 .btn-close-cookie {
@@ -273,11 +274,8 @@ nav ul li a:hover {
    outline: none;
    border: none;
    cursor: pointer;
+   transition-delay: 0.6s;
    border-radius: 3px;
-}
-
-.btn-close-cookie:active {
-   transform: scale(0.98);
 }
 
 /*--- Media Query ---*/
@@ -302,6 +300,7 @@ nav ul li a:hover {
    .cookie-message {
       font-size: 1.3rem;
       padding: 0.4rem 0;
+      bottom: 0;
    }
 
    .btn-close-cookie {
