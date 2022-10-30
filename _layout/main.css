@@ -95,7 +95,7 @@ a {
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 5px;
-   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
    position: relative;
    max-width: 1800px;
    margin: 0 auto;
