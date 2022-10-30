@@ -94,12 +94,12 @@ a {
    background-position: 70%;
    background-repeat: no-repeat;
    background-size: cover;
-   border-radius: 5px;
+   border-radius: 0.5rem;
    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
    position: relative;
-   max-width: 1800px;
+   max-width: 180rem;
    margin: 0 auto;
-   border: 2px solid var(--color-primary);
+   border: 0.2rem solid var(--color-primary);
    overflow: hidden;
 }
 
@@ -119,7 +119,7 @@ nav {
    top: 2.2rem;
    background-color: var(--color-dark);
    padding: 1.5rem 1rem;
-   border-radius: 5px 0 0 5px;
+   border-radius: 0.5rem 0 0 0.5rem;
 }
 
 nav ul {
@@ -175,7 +175,7 @@ nav ul li a:hover {
 .heading-primary-subtitle {
    font-size: 3rem;
    font-weight: 500;
-   letter-spacing: 3px;
+   letter-spacing: 0.3rem;
    display: block;
    color: var(--color-light);
    animation: moveInRight;
