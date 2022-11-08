@@ -60,7 +60,7 @@ body {
    font-family: "Outfit", sans-serif;
    line-height: 1.6;
    background-color: var(--color-dark);
-   color: var(--color-font);
+   color: var(--color-light);
 }
 
 img {
@@ -257,7 +257,10 @@ nav .categorie-selector {
    }
 }
 
-.btn {
+.btn-cta {
+   position: relative;
+   margin-top: 3rem;
+   display: inline-block;
    padding: 1rem 2rem;
    font-size: 2rem;
    color: var(--color-light);
@@ -265,12 +268,6 @@ nav .categorie-selector {
    border-radius: 10px;
    overflow: hidden;
    text-transform: uppercase;
-}
-
-.btn-cta {
-   position: relative;
-   margin-top: 3rem;
-   display: inline-block;
 }
 
 .btn-cta::after {
@@ -290,30 +287,47 @@ nav .categorie-selector {
    width: 120%;
 }
 
-/* Cookie message function */
-.cookie-message {
-   color: var(--color-dark);
-   background-color: var(--color-light);
-   font-size: 1.6rem;
-   position: absolute;
-   text-transform: uppercase;
-   bottom: 0;
-   text-align: center;
-   width: 100%;
-   padding: 1rem 0;
-   left: 0;
-   transition-delay: 0.6s;
+main {
+   max-width: 180rem;
+   margin: 0 auto;
+   overflow: hidden;
 }
 
-.btn-close-cookie {
-   padding: 0.5rem 0.7rem;
-   color: var(--color-light);
-   background-color: var(--color-dark);
-   outline: none;
-   border: none;
-   cursor: pointer;
-   transition-delay: 0.6s;
-   border-radius: 3px;
+.memberships {
+   padding: 5rem 0;
+   color: var(--color-dark);
+}
+
+.memberships h2 {
+   color: white;
+   text-transform: uppercase;
+   font-size: 4rem;
+   text-align: center;
+}
+
+.memberships-plans {
+   text-align: center;
+   margin: 5rem 0;
+   display: flex;
+   justify-content: center;
+}
+
+.memberships__member {
+   border-radius: 10px;
+   flex-basis: 40%;
+   margin: 0 3rem;
+   padding: 5rem 7rem;
+   max-width: 500px;
+   background-color: white;
+}
+
+.memberships__member .li-item {
+   text-align: left;
+}
+
+.memberOne {
+   border: 10px solid var(--color-primary);
+   box-shadow: 1px 2px 3px white;
 }
 
 /*--- Media Query ---*/
@@ -345,4 +359,30 @@ nav .categorie-selector {
       padding: 0.3rem 0.5rem;
       color: var(--color-light);
    }
+}
+
+/* Cookie message function */
+.cookie-message {
+   color: var(--color-dark);
+   background-color: var(--color-light);
+   font-size: 1.6rem;
+   position: absolute;
+   text-transform: uppercase;
+   bottom: 0;
+   text-align: center;
+   width: 100%;
+   padding: 1rem 0;
+   left: 0;
+   transition-delay: 0.6s;
+}
+
+.btn-close-cookie {
+   padding: 0.5rem 0.7rem;
+   color: var(--color-light);
+   background-color: var(--color-dark);
+   outline: none;
+   border: none;
+   cursor: pointer;
+   transition-delay: 0.6s;
+   border-radius: 3px;
 }
