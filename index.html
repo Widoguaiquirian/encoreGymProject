@@ -52,349 +52,122 @@
    </head>
    <body class="body">
       <header class="header">
-         <nav>
-            <!-- Logo -->
+         <nav class="header__navBar">
             <img src="/_images/_logos/logo.png" class="header__logo" alt="logo-brand" />
             <ul>
-               <li> <a href="locations.html">Locations</a></li>
-               <li> <a href="classes.html">Classes</a></li>
-               <li> <a href="training.html">training</a></li>
-               <li> <a href="membership.html">Membership</a></li>
-               <li> <a href="contact.html">contact us</a></li>
+               <li> <a class="listItem" href="locations.html">Locations</a></li>
+               <li> <a class="listItem" href="classes.html">Classes</a></li>
+               <li> <a class="listItem" href="training.html">training</a></li>
+               <li> <a class="listItem" href="membership.html">Membership</a></li>
+               <li> <a class="listItem" href="contact.html">contact us</a></li>
             </ul>
+
             <div class="header__login">
                <ul>
-                  <li class="login-li">
+                  <li class="listItem">
                      <a href="#">
                         Log in
                         <i class="fas fa-user"></i>
                      </a>
                   </li>
-                  <li>
-                     <button class="btn-language btn-eng">EN</button>
-                     /
-                     <button class="btn-language btn-esp opacity">ES</button></li
-                  >
+
+                  <li class="listItem">
+                     <a class="lagBtn engBtn" href="#">EN</a>
+                     <a class="lagBtn espBtn btnOpacity" href="#">ES</a>
+                  </li
                </ul>
             </div>
          </nav>
 
          <!-- Hero title -->
-         <div class="header__tex-box">
-            <h1 class="heading-primary">
-               <span class="heading-primary--title">The Encore gym</span>
-               <span class="heading-primary--subtitle">where healthy life happens</span>
+         <div class="header__heroText">
+            <h1 class="header__hero-title">
+               <span class="hero--title">The Encore gym</span>
+               <span class="hero--subtitle">where healthy life happens</span>
             </h1>
             <a href="#" class="btn-cta">Join now</a>
          </div>
       </header>
 
+      <!-- MAIN -->
       <main>
          <section class="schedule">
             <h2 class="section-title">Schedules & hours</h2>
-            <p>Check hours and days to find the best time for you!</p>
+            <p class="section-intro">Check hours and days to find the best time for you!</p>
 
-            <div class="schedule-plans">
-               <div class="hours">
-                  <h3 class="">HOURS</h3>
-                  <ul class="hours-list">
-                     <li>Monday: 5:00 AM - 12:00 AM</li>
-                     <li>Tuesday: 24 HRS</li>
-                     <li>Wednesday: 5:00 AM - 12:00 AM</li>
-                     <li>Thursday: 5:00 AM - 12:00 AM</li>
-                     <li>Friday: 7:00 AM - 09:00 PM</li>
-                     <li>Saturday: 5:00 AM - 12:00</li>
-                     <li>Sunday: 5:00 AM - 12:00</li>
+            <div class="schedule-days">
+               <div class="days-box">
+                  <h3>HOURS</h3>
+                  <ul>
+                     <li class="dayItem">Monday: 5:00 AM - 12:00 AM</li>
+                     <li class="dayItem">Tuesday: 24 HRS</li>
+                     <li class="dayItem">Wednesday: 24 HRS</li>
+                     <li class="dayItem">Thursday: 5:00 AM - 12:00 AM</li>
+                     <li class="dayItem">Friday: 7:00 AM - 09:00 PM</li>
+                     <li class="dayItem">Saturday: 5:00 AM - 12:00</li>
+                     <li class="dayItem">Sunday: 5:00 AM - 12:00</li>
                   </ul>
                </div>
+               
+               <div class="crowd-box">
+                  <h3>DAILY CROWD</h3>
+                  <div class="inner-crowd-box">
 
-               <div class="crowd-section">
-                  <h3 class="">WEEKLY CROWD</h3>
-                  <div class="crowd-history">
-                     <div class="crowd-grid">
-                        <div class="grid-top tabs-component-container">
-                           <button class="tab-day tab-day-1 tabs-button-active" data-tab="1">MON</button>
-                           <button class="tab-day tab-day-2" data-tab="2">TUE</button>
-                           <button class="tab-day tab-day-3" data-tab="3">WED</button>
-                           <button class="tab-day tab-day-4" data-tab="4">THU</button>
-                           <button class="tab-day tab-day-5" data-tab="5">FRI</button>
-                           <button class="tab-day tab-day-6" data-tab="6">SAT</button>
-                           <button class="tab-day tab-day-7" data-tab="7">SUN</button>
-                        </div>
+                     <div class="box-top">
+                        <button class="tab-day tab-day-1" data-tab="1">MON</button>
+                        <button class="tab-day tab-day-2" data-tab="2">TUE</button>
+                        <button class="tab-day tab-day-3" data-tab="3">WED</button>
+                        <button class="tab-day tab-day-4" data-tab="4">THU</button>
+                        <button class="tab-day tab-day-5" data-tab="5">FRI</button>
+                        <button class="tab-day tab-day-6" data-tab="6">SAT</button>
+                        <button class="tab-day tab-day-7" data-tab="7">SUN</button>
+                     </div>
 
-                        <div class="grid-medium tabs-content tabs-content-1 tabs-content-active">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
+                     <div class="box-medium">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                     </div>
 
-                        <div class="grid-medium tabs-content tabs-content-2">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-medium tabs-content tabs-content-3">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-medium tabs-content tabs-content-4">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-medium tabs-content tabs-content-5">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-medium tabs-content tabs-content-6">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-medium tabs-content tabs-content-7">
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                           <div class="bar"></div>
-                        </div>
-
-                        <div class="grid-bottom">
-                           <span>6AM</span>
-                           <span>9AM</span>
-                           <span>12PM</span>
-                           <span>3PM</span>
-                           <span>6PM</span>
-                           <span>9PM</span>
-                           <span>12AM</span>
-                           <span>3AM</span>
-                        </div>
+                     <div class="box-bottom">
+                        <span class="tab-hours">6AM</span>
+                        <span class="tab-hours">9AM</span>
+                        <span class="tab-hours">12PM</span>
+                        <span class="tab-hours">3PM</span>
+                        <span class="tab-hours">6PM</span>
+                        <span class="tab-hours">9PM</span>
+                        <span class="tab-hours">12AM</span>
+                        <span class="tab-hours">3AM</span>
                      </div>
                   </div>
                </div>
             </div>
-         </section>
 
-         <section class="memberships">
-            <h2 class="section-title">Memberships</h2>
-            <p>Check out our affordable gym memberships. Clean and spacious with tons of equipment!</p>
 
-            <div class="memberships-plans">
-               <div class="memberships__member memberOne">
-                  <div class="title-box">
-                     <h3 class="memberships__member--title">Gold member</h3>
-                     <h4 class="memberships__member--subtitle">Unlimited locations</h4>
-                  </div>
-
-                  <div class="price-box">
-                     <sup>$</sup>
-                     <span class="price-box--price">24.99/mo</span>
-                     <span class="disclaimer">plus taxes and fees</span>
-                  </div>
-
-                  <a href="#" class="btn-plans">Select</a>
-
-                  <ul class="benefits-ul">
-                     <li class="li-item"> <i class="fas fa-check"></i> Unlimited Access to Home Club</li>
-                     <li class="li-item"><i class="fas fa-check"></i>PF App Workouts</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Free Fitness Training</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Free WiFi</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Use of Any Planet Fitness Worldwide</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Bring a Guest Anytime</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Use of HydroMassage</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Use of Tanning</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Use of Total Body Enhancement</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Use of Massage Chairs</li>
-                     <li class="li-item"><i class="fas fa-check"></i>50% Off Select Drinks</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Premium Perks: Partner & Rewards Discounts</li>
-                  </ul>
-               </div>
-               <div class="memberships__member membertwo">
-                  <div class="title-box">
-                     <h3 class="memberships__member--title">Classic</h3>
-                     <h4 class="memberships__member--subtitle">Limited locations</h4>
-                  </div>
-
-                  <div class="price-box">
-                     <sup>$</sup>
-                     <span class="price-box--price">10/mo</span>
-                     <span class="disclaimer">plus taxes and fees</span>
-                  </div>
-
-                  <a href="#" class="btn-plans">Select</a>
-
-                  <ul class="benefits-ul">
-                     <li class="li-item"><i class="fas fa-check"></i>Unlimited Access to Home Club</li>
-                     <li class="li-item"><i class="fas fa-check"></i>PF App Workouts</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Free Fitness Training</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Free WiFi</li>
-                     <li class="li-item"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
-                     <li class="li-item">Use of Any Planet Fitness Worldwide</li>
-                     <li class="li-item">Bring a Guest Anytime</li>
-                     <li class="li-item">Use of HydroMassage</li>
-                     <li class="li-item">Use of Tanning</li>
-                     <li class="li-item">Use of Total Body Enhancement</li>
-                     <li class="li-item">Use of Massage Chairs</li>
-                     <li class="li-item">50% Off Select Drinks</li>
-                     <li class="li-item">Premium Perks: Partner & Rewards Discounts</li>
-                  </ul>
-               </div>
-            </div>
          </section>
       </main>
+
       <script src="_layout/script.js"></script>
    </body>
 </html>
