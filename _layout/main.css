@@ -524,17 +524,55 @@ sup {
 /* FOOTER */
 
 footer {
-   padding: 2rem;
+   padding: 1rem;
    background-color: #1f2123;
 }
 
 .final-footer {
    display: flex;
-   width: 50%;
-   margin: 3rem auto;
+   width: 100%;
+   margin: 1rem auto 3rem auto;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+/* TOP */
+
+.footer-nav {
+   display: flex;
+   margin: 2rem 0;
+}
+
+.footer-nav li {
+   margin: 0 1rem;
+}
+
+.footer-nav li a {
+   text-transform: uppercase;
+   font-size: 2rem;
+}
+
+/* MEDIUM  */
+.social {
+   display: flex;
+   margin: 2rem 0;
+}
+
+.social li {
+   margin: 0 2rem;
+   font-size: 3rem;
+}
+
+/* BOTTOM */
+.copy {
+   text-transform: uppercase;
+   font-size: 0.7rem;
+   letter-spacing: 2px;
+}
+
+.copy a {
+   text-decoration: underline;
 }
 
 /*--- Media Query ---*/
@@ -621,6 +659,10 @@ footer {
       padding: 1rem 0;
       color: white;
       text-align: center;
+   }
+
+   .footer-nav li a {
+      font-size: 1.2rem;
    }
 }
 
