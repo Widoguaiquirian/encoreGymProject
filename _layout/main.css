@@ -96,6 +96,7 @@ a {
    position: relative;
    max-width: 180rem;
    margin: 0 auto;
+   overflow: hidden;
 }
 
 /*--- Navigation ---*/
@@ -495,15 +496,7 @@ sup {
    }
 
    .gallery-grid {
-      display: grid;
-      margin: 0 auto;
       grid-template-columns: repeat(2, 45%);
-      grid-template-rows: repeat(2, 50%);
-      justify-content: center;
-      column-gap: 1.3rem;
-      row-gap: 1.3rem;
-      max-width: 100%;
-      padding: 1rem;
    }
 }
 
@@ -1184,4 +1177,26 @@ sup {
 
 .grid-bar-7 .bar:nth-child(24) {
    height: 0.5rem;
+}
+
+/* COOKIE MESSAGE */
+.cookie-message {
+   background-color: white;
+   color: var(--color-tertiary);
+   position: fixed;
+   bottom: 0;
+   padding: 0.6rem 0;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.cookie-message button {
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+   outline: none;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   padding: 1rem 2rem;
 }
