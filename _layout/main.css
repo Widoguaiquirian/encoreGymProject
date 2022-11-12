@@ -99,6 +99,12 @@ a {
    overflow: hidden;
 }
 
+.header-pages {
+   background-image: none;
+   height: 80px;
+   clip-path: none;
+}
+
 /*--- Navigation ---*/
 
 /* Categories bar */
@@ -555,8 +561,56 @@ sup {
    margin-left: 0.3rem;
 }
 
-/* FOOTER */
+/* LOCATIONS PAGE */
+.locals-grid {
+   display: grid;
+   max-width: 90%;
+   margin: 0 auto;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   column-gap: 3rem;
+   row-gap: 3rem;
+}
 
+.local {
+   position: relative;
+}
+
+.gallery-locals {
+   height: 200px;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+   overflow: hidden;
+}
+
+.gallery-locals img {
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   object-position: center;
+   transition: all 0.4s ease-in-out;
+   width: 100%;
+}
+
+.local:hover .gallery-locals img {
+   transform: scale(1.1);
+   transition: all 0.4s ease-in-out;
+}
+
+.info-local {
+   background-color: white;
+   color: var(--color-tertiary);
+}
+
+.btn-local {
+   background-color: var(--color-primary);
+   width: 100%;
+   display: inline-block;
+   text-transform: uppercase;
+   padding: 1rem;
+}
+
+/* FOOTER */
 footer {
    padding: 1rem;
    background-color: #1f2123;
@@ -704,6 +758,17 @@ footer {
       padding: 0.5rem;
       opacity: 1;
       transform: translateY(0);
+   }
+
+   /* LOCALS PAGE */
+   .locals-grid {
+      display: grid;
+      max-width: 90%;
+      margin: 0 auto;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 3rem;
+      row-gap: 3rem;
    }
 }
 

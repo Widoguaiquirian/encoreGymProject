@@ -53,13 +53,15 @@
    <body class="body">
       <header class="header">
          <nav class="header__navBar">
-            <img src="/_images/_logos/logo.png" class="header__logo" alt="logo-brand" />
+            <a href="index.html">
+               <img src="/_images/_logos/logo.png" class="header__logo" alt="logo-brand" />
+            </a>
             <ul>
-               <li> <a class="listItem " href="locations.html">Locations</a></li>
+               <li> <a class="listItem" href="locations.html">Locations</a></li>
                <li> <a class="listItem" href="classes.html">Classes</a></li>
                <li> <a class="listItem categorie-selector" href="training.html">training</a></li>
-               <li> <a class="listItem " href="membership.html">Membership</a></li>
-               <li> <a class="listItem " href="contact.html">contact us</a></li>
+               <li> <a class="listItem" href="membership.html">Membership</a></li>
+               <li> <a class="listItem" href="contact.html">contact us</a></li>
             </ul>
 
             <div class="header__login">
@@ -74,14 +76,59 @@
                   <li class="listItem">
                      <a class="lagBtn engBtn" href="#">EN</a>
                      <a class="lagBtn espBtn btnOpacity" href="#">ES</a>
-                  </li
+                  </li>
                </ul>
             </div>
          </nav>
-
       </header>
 
       <main> </main>
+      <div class="newsLetter-back">
+         <div class="newsletter">
+            <div class="newsletter-content">
+               <h2>Subscribe to our newsletter</h2>
+               <div class="form-row-newsletter">
+                  <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     required
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                     placeholder="Enter your email"
+                  />
+                  <button class="newsletter-button">Subscribe</button>
+               </div>
+               <p>You will receive a welcoming email</p>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="final-footer">
+            <div class="top">
+               <ul class="footer-nav">
+                  <li class="listItem"> <a href="#">Rules</a></li>
+                  <li class="listItem"> <a href="#">About us</a></li>
+                  <li class="listItem"> <a href="#">Terms</a></li>
+                  <li class="listItem"> <a href="#">Policy</a></li>
+                  <li class="listItem"> <a href="#">Call now</a></li>
+               </ul>
+            </div>
+            <img src="/_images/_logos/logo.png" class="header__logo" alt="logo-brand" />
+            <div class="social">
+               <li class="listItem">
+                  <a href="#"><i class="fab fa-instagram"></i></a
+               ></li>
+               <li class="listItem">
+                  <a href="#"><i class="fab fa-facebook"></i></a
+               ></li>
+               <li class="listItem">
+                  <a href="#"><i class="fab fa-youtube"></i></a
+               ></li>
+            </div>
+            <p class="copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
+         </div>
+      </footer>
       <script src="_layout/script.js"></script>
    </body>
 </html>
