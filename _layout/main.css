@@ -272,18 +272,17 @@ a {
 /*--- Main ---*/
 main {
    max-width: 180rem;
-   margin: 1rem auto;
+   margin: 2rem auto;
    padding: 1rem;
 }
 
 .block {
    padding: 4rem 0;
-   margin: 5rem 0;
-   max-width: 95%;
+   max-width: 100%;
    text-align: center;
    margin: 0 auto;
    transition: transform 1s, opacity 1s;
-   transform: translateY(-3rem);
+   transform: translateY(0);
 }
 
 .block--hidden {
@@ -454,6 +453,7 @@ sup {
 .grid-item {
    overflow: hidden;
    position: relative;
+   height: 200px;
 }
 
 .gallery-photos {
@@ -570,6 +570,7 @@ sup {
    outline: none;
    color: white;
    font-weight: bold;
+   border: 1px solid white;
    cursor: pointer;
    margin-left: 0.3rem;
 }
@@ -733,6 +734,8 @@ footer {
 
    .gallery-grid {
       grid-template-columns: repeat(2, 45%);
+      grid-template-rows: repeat(4, 25%);
+      height: auto;
    }
 
    .cookie-message {
