@@ -282,6 +282,13 @@ main {
    max-width: 95%;
    text-align: center;
    margin: 0 auto;
+   transition: transform 1s, opacity 1s;
+   transform: translateY(-3rem);
+}
+
+.block--hidden {
+   opacity: 0;
+   transform: translateY(0);
 }
 
 .section-title {
