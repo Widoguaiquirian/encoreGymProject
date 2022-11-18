@@ -58,3 +58,33 @@ allRevealSections.forEach(function (section) {
    sectionOberserver.observe(section);
    section.classList.add("block--hidden");
 });
+
+//STICKY NAV
+const nav = document.querySelector(".header__navBar");
+
+window.addEventListener("scroll", fixNav);
+
+function fixNav() {
+   if (window.scrollY > nav.offsetHeight + 650) {
+      nav.classList.add("active");
+   } else {
+      nav.classList.remove("active");
+   }
+}
+
+// menu mobile
+const openBtn = document.querySelector(".open-btn");
+const closeBtn = document.querySelector(".close-btn");
+const navs = document.querySelectorAll(".nav");
+
+openBtn.addEventListener("click", function () {
+   navs.forEach(function (nav) {
+      nav.classList.add("visible");
+   });
+});
+
+closeBtn.addEventListener("click", function () {
+   navs.forEach(function (nav) {
+      nav.classList.remove("visible");
+   });
+});

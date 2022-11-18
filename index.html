@@ -53,11 +53,43 @@
    <body class="body">
       <header class="header">
          <nav class="header__navBar">
+            <!-- mobile -->
+            <button class="nav-btn open-btn">
+               <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav nav-black">
+               <div class="nav nav-red">
+                  <div class="nav nav-white">
+                     <button class="nav-btn close-btn">
+                        <i class="fas fa-times"></i>
+                     </button>
+
+                     <img src="/_images/_logos/logo.png" alt="logo" class="logo" />
+
+                     <ul class="list">
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li>
+                           <ul>
+                              <li><a href="#">- My work</a></li>
+                              <li><a href="#">- Experience</a></li>
+                              <li><a href="#">- Life</a></li>
+                              <li><a href="#">- Travelling</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <!-- desktop -->
             <a class="logo-btn" href="index.html">
                <img src="/_images/_logos/logo.png" class="header__logo" alt="logo-brand" />
             </a>
 
-            <ul>
+            <ul class="item-nav">
                <li> <a class="listItem categorie-selector" href="index.html">home</a></li>
                <li> <a class="listItem" href="locations.html">Locations</a></li>
                <li> <a class="listItem" href="classes.html">Classes</a></li>

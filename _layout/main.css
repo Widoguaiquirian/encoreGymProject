@@ -93,7 +93,7 @@ a {
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 0.5rem;
-   clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+   /* clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); */
    position: relative;
    max-width: 180rem;
    margin: 0 auto;
@@ -172,6 +172,97 @@ a {
    font-size: 1.5rem;
 }
 
+/*--- Navigation  sticky---*/
+
+.header__navBar.active {
+   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: all 0.1s linear;
+   right: 0;
+   padding: 1.5rem;
+   z-index: 9;
+   max-width: 1800px;
+}
+
+/*--- Navigation  mobile---*/
+
+.nav-black .logo {
+   height: 3rem;
+}
+
+.nav-btn {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   font-size: 3rem;
+   display: none;
+}
+
+.open-btn {
+   top: 10px;
+   left: 10px;
+}
+
+.fa-bars {
+   color: white;
+}
+
+.nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   transform: translatex(-350px);
+   transition: transform 0.2s ease-in-out;
+   z-index: 99;
+}
+
+.nav.visible {
+   transform: translatex(0);
+}
+
+.nav-black {
+   background-color: rgb(0, 0, 0);
+   width: 30%;
+   max-width: 290px;
+   min-width: 270px;
+   transition-delay: 0.1s;
+}
+
+.nav-black.visible {
+   transition-delay: 0s;
+}
+
+.nav-red {
+   background-color: rgb(222, 54, 54);
+   width: 95%;
+   transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+   transition-delay: 0.1s;
+}
+
+.nav-white {
+   width: 95%;
+   position: relative;
+   padding: 4rem;
+   background-color: white;
+   transition-delay: 0.3s;
+}
+
+.nav-white.visible {
+   transition-delay: 0.2s;
+}
+
+.close-btn {
+   position: absolute;
+   right: 40px;
+   top: 40px;
+   opacity: 0.3;
+}
 /* HERO HEADER SECTION */
 
 .header__heroText {
@@ -720,11 +811,37 @@ footer {
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
+   .nav-btn {
+      display: block;
+   }
    .header__logo {
-      height: 4rem;
+      height: 3.5rem;
+      margin-left: 2rem;
+   }
+
+   .item-nav,
+   .item-nav li,
+   .lagBtn {
+      display: none;
    }
 
    .header__navBar {
+      padding: 2rem 0;
+   }
+
+   .header__login a {
+      font-size: 1.6rem;
+   }
+
+   .header__login .listItem {
+      padding: 0 1rem;
+   }
+
+   .header__navBar ul li:not(:last-child) {
+      border: none;
+   }
+
+   .header__navBar ul li:last-child {
       display: none;
    }
 
