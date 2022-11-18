@@ -145,6 +145,7 @@ a {
 .header__navBar .listItem {
    text-transform: uppercase;
    display: block;
+   font-size: 1.6rem;
    padding: 0 1.5rem;
    color: var(--color-secondary-strong);
 }
@@ -169,7 +170,7 @@ a {
 /* Opacity for language not selected */
 .header__login .btnOpacity {
    opacity: 50%;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
 }
 
 /*--- Navigation  sticky---*/
@@ -187,10 +188,6 @@ a {
 }
 
 /*--- Navigation  mobile---*/
-
-.nav-black .logo {
-   height: 3rem;
-}
 
 .nav-btn {
    border: none;
@@ -224,7 +221,6 @@ a {
 }
 
 .nav-black {
-   background-color: rgb(0, 0, 0);
    width: 30%;
    max-width: 290px;
    min-width: 270px;
@@ -236,7 +232,7 @@ a {
 }
 
 .nav-red {
-   background-color: rgb(222, 54, 54);
+   background-color: var(--color-primary);
    width: 95%;
    transition-delay: 0.2s;
 }
@@ -248,9 +244,10 @@ a {
 .nav-white {
    width: 95%;
    position: relative;
-   padding: 4rem;
-   background-color: white;
+   padding: 3rem 1.5rem;
+   background-color: var(--color-tertiary);
    transition-delay: 0.3s;
+   text-transform: uppercase;
 }
 
 .nav-white.visible {
@@ -259,10 +256,32 @@ a {
 
 .close-btn {
    position: absolute;
-   right: 40px;
-   top: 40px;
-   opacity: 0.3;
+   right: 12px;
+   top: 12px;
 }
+
+.fa-times {
+   color: white;
+}
+
+.nav-black .logo {
+   height: 4rem;
+}
+
+.nav .list {
+   display: block;
+   padding-top: 3rem;
+}
+
+.nav .list .listItem {
+   margin: 0.6rem 0;
+}
+
+.inherit-list {
+   flex-direction: column;
+   margin-left: 1rem;
+}
+
 /* HERO HEADER SECTION */
 
 .header__heroText {
@@ -841,7 +860,7 @@ footer {
       border: none;
    }
 
-   .header__navBar ul li:last-child {
+   .header__navBar .item-nav li:last-child {
       display: none;
    }
 
