@@ -279,7 +279,11 @@ a {
 
 .inherit-list {
    flex-direction: column;
-   margin-left: 1rem;
+   margin-left: 2.5rem;
+}
+
+.list .inherit-list li {
+   font-size: 1.4rem;
 }
 
 /* HERO HEADER SECTION */
