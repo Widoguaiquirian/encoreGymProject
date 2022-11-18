@@ -670,6 +670,25 @@ sup {
    border-radius: 10px;
 }
 
+/* HUINCHA */
+.huincha-back {
+   background-color: #2c1d58;
+   width: 100%;
+   padding: 2rem 0;
+   margin-bottom: 5rem;
+}
+
+.huincha {
+   padding: 1rem 0;
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+}
+
+.huincha h2 {
+   color: var(--color-primary);
+}
+
 /* NEWSLETTER */
 .newsLetter-back {
    background-color: #2c1d58;
@@ -966,6 +985,26 @@ footer {
       grid-template-rows: repeat(2, 1fr);
       column-gap: 3rem;
       row-gap: 3rem;
+   }
+
+   /* flash promotion */
+   .huincha-back {
+      background-color: #2c1d58;
+      width: 100%;
+      padding: 2rem 0;
+      margin-bottom: 5rem;
+   }
+
+   .huincha {
+      padding: 1rem 0;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+   }
+
+   .huincha h2 {
+      color: var(--color-primary);
+      font-size: 2rem;
    }
 }
 
