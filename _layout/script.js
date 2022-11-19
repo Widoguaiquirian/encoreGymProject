@@ -42,26 +42,26 @@ window.onload = function () {
    });
 };
 
-// SCROLL REVEALING
-const allRevealSections = document.querySelectorAll(".block");
+// // SCROLL REVEALING
+// const allRevealSections = document.querySelectorAll(".block");
 
-const revealSection = function (entries, oberserver) {
-   const [entry] = entries;
+// const revealSection = function (entries, oberserver) {
+//    const [entry] = entries;
 
-   if (!entry.isIntersecting) return;
-   entry.target.classList.remove("block--hidden");
-   oberserver.unobserve(entry.target);
-};
+//    if (!entry.isIntersecting) return;
+//    entry.target.classList.remove("block--hidden");
+//    oberserver.unobserve(entry.target);
+// };
 
-const sectionOberserver = new IntersectionObserver(revealSection, {
-   root: null,
-   threshold: 0.1,
-});
+// const sectionOberserver = new IntersectionObserver(revealSection, {
+//    root: null,
+//    threshold: 0.1,
+// });
 
-allRevealSections.forEach(function (section) {
-   sectionOberserver.observe(section);
-   section.classList.add("block--hidden");
-});
+// allRevealSections.forEach(function (section) {
+//    sectionOberserver.observe(section);
+//    section.classList.add("block--hidden");
+// });
 
 //STICKY NAV
 const nav = document.querySelector(".header__navBar");
