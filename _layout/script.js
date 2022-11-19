@@ -21,22 +21,26 @@ const tabsDaysContainer = document.querySelector(".box-top");
 const contentBoxMedium = document.querySelectorAll(".box-medium");
 
 // ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
-tabsDaysContainer.addEventListener("click", function (e) {
-   const clicked = e.target.closest(".tab-day");
-   if (!clicked) return;
 
-   tabsDays.forEach(function (t) {
-      t.classList.remove("activeDay");
+// CON WINDOW.ONLOAD EVITAMOS QUE JS SE EJECUTE DE PRIMERO Y TIRE ERRORES
+window.onload = function () {
+   tabsDaysContainer.addEventListener("click", function (e) {
+      const clicked = e.target.closest(".tab-day");
+      if (!clicked) return;
+
+      tabsDays.forEach(function (t) {
+         t.classList.remove("activeDay");
+      });
+
+      contentBoxMedium.forEach(function (c) {
+         c.classList.remove("grid-active");
+      });
+
+      clicked.classList.add("activeDay");
+
+      document.querySelector(`.grid-bar-${clicked.dataset.tab}`).classList.add("grid-active");
    });
-
-   contentBoxMedium.forEach(function (c) {
-      c.classList.remove("grid-active");
-   });
-
-   clicked.classList.add("activeDay");
-
-   document.querySelector(`.grid-bar-${clicked.dataset.tab}`).classList.add("grid-active");
-});
+};
 
 // SCROLL REVEALING
 const allRevealSections = document.querySelectorAll(".block");
