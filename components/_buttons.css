@@ -1,0 +1,118 @@
+/*--- DESKTOP---*/
+
+/* HOME - Main button */
+.btn-cta {
+   position: relative;
+   margin-top: 3rem;
+   display: inline-block;
+   padding: 1rem 1.5rem;
+   font-size: 2rem;
+   color: var(--color-secondary);
+   border: 5px solid var(--color-secondary);
+   border-radius: 10px;
+   overflow: hidden;
+   text-transform: uppercase;
+}
+
+.btn-cta::after {
+   content: "";
+   width: 0%;
+   height: 110%;
+   border-radius: 10px;
+   left: -10px;
+   top: 0;
+   background-color: var(--color-primary);
+   position: absolute;
+   transition: all 0.5s ease;
+   z-index: -1;
+}
+
+.btn-cta:hover::after {
+   width: 120%;
+}
+
+/* HOME - Membership plans buttons */
+
+.btn-plans {
+   background-color: var(--color-primary);
+   color: white;
+   padding: 1rem 10rem;
+   display: inline-block;
+   margin: 2rem 0;
+   border-radius: 10px;
+}
+
+.btn-plans:hover {
+   background-color: #be4612;
+}
+
+/* HOME - Opacity for not selected language */
+.btnOpacity {
+   opacity: 50%;
+   font-size: 1.2rem;
+}
+
+/* HOME - Hall of fame */
+.grid__btn {
+   position: absolute;
+   top: 50%;
+   border: none;
+   height: 5.5rem;
+   background-color: var(--color-primary);
+   width: 4rem;
+   color: var(--color-secondary);
+   font-size: 3.25rem;
+   cursor: pointer;
+}
+
+.grid__btn:hover {
+   background-color: #be4612;
+}
+
+.grid__btn--left {
+   left: 10%;
+   transform: translate(-50%, -50%);
+}
+
+.grid__btn--right {
+   right: 10%;
+   transform: translate(50%, -50%);
+}
+
+/* LOCATIONS - local btns */
+.btn-local {
+   background-color: var(--color-primary);
+   width: 100%;
+   display: inline-block;
+   text-transform: uppercase;
+   padding: 1rem;
+   transition: all 0.3s ease-in-out;
+}
+
+.local:hover .btn-local {
+   background-color: #d64e13;
+}
+
+/*--- MOBILE---*/
+.nav-btn {
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   font-size: 3rem;
+   display: none;
+}
+
+.open-btn {
+   top: 10px;
+   left: 10px;
+}
+
+.fa-bars {
+   color: white;
+}
+
+.close-btn {
+   position: absolute;
+   right: 12px;
+   top: 12px;
+}

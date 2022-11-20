@@ -1,0 +1,53 @@
+/*--- Header ---*/
+.header {
+   height: 95vh;
+   max-height: 900px;
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884) 20%, rgba(255, 255, 255, 0)),
+      url(/images/sliders/hero-images.jpg);
+   background-position: 70%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 0.5rem;
+   position: relative;
+   max-width: 180rem;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.header-pages {
+   background-image: none;
+   height: 80px;
+   clip-path: none;
+}
+
+/* HERO HEADER SECTION */
+.header__heroText {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   text-align: center;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-transform: uppercase;
+   text-align: center;
+   max-width: 90%;
+}
+
+.hero--title {
+   font-size: 7rem;
+   color: var(--color-primary);
+   text-shadow: 1px 2px 3px rgba(221, 221, 221, 0.555);
+   display: block;
+   animation: moveInLeft 1s ease-in-out;
+   margin: 0 auto;
+}
+
+.hero--subtitle {
+   font-size: 3rem;
+   font-weight: 500;
+   letter-spacing: 0.3rem;
+   display: block;
+   color: var(--color-secondary-strong);
+   animation: moveInRight 1s ease-in-out;
+   margin: 0 auto;
+}
