@@ -11,3 +11,10 @@
    opacity: 0;
    transform: translateY(0);
 }
+
+/*--- Main ---*/
+main {
+   max-width: 180rem;
+   padding: 1rem;
+   margin: 0 auto;
+}

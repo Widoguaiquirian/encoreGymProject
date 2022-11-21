@@ -41,12 +41,6 @@ Safari V.
 
 */
 
-/*--- Main ---*/
-main {
-   max-width: 180rem;
-   padding: 1rem;
-}
-
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
    main {

@@ -8,6 +8,7 @@
    background-color: var(--color-tertiary);
    color: var(--color-secondary-strong);
    padding: 2rem 1rem;
+   margin: 0 auto;
 }
 
 .desktopNav-list {

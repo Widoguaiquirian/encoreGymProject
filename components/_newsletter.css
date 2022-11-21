@@ -6,7 +6,7 @@
 
 .newsletter {
    width: 45%;
-   max-width: 600px;
+   max-width: 420px;
    margin: auto;
    display: flex;
    text-align: center;
@@ -15,6 +15,9 @@
 
 .newsletter p {
    font-size: 1.3rem;
+   text-align: left;
+   margin: 0 auto 0 6rem;
+   width: 50%;
 }
 
 .newsletter h2 {
@@ -49,4 +52,13 @@
    border: 1px solid white;
    cursor: pointer;
    margin-left: 0.3rem;
+}
+
+@media (max-width: 490px) {
+   .newsletter p {
+      font-size: 1.3rem;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+   }
 }
