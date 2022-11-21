@@ -52,17 +52,16 @@
    </head>
    <body class="body">
       <header class="header">
-         <nav class="header__navBar">
-            
+         <nav class="navBar">
             <!-- mobile -->
-            <button class="nav-btn open-btn">
+            <button class="nav-btn openNav">
                <i class="fas fa-bars"></i>
             </button>
 
-            <div class="nav nav-black">
-               <div class="nav nav-red">
-                  <div class="nav nav-white">
-                     <button class="nav-btn close-btn">
+            <div class="navMobile navBG-orange">
+
+                  <div class="navMobile navBG-white">
+                     <button class="nav-btn closeNav">
                         <i class="fas fa-times"></i>
                      </button>
 
@@ -70,10 +69,10 @@
                         <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
                      </a>
 
-                     <ul class="list">
-                        <li><a class="listItem" href="index.html">Home</a></li>
+                     <ul class="mobileNav-list">
+                        <li><a class="listItem" href="#">Home</a></li>
                         <li> <a class="listItem" href="locations.html">Locations</a></li>
-                        <ul class="inherit-list">
+                        <ul class="innerMobileNav-list">
                            <li>- 1160 Louder Miami</a></li>
                            <li>- 660 Way Miami</a></li>
                            <li>- 1123 Coral Miami</a></li>
@@ -81,12 +80,11 @@
                            <li>- 4660 Coral Miami</a></li>
                            <li>- 423 Coral Miami</a></li>
                         </ul>
-                        <li><a class="listItem" href="classes.html">Classes</a></li>
-                        <li><a class="listItem" href="membership.html">Membership</a></li>
-                        <li><a class="listItem" href="contact.html">contact us</a></li>
+                        <li><a class="listItem" href="#">Classes</a></li>
+                        <li><a class="listItem" href="#">Membership</a></li>
+                        <li><a class="listItem" href="#">contact us</a></li>
                      </ul>
                   </div>
-               </div>
             </div>
 
             <!-- desktop -->
@@ -94,16 +92,16 @@
                <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
             </a>
 
-            <ul class="item-nav">
+            <ul class="desktopNav-list">
                <li> <a class="listItem " href="index.html">home</a></li>
-               <li> <a class="listItem" href="locations.html">Locations</a></li>
+               <li> <a class="listItem " href="locations.html">Locations</a></li>
                <li> <a class="listItem" href="classes.html">Classes</a></li>
                <li> <a class="listItem categorie-selector" href="membership.html">Membership</a></li>
                <li> <a class="listItem" href="contact.html">contact us</a></li>
             </ul>
 
-            <div class="header__login">
-               <ul>
+            <div class="navLogin">
+               <ul class="desktopNav-list">
                   <li class="listItem">
                      <a href="#">
                         Log in
@@ -111,13 +109,14 @@
                      </a>
                   </li>
 
-                  <li class="listItem">
+                  <li class="listItem lagBtns">
                      <a class="lagBtn engBtn" href="#">EN</a>
                      <a class="lagBtn espBtn btnOpacity" href="#">ES</a>
                   </li>
                </ul>
             </div>
          </nav>
+
       </header>
 
       <main> </main>
