@@ -1,5 +1,5 @@
 /*--- Navigation ---*/
-.header__navBar {
+.navBar {
    position: absolute;
    width: 100%;
    display: flex;
@@ -10,7 +10,7 @@
    padding: 2rem 1rem;
 }
 
-.header__navBar ul {
+.desktopNav-list {
    display: flex;
 }
 
@@ -24,11 +24,11 @@
    height: 4rem;
 }
 
-.header__navBar ul li:not(:last-child) {
+.desktopNav-list li:not(:last-child) {
    border-right: 3px solid #ec662dbd;
 }
 
-.header__navBar .listItem {
+.desktopNav-list .listItem {
    text-transform: uppercase;
    display: block;
    font-size: 1.6rem;
@@ -42,7 +42,7 @@
 }
 
 /* highlight the categorie where we are */
-.header__navBar .categorie-selector {
+.desktopNav-list .categorie-selector {
    color: var(--color-primary);
    font-weight: bold;
 }
@@ -55,7 +55,7 @@
 
 /*--- Navigation  sticky---*/
 
-.header__navBar.active {
+.navBar.active {
    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
    position: fixed;
    top: 0;

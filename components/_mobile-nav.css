@@ -1,5 +1,5 @@
 /*--- Navigation  mobile---*/
-.nav {
+.navMobile {
    position: fixed;
    top: 0;
    left: 0;
@@ -9,88 +9,67 @@
    z-index: 99;
 }
 
-.nav.visible {
+.navMobile.visible {
    transform: translatex(0);
 }
 
-.nav-black {
+.navBG-orange {
    width: 30%;
    max-width: 290px;
    min-width: 270px;
-   transition-delay: 0.1s;
-}
-
-.nav-black.visible {
-   transition-delay: 0s;
-}
-
-.nav-red {
    background-color: var(--color-primary);
-   width: 95%;
-   transition-delay: 0.2s;
 }
 
-.nav-red.visible {
-   transition-delay: 0.1s;
-}
-
-.nav-white {
+.navBG-white {
    width: 95%;
    position: relative;
    padding: 3rem 1.5rem;
    background-color: var(--color-tertiary);
-   transition-delay: 0.3s;
    text-transform: uppercase;
 }
 
-.nav-white.visible {
-   transition-delay: 0.2s;
+.navBG-white.visible {
+   transition-delay: 0.05s;
 }
 
-.fa-times {
-   color: white;
+.navMobile .logo {
+   height: 3rem;
 }
 
-.nav-black .logo {
-   height: 4rem;
-}
-
-.nav .list {
+.mobileNav-list {
    display: block;
    padding-top: 3rem;
 }
 
-.nav .list .listItem {
-   margin: 0.6rem 0;
-}
-
-.inherit-list {
+.innerMobileNav-list {
    flex-direction: column;
-   margin-left: 2.5rem;
+   margin-left: 2rem;
 }
 
-.list .inherit-list li {
+.innerMobileNav-list li {
    font-size: 1.4rem;
 }
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
+   .navBar {
+      justify-content: space-between;
+   }
+
    .nav-btn {
       display: block;
    }
-   .header__logo {
-      height: 3.5rem;
+
+   .openNav {
+      padding: 0;
+   }
+
+   .logo {
       margin-left: 2rem;
    }
 
-   .item-nav,
-   .item-nav li,
-   .lagBtn {
-      display: none;
-   }
-
-   .header__navBar {
-      padding: 2rem 0;
+   .navMobile .logo {
+      margin: 0;
    }
 
    .header__login a {
@@ -98,14 +77,19 @@
    }
 
    .header__login .listItem {
-      padding: 0 1rem;
+      padding: 0;
    }
 
-   .header__navBar ul li:not(:last-child) {
-      border: none;
-   }
-
-   .header__navBar .item-nav li:last-child {
+   /* hide elements from the desktop menu */
+   .desktopNav-list li {
       display: none;
+   }
+
+   .desktopNav-list .lagBtns {
+      display: none;
+   }
+
+   .desktopNav-list .listItem:not(:last-child) {
+      border: none;
    }
 }

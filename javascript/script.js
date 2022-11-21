@@ -64,7 +64,7 @@ window.onload = function () {
 // });
 
 //STICKY NAV
-const nav = document.querySelector(".header__navBar");
+const nav = document.querySelector(".navBar");
 
 window.addEventListener("scroll", fixNav);
 
@@ -77,9 +77,9 @@ function fixNav() {
 }
 
 // menu mobile
-const openBtn = document.querySelector(".open-btn");
-const closeBtn = document.querySelector(".close-btn");
-const navs = document.querySelectorAll(".nav");
+const openBtn = document.querySelector(".openNav");
+const closeBtn = document.querySelector(".closeNav");
+const navs = document.querySelectorAll(".navMobile");
 
 openBtn.addEventListener("click", function () {
    navs.forEach(function (nav) {

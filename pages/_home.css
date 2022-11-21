@@ -795,6 +795,11 @@
 .plan--title {
    color: var(--color-primary);
    font-size: 3rem;
+   margin: 0;
+}
+
+.plan--subtitle {
+   margin: 0;
 }
 
 sup {
@@ -897,7 +902,6 @@ sup {
 }
 
 /* TESTIMONIES SECTION */
-
 .grid__slider-box {
    max-width: 1800px;
    height: 40rem;

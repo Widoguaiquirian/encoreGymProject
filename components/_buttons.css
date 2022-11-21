@@ -37,7 +37,7 @@
    color: white;
    padding: 1rem 10rem;
    display: inline-block;
-   margin: 2rem 0;
+   margin: 1rem 0 3rem 0;
    border-radius: 10px;
 }
 
@@ -74,16 +74,16 @@
    display: none;
 }
 
-.open-btn {
+.openNav {
    top: 10px;
    left: 10px;
 }
 
-.fa-bars {
+.fas {
    color: white;
 }
 
-.close-btn {
+.closeNav {
    position: absolute;
    right: 12px;
    top: 12px;
