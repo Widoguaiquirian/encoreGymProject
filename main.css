@@ -43,34 +43,6 @@ Safari V.
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
-   main {
-      max-width: 97%;
-      margin: 0 auto;
-   }
-
-   .schedule-days {
-      flex-direction: column;
-      margin: 1rem 0;
-   }
-
-   .days-box {
-      margin: 1rem 0 3rem 0;
-   }
-
-   .box-top .tab-day {
-      margin: 0 1rem;
-   }
-
-   .box-bottom {
-      display: flex;
-      justify-content: space-between;
-   }
-
-   .box-bottom .tab-hours {
-      margin: 0;
-      font-size: 1.2rem;
-   }
-
    .memberships-plans {
       flex-direction: column;
    }
