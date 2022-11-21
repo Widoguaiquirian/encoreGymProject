@@ -16,9 +16,9 @@ document.querySelector(".btn-ok-cookie").addEventListener("click", function () {
 //Clase que comparten los botones
 const tabsDays = document.querySelectorAll(".tab-day");
 //Clase del container padre de los botones
-const tabsDaysContainer = document.querySelector(".box-top");
+const tabsDaysContainer = document.querySelector(".crowd-top");
 //Clase que comparten los bloques de HTML a mostrar
-const contentBoxMedium = document.querySelectorAll(".box-medium");
+const contentBoxMedium = document.querySelectorAll(".crowd-medium");
 
 // ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
 

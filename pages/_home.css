@@ -1,9 +1,5 @@
 /* SCHEDULE SECTION BIG*/
-.schedule {
-   text-align: center;
-}
-
-.schedule-days {
+.schedule-content {
    display: flex;
    justify-content: center;
 }
@@ -13,18 +9,18 @@
    margin-right: 5rem;
 }
 
-.days-box ul .dayItem {
+.dayItem {
    text-align: left;
 }
 
 /* right side */
 
-.inner-crowd-box .box-top {
+.inner-crowd-content .crowd-top {
    border-bottom: 3px solid var(--color-primary);
    padding-bottom: 1rem;
 }
 
-.box-top .tab-day {
+.crowd-top .tab-day {
    margin: 0 2rem;
    color: white;
    background-color: transparent;
@@ -32,14 +28,14 @@
    border: none;
 }
 
-.box-top .activeDay {
+.crowd-top .activeDay {
    transition: all 0.5s ease;
    background-color: var(--color-primary);
    border-radius: 3px;
 }
 
 /* OCULTAR LOS QUE NO ESTEN ACTIVE */
-.box-medium {
+.crowd-medium {
    display: none;
 }
 
@@ -53,11 +49,11 @@
    border-bottom: 2px dashed var(--color-primary);
 }
 
-.box-bottom {
+.crowd-bottom {
    position: relative;
 }
 
-.box-bottom span:last-child {
+.crowd-bottom span:last-child {
    position: absolute;
    left: 0;
    bottom: -30px;
@@ -65,7 +61,7 @@
    color: var(--color-info);
 }
 
-.box-bottom .tab-hours {
+.crowd-bottom .tab-hours {
    margin: 0 2rem;
 }
 
@@ -981,6 +977,10 @@ sup {
 }
 
 @media (max-width: 600px) {
+   .schedule-content {
+      display: block;
+   }
+
    .slide__section {
       column-gap: 1rem;
       grid-template-columns: 1fr 2fr 2fr 1fr;

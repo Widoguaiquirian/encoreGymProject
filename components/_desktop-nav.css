@@ -48,8 +48,7 @@
 }
 
 /* Login bar */
-
-.header__login .listItem a {
+.navLogin .listItem a {
    color: var(--color-secondary-strong);
 }
 
