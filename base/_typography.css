@@ -21,6 +21,7 @@ a {
    text-transform: uppercase;
    font-size: 4rem;
    text-align: center;
+   margin: 2rem;
 }
 
 .heading-primary::selection {
@@ -29,4 +30,5 @@ a {
 }
 
 .heading-secondary {
+   margin: 1rem;
 }

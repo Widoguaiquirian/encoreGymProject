@@ -1,20 +1,18 @@
 /* Footer */
-footer {
-   padding: 1rem;
+.footer {
    background-color: #1f2123;
+   margin: 0;
 }
 
 .final-footer {
    display: flex;
    width: 100%;
-   margin: 1rem auto 3rem auto;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
 
 /* TOP */
-
 .footer-nav {
    display: flex;
    margin: 2rem 0;

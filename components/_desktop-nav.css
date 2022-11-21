@@ -15,17 +15,14 @@
    display: flex;
 }
 
-.header__navBar ul li {
-   font-size: 1.8rem;
-}
-
-.header__logo {
-   height: 4rem;
-}
-
-.header__navBar .logo {
+.logo-box {
    display: flex;
    align-items: center;
+   justify-content: center;
+}
+
+.logo {
+   height: 4rem;
 }
 
 .header__navBar ul li:not(:last-child) {
@@ -66,7 +63,6 @@
    left: 0;
    transition: all 0.1s linear;
    right: 0;
-   padding: 1.5rem;
    z-index: 9;
    max-width: 1800px;
 }

@@ -1,0 +1,13 @@
+.block {
+   padding: 4rem 0;
+   max-width: 100%;
+   text-align: center;
+   margin: 4rem auto;
+   transition: transform 1s, opacity 1s;
+   transform: translateY(-3rem);
+}
+
+.block--hidden {
+   opacity: 0;
+   transform: translateY(0);
+}
