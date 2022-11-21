@@ -8,11 +8,17 @@
 @import url(base/_utilities.css);
 
 @import url(components/_buttons.css);
+@import url(components/_cookie-message.css);
+@import url(components/_desktop-nav.css);
+@import url(components/_huincha.css);
+@import url(components/_mobile-nav.css);
+@import url(components/_newsletter.css);
 
 @import url(layout/_header.css);
 @import url(layout/_footer.css);
 
 @import url(pages/_home.css);
+@import url(pages/_locations.css);
 
 /*CSS Stylesheet T.O.C. - Table of contents
 Created XX April XXXX
@@ -35,157 +41,6 @@ Safari V.
 
 */
 
-/*--- Navigation ---*/
-
-/* Categories bar */
-.header__navBar {
-   position: absolute;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   background-color: var(--color-tertiary);
-   color: var(--color-secondary-strong);
-   padding: 2rem 1rem;
-   border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.header__navBar ul {
-   display: flex;
-}
-
-.header__navBar ul li {
-   font-size: 1.8rem;
-}
-
-.header__logo {
-   height: 4rem;
-}
-
-.header__navBar .logo {
-   display: flex;
-   align-items: center;
-}
-
-.header__navBar ul li:not(:last-child) {
-   border-right: 3px solid #ec662dbd;
-}
-
-.header__navBar .listItem {
-   text-transform: uppercase;
-   display: block;
-   font-size: 1.6rem;
-   padding: 0 1.5rem;
-   color: var(--color-secondary-strong);
-}
-
-.listItem:hover {
-   color: var(--color-primary);
-   transition: 0.3s;
-}
-
-/* highlight the categorie where we are */
-.header__navBar .categorie-selector {
-   color: var(--color-primary);
-   font-weight: bold;
-}
-
-/* Login bar */
-
-.header__login .listItem a {
-   color: var(--color-secondary-strong);
-}
-
-/*--- Navigation  sticky---*/
-
-.header__navBar.active {
-   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
-   position: fixed;
-   top: 0;
-   left: 0;
-   transition: all 0.1s linear;
-   right: 0;
-   padding: 1.5rem;
-   z-index: 9;
-   max-width: 1800px;
-}
-
-/*--- Navigation  mobile---*/
-
-.nav {
-   position: fixed;
-   top: 0;
-   left: 0;
-   height: 100vh;
-   transform: translatex(-350px);
-   transition: transform 0.2s ease-in-out;
-   z-index: 99;
-}
-
-.nav.visible {
-   transform: translatex(0);
-}
-
-.nav-black {
-   width: 30%;
-   max-width: 290px;
-   min-width: 270px;
-   transition-delay: 0.1s;
-}
-
-.nav-black.visible {
-   transition-delay: 0s;
-}
-
-.nav-red {
-   background-color: var(--color-primary);
-   width: 95%;
-   transition-delay: 0.2s;
-}
-
-.nav-red.visible {
-   transition-delay: 0.1s;
-}
-
-.nav-white {
-   width: 95%;
-   position: relative;
-   padding: 3rem 1.5rem;
-   background-color: var(--color-tertiary);
-   transition-delay: 0.3s;
-   text-transform: uppercase;
-}
-
-.nav-white.visible {
-   transition-delay: 0.2s;
-}
-
-.fa-times {
-   color: white;
-}
-
-.nav-black .logo {
-   height: 4rem;
-}
-
-.nav .list {
-   display: block;
-   padding-top: 3rem;
-}
-
-.nav .list .listItem {
-   margin: 0.6rem 0;
-}
-
-.inherit-list {
-   flex-direction: column;
-   margin-left: 2.5rem;
-}
-
-.list .inherit-list li {
-   font-size: 1.4rem;
-}
-
 /*--- Main ---*/
 main {
    max-width: 180rem;
@@ -205,17 +60,6 @@ main {
 .block--hidden {
    opacity: 0;
    transform: translateY(0);
-}
-
-.section-title {
-   text-transform: uppercase;
-   font-size: 4rem;
-   text-align: center;
-}
-
-.section-title::selection {
-   background-color: var(--color-primary);
-   color: var(--color-tertiary);
 }
 
 /* SCHEDULE SECTION BIG*/
@@ -280,11 +124,11 @@ main {
 }
 
 .box-bottom span:last-child {
-   color: yellow;
    position: absolute;
    left: 0;
    bottom: -30px;
    font-size: 1.4rem;
+   color: var(--color-info);
 }
 
 .box-bottom .tab-hours {
@@ -298,286 +142,6 @@ main {
    width: 2rem;
    background-image: linear-gradient(rgba(255, 166, 0, 0.753) 10%, white);
    margin: 0 0.4rem;
-}
-
-/* MEMBERSHIPS SECTION */
-
-.memberships-plans {
-   text-align: center;
-   margin: 5rem 0;
-   display: flex;
-   justify-content: center;
-   color: var(--color-tertiary);
-}
-
-.memberships-plans .opacity {
-   opacity: 50%;
-}
-
-.plans {
-   margin: 0 3rem;
-   border-radius: 10px;
-   margin: 0 3rem;
-   padding: 2rem 4rem;
-   min-width: 470px;
-   background-color: var(--color-secondary);
-}
-
-.plans .benefitItem {
-   text-align: left;
-   position: relative;
-}
-
-.fa-check {
-   color: var(--color-primary);
-   font-size: 1rem;
-   font-weight: bold;
-   position: absolute;
-   left: -15px;
-   bottom: 8px;
-}
-
-.plan--title {
-   color: var(--color-primary);
-   font-size: 3rem;
-}
-
-sup {
-   font-size: 2rem;
-   color: var(--color-primary);
-}
-
-.disclaimer {
-   font-size: 1rem;
-   display: block;
-   opacity: 50%;
-}
-
-.box--price {
-   font-size: 4rem;
-}
-
-/* GALLERY SECTION */
-
-.gallery-grid {
-   display: grid;
-   margin: 0 auto;
-   grid-template-columns: repeat(4, 20%);
-   grid-template-rows: repeat(2, 50%);
-   justify-content: center;
-   column-gap: 1.3rem;
-   row-gap: 1.3rem;
-   max-width: 100%;
-   padding: 1rem;
-}
-
-.grid-item {
-   overflow: hidden;
-   position: relative;
-   height: 200px;
-}
-
-.gallery-photos {
-   height: 200px;
-   cursor: pointer;
-}
-
-.gallery-photos img {
-   height: 100%;
-   object-fit: cover;
-   border-radius: 5px;
-   object-position: center;
-   width: 100%;
-}
-
-.info-photos {
-   background-color: rgba(255, 255, 255, 0.692);
-   color: var(--color-tertiary);
-   text-align: left;
-   padding: 1rem;
-   max-height: 100%;
-   position: absolute;
-   border-radius: 0 0 5px 5px;
-   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-   opacity: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   transform: translateY(100%);
-}
-
-.grid-item:hover .info-photos {
-   transform: translateY(0);
-   opacity: 1;
-}
-
-.info-photos h5 {
-   margin: 0;
-}
-
-.info-photos p {
-   font-size: 1.3rem;
-}
-
-/* COOKIE MESSAGE */
-.cookie-message {
-   background-color: white;
-   color: var(--color-tertiary);
-   position: fixed;
-   bottom: 0;
-   padding: 0.6rem 0;
-   width: 100%;
-   text-align: center;
-   text-transform: uppercase;
-}
-
-.cookie-message button {
-   background-color: var(--color-primary);
-   color: var(--color-secondary);
-   outline: none;
-   border-radius: 5px;
-   border: none;
-   cursor: pointer;
-   padding: 1rem 2rem;
-}
-
-/* BACKGROUND VIDEO */
-
-.bg-video {
-   margin: 0;
-   padding: 0;
-}
-
-.video-container {
-   width: 80%;
-   height: 400px;
-   max-height: 500px;
-   margin: auto;
-   position: relative;
-}
-
-.video-background {
-   width: 100%;
-   height: 400px;
-   object-fit: cover;
-   margin: auto;
-   opacity: 60%;
-   border-radius: 10px;
-}
-
-/* HUINCHA */
-.huincha-back {
-   background-color: #2c1d58;
-   width: 100%;
-   padding: 2rem 0;
-   margin-bottom: 5rem;
-}
-
-.huincha {
-   padding: 1rem 0;
-   width: 90%;
-   max-width: 1200px;
-   margin: auto;
-}
-
-.huincha h2 {
-   color: var(--color-primary);
-}
-
-/* NEWSLETTER */
-.newsLetter-back {
-   background-color: #2c1d58;
-   width: 100%;
-   padding: 2rem 0;
-}
-
-.newsletter {
-   padding: 1rem 0;
-   width: 45%;
-   max-width: 600px;
-   margin: auto;
-   display: flex;
-   text-align: center;
-   flex-direction: column;
-}
-
-.newsletter p {
-   font-size: 1.3rem;
-}
-
-.newsletter h2 {
-   margin-bottom: 1rem;
-}
-
-.form-row-newsletter {
-   margin-bottom: 1rem;
-}
-
-.form-row-newsletter input {
-   background-color: transparent;
-   border: 1px solid white;
-   outline: none;
-   width: 290px;
-   padding: 1rem 0;
-   color: white;
-   text-align: center;
-}
-
-.form-row-newsletter input::placeholder {
-   color: white;
-   text-align: center;
-}
-
-.newsletter-button {
-   padding: 1rem;
-   background-color: var(--color-primary);
-   outline: none;
-   color: white;
-   font-weight: bold;
-   border: 1px solid white;
-   cursor: pointer;
-   margin-left: 0.3rem;
-}
-
-/* LOCATIONS PAGE */
-.locals-grid {
-   display: grid;
-   max-width: 90%;
-   margin: 5rem auto;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   column-gap: 3rem;
-   row-gap: 3rem;
-}
-
-.local {
-   position: relative;
-}
-
-.gallery-locals {
-   height: 200px;
-   cursor: pointer;
-   transition: all 0.2s ease-in-out;
-   overflow: hidden;
-}
-
-.gallery-locals img {
-   height: 100%;
-   object-fit: cover;
-   border-radius: 5px;
-   object-position: center;
-   transition: all 0.4s ease-in-out;
-   width: 100%;
-}
-
-.local:hover .gallery-locals img {
-   transform: scale(1.1);
-   transition: all 0.4s ease-in-out;
-}
-
-.info-local {
-   background-color: white;
-   color: var(--color-tertiary);
 }
 
 /* TESTIMONIES SECTION */
@@ -675,7 +239,7 @@ sup {
       max-width: 97%;
    }
 
-   .section-title {
+   .section-titles {
       font-size: 2rem;
    }
 

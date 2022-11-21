@@ -16,3 +16,17 @@ a {
    text-decoration: none;
    color: var(--color-secondary);
 }
+
+.heading-primary {
+   text-transform: uppercase;
+   font-size: 4rem;
+   text-align: center;
+}
+
+.heading-primary::selection {
+   background-color: var(--color-primary);
+   color: var(--color-tertiary);
+}
+
+.heading-secondary {
+}

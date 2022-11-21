@@ -1,0 +1,72 @@
+/*--- Navigation ---*/
+.header__navBar {
+   position: absolute;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: var(--color-tertiary);
+   color: var(--color-secondary-strong);
+   padding: 2rem 1rem;
+   border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.header__navBar ul {
+   display: flex;
+}
+
+.header__navBar ul li {
+   font-size: 1.8rem;
+}
+
+.header__logo {
+   height: 4rem;
+}
+
+.header__navBar .logo {
+   display: flex;
+   align-items: center;
+}
+
+.header__navBar ul li:not(:last-child) {
+   border-right: 3px solid #ec662dbd;
+}
+
+.header__navBar .listItem {
+   text-transform: uppercase;
+   display: block;
+   font-size: 1.6rem;
+   padding: 0 1.5rem;
+   color: var(--color-secondary-strong);
+}
+
+.listItem:hover {
+   color: var(--color-primary);
+   transition: 0.3s;
+}
+
+/* highlight the categorie where we are */
+.header__navBar .categorie-selector {
+   color: var(--color-primary);
+   font-weight: bold;
+}
+
+/* Login bar */
+
+.header__login .listItem a {
+   color: var(--color-secondary-strong);
+}
+
+/*--- Navigation  sticky---*/
+
+.header__navBar.active {
+   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
+   position: fixed;
+   top: 0;
+   left: 0;
+   transition: all 0.1s linear;
+   right: 0;
+   padding: 1.5rem;
+   z-index: 9;
+   max-width: 1800px;
+}

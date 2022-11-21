@@ -1,0 +1,74 @@
+/*--- Navigation  mobile---*/
+.nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   transform: translatex(-350px);
+   transition: transform 0.2s ease-in-out;
+   z-index: 99;
+}
+
+.nav.visible {
+   transform: translatex(0);
+}
+
+.nav-black {
+   width: 30%;
+   max-width: 290px;
+   min-width: 270px;
+   transition-delay: 0.1s;
+}
+
+.nav-black.visible {
+   transition-delay: 0s;
+}
+
+.nav-red {
+   background-color: var(--color-primary);
+   width: 95%;
+   transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+   transition-delay: 0.1s;
+}
+
+.nav-white {
+   width: 95%;
+   position: relative;
+   padding: 3rem 1.5rem;
+   background-color: var(--color-tertiary);
+   transition-delay: 0.3s;
+   text-transform: uppercase;
+}
+
+.nav-white.visible {
+   transition-delay: 0.2s;
+}
+
+.fa-times {
+   color: white;
+}
+
+.nav-black .logo {
+   height: 4rem;
+}
+
+.nav .list {
+   display: block;
+   padding-top: 3rem;
+}
+
+.nav .list .listItem {
+   margin: 0.6rem 0;
+}
+
+.inherit-list {
+   flex-direction: column;
+   margin-left: 2.5rem;
+}
+
+.list .inherit-list li {
+   font-size: 1.4rem;
+}

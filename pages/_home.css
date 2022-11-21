@@ -1,0 +1,139 @@
+/* MEMBERSHIPS SECTION */
+.memberships-plans {
+   text-align: center;
+   margin: 5rem 0;
+   display: flex;
+   justify-content: center;
+   color: var(--color-tertiary);
+}
+
+.memberships-plans .opacity {
+   opacity: 50%;
+}
+
+.plans {
+   margin: 0 3rem;
+   border-radius: 10px;
+   margin: 0 3rem;
+   padding: 2rem 4rem;
+   min-width: 470px;
+   background-color: var(--color-secondary);
+}
+
+.plans .benefitItem {
+   text-align: left;
+   position: relative;
+}
+
+.fa-check {
+   color: var(--color-primary);
+   font-size: 1rem;
+   font-weight: bold;
+   position: absolute;
+   left: -15px;
+   bottom: 8px;
+}
+
+.plan--title {
+   color: var(--color-primary);
+   font-size: 3rem;
+}
+
+sup {
+   font-size: 2rem;
+   color: var(--color-primary);
+}
+
+.disclaimer {
+   font-size: 1rem;
+   display: block;
+   opacity: 50%;
+}
+
+.box--price {
+   font-size: 4rem;
+}
+
+/* GALLERY SECTION */
+.gallery-grid {
+   display: grid;
+   margin: 0 auto;
+   grid-template-columns: repeat(4, 20%);
+   grid-template-rows: repeat(2, 50%);
+   justify-content: center;
+   column-gap: 1.3rem;
+   row-gap: 1.3rem;
+   max-width: 100%;
+   padding: 1rem;
+}
+
+.grid-item {
+   overflow: hidden;
+   position: relative;
+   height: 200px;
+}
+
+.gallery-photos {
+   height: 200px;
+   cursor: pointer;
+}
+
+.gallery-photos img {
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   object-position: center;
+   width: 100%;
+}
+
+.info-photos {
+   background-color: rgba(255, 255, 255, 0.692);
+   color: var(--color-tertiary);
+   text-align: left;
+   padding: 1rem;
+   max-height: 100%;
+   position: absolute;
+   border-radius: 0 0 5px 5px;
+   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+   opacity: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transform: translateY(100%);
+}
+
+.grid-item:hover .info-photos {
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.info-photos h5 {
+   margin: 0;
+}
+
+.info-photos p {
+   font-size: 1.3rem;
+}
+
+/* BACKGROUND VIDEO */
+.bg-video {
+   margin: 0;
+   padding: 0;
+}
+
+.video-container {
+   width: 80%;
+   height: 400px;
+   max-height: 500px;
+   margin: auto;
+   position: relative;
+}
+
+.video-background {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+   margin: auto;
+   opacity: 60%;
+   border-radius: 10px;
+}

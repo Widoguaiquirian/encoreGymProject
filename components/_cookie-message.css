@@ -1,0 +1,21 @@
+/* COOKIE MESSAGE */
+.cookie-message {
+   background-color: white;
+   color: var(--color-tertiary);
+   position: fixed;
+   bottom: 0;
+   padding: 0.6rem 0;
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.cookie-message button {
+   background-color: var(--color-primary);
+   color: var(--color-secondary);
+   outline: none;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   padding: 1rem 2rem;
+}
