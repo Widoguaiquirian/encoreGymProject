@@ -10,12 +10,51 @@
    text-transform: uppercase;
 }
 
-.cookie-message button {
+.btn-ok-cookie {
    background-color: var(--color-primary);
+   color: var(--color-secondary-strong);
+   outline: none;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   padding: 1rem 2rem;
+}
+
+.btn-no-cookie {
+   background-color: var(--color-bg-contrast);
    color: var(--color-secondary);
    outline: none;
    border-radius: 5px;
    border: none;
    cursor: pointer;
    padding: 1rem 2rem;
+}
+
+@media (max-width: 1050px) {
+   .cookie-message {
+      background-color: var(--color-secondary);
+      color: var(--color-tertiary);
+      font-size: 1.2rem;
+      padding: 0.6rem;
+   }
+
+   .btn-ok-cookie {
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+   }
+
+   .btn-no-cookie {
+      background-color: var(--color-bg-contrast);
+      color: var(--color-secondary);
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+   }
 }

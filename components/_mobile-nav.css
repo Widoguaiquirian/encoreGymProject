@@ -72,3 +72,40 @@
 .list .inherit-list li {
    font-size: 1.4rem;
 }
+
+/*--- Media Query ---*/
+@media (max-width: 1050px) {
+   .nav-btn {
+      display: block;
+   }
+   .header__logo {
+      height: 3.5rem;
+      margin-left: 2rem;
+   }
+
+   .item-nav,
+   .item-nav li,
+   .lagBtn {
+      display: none;
+   }
+
+   .header__navBar {
+      padding: 2rem 0;
+   }
+
+   .header__login a {
+      font-size: 1.6rem;
+   }
+
+   .header__login .listItem {
+      padding: 0 1rem;
+   }
+
+   .header__navBar ul li:not(:last-child) {
+      border: none;
+   }
+
+   .header__navBar .item-nav li:last-child {
+      display: none;
+   }
+}

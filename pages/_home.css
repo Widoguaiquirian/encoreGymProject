@@ -948,3 +948,65 @@ sup {
    color: var(--color-primary);
    margin: 1rem 0;
 }
+
+/* HOME - Hall of fame */
+.grid__btn {
+   position: absolute;
+   top: 50%;
+   border: none;
+   height: 5.5rem;
+   background-color: var(--color-primary);
+   width: 4rem;
+   color: var(--color-secondary);
+   font-size: 3.25rem;
+   cursor: pointer;
+}
+
+.grid__btn:hover {
+   background-color: #be4612;
+}
+
+.grid__btn--left {
+   left: 10%;
+   transform: translate(-50%, -50%);
+}
+
+.grid__btn--right {
+   right: 10%;
+   transform: translate(50%, -50%);
+}
+
+@media (max-width: 600px) {
+   .slide__section {
+      column-gap: 1rem;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+      overflow: hidden;
+   }
+
+   .grid-product-item-3 {
+      display: none;
+   }
+
+   .grid__btn--left {
+      left: 5%;
+      transform: translate(-50%, -50%);
+   }
+
+   .grid__btn--right {
+      right: 5%;
+      transform: translate(50%, -50%);
+   }
+
+   .grid__btn {
+      height: 3.5rem;
+      background-color: var(--color-primary);
+      width: 3rem;
+      color: var(--color-secondary);
+      font-size: 2rem;
+      cursor: pointer;
+   }
+
+   .grid-title-post {
+      font-size: 1.5rem;
+   }
+}

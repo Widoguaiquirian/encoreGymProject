@@ -49,46 +49,9 @@ main {
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
-   .nav-btn {
-      display: block;
-   }
-   .header__logo {
-      height: 3.5rem;
-      margin-left: 2rem;
-   }
-
-   .item-nav,
-   .item-nav li,
-   .lagBtn {
-      display: none;
-   }
-
-   .header__navBar {
-      padding: 2rem 0;
-   }
-
-   .header__login a {
-      font-size: 1.6rem;
-   }
-
-   .header__login .listItem {
-      padding: 0 1rem;
-   }
-
-   .header__navBar ul li:not(:last-child) {
-      border: none;
-   }
-
-   .header__navBar .item-nav li:last-child {
-      display: none;
-   }
-
    main {
       max-width: 97%;
-   }
-
-   .section-titles {
-      font-size: 2rem;
+      margin: 0 auto;
    }
 
    .schedule-days {
@@ -127,23 +90,6 @@ main {
       grid-template-columns: repeat(2, 45%);
       grid-template-rows: repeat(4, 25%);
       height: auto;
-   }
-
-   .cookie-message {
-      background-color: var(--color-secondary);
-      color: var(--color-tertiary);
-      font-size: 1.2rem;
-      padding: 0.6rem;
-   }
-
-   .cookie-message button {
-      background-color: var(--color-primary);
-      color: var(--color-secondary);
-      outline: none;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem 1rem;
    }
 
    .newsletter {

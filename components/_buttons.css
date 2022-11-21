@@ -51,33 +51,6 @@
    font-size: 1.2rem;
 }
 
-/* HOME - Hall of fame */
-.grid__btn {
-   position: absolute;
-   top: 50%;
-   border: none;
-   height: 5.5rem;
-   background-color: var(--color-primary);
-   width: 4rem;
-   color: var(--color-secondary);
-   font-size: 3.25rem;
-   cursor: pointer;
-}
-
-.grid__btn:hover {
-   background-color: #be4612;
-}
-
-.grid__btn--left {
-   left: 10%;
-   transform: translate(-50%, -50%);
-}
-
-.grid__btn--right {
-   right: 10%;
-   transform: translate(50%, -50%);
-}
-
 /* LOCATIONS - local btns */
 .btn-local {
    background-color: var(--color-primary);

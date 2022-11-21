@@ -4,11 +4,11 @@ const message = document.createElement("div");
 
 // Cookie messages
 message.classList.add("cookie-message");
-message.innerHTML = `We use cookies for improved functionality and analytics. <button class="btn-close-cookie"> GOT IT! </button>`;
+message.innerHTML = `We use cookies for improved functionality and analytics. <button class="btn-ok-cookie"> I UNDERSTAND! </button> <button class="btn-no-cookie"> NO! </button>`;
 
 body.append(message);
 
-document.querySelector(".btn-close-cookie").addEventListener("click", function () {
+document.querySelector(".btn-ok-cookie").addEventListener("click", function () {
    message.remove();
 });
 

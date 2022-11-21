@@ -32,3 +32,10 @@ a {
 .heading-secondary {
    margin: 1rem;
 }
+
+/*--- Media Query ---*/
+@media (max-width: 1050px) {
+   .heading-primary {
+      font-size: 2rem;
+   }
+}
