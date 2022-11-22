@@ -12,3 +12,20 @@
 .huincha h2 {
    color: var(--color-primary);
 }
+
+@media (max-width: 1050px) {
+   /* flash promotion */
+   .huincha-back {
+      padding: 2rem 0;
+      margin-bottom: 5rem;
+   }
+
+   .huincha {
+      padding: 1rem 0;
+   }
+
+   .huincha h2 {
+      color: var(--color-primary);
+      font-size: 2rem;
+   }
+}

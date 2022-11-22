@@ -1,6 +1,4 @@
-/*--- DESKTOP---*/
-
-/* HOME - Main button */
+/* Home - Hero btn cta */
 .btn-cta {
    position: relative;
    display: inline-block;
@@ -30,8 +28,7 @@
    width: 120%;
 }
 
-/* HOME - Membership plans buttons */
-
+/* Home - Membership plans buttons */
 .btn-plans {
    background-color: var(--color-primary);
    color: white;
@@ -45,13 +42,13 @@
    background-color: #be4612;
 }
 
-/* HOME - Opacity for not selected language */
+/* Home - Opacity for not selected language */
 .btnOpacity {
    opacity: 50%;
    font-size: 1.2rem;
 }
 
-/* LOCATIONS - local btns */
+/* Locations - local btns */
 .btn-local {
    background-color: var(--color-primary);
    width: 100%;
@@ -89,6 +86,7 @@
    top: 12px;
 }
 
+/*--- Media Query ---*/
 @media (max-width: 350px) {
    .btn-plans {
       padding: 1rem 4rem;

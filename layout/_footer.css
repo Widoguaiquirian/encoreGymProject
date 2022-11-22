@@ -4,7 +4,7 @@
    margin: 0;
 }
 
-.final-footer {
+.footer-content {
    display: flex;
    width: 100%;
    flex-direction: column;
@@ -18,13 +18,10 @@
    margin: 2rem 0;
 }
 
-.footer-nav li {
-   margin: 0 1rem;
-}
-
 .footer-nav li a {
    text-transform: uppercase;
    font-size: 2rem;
+   margin: 0 1rem;
 }
 
 /* MEDIUM  */
@@ -33,7 +30,7 @@
    margin: 2rem 0;
 }
 
-.social li {
+.social .listItem {
    margin: 0 2rem;
    font-size: 3rem;
 }
@@ -47,4 +44,11 @@
 
 .copy a {
    text-decoration: underline;
+}
+
+/*--- Media Query ---*/
+@media (max-width: 1050px) {
+   .footer-nav li a {
+      font-size: 1.2rem;
+   }
 }

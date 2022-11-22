@@ -42,3 +42,17 @@
 .info-gyms {
    margin: 0;
 }
+
+/*--- Media Query ---*/
+@media (max-width: 1050px) {
+   /* LOCALS PAGE */
+   .locals-grid {
+      display: grid;
+      max-width: 90%;
+      margin: 3rem auto;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 3rem;
+      row-gap: 3rem;
+   }
+}

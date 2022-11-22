@@ -81,10 +81,7 @@
    }
 
    /* hide elements from the desktop menu */
-   .desktopNav-list li {
-      display: none;
-   }
-
+   .desktopNav-list li,
    .desktopNav-list .lagBtns {
       display: none;
    }
