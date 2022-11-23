@@ -11,11 +11,11 @@
    margin: 0 auto;
 }
 
-.nav-desktop-ul {
+.header__nav-desktop {
    display: flex;
 }
 
-.logo-container {
+.header__logo {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -25,11 +25,11 @@
    height: 4rem;
 }
 
-.nav-desktop-ul li:not(:last-child) {
+.header__nav-desktop li:not(:last-child) {
    border-right: 3px solid #ec662dbd;
 }
 
-.nav-desktop-ul .desktop-li-item {
+.header__nav-desktop .desktop-li-item {
    text-transform: uppercase;
    display: block;
    font-size: 1.6rem;
@@ -43,13 +43,13 @@
 }
 
 /* highlight the categorie where we are */
-.nav-desktop-ul .cat--selector {
+.header__nav-desktop .cat--selector {
    color: var(--color-primary);
    font-weight: bold;
 }
 
 /* Login bar */
-.header-nav-login .desktop-li-item a {
+.header__nav-login .desktop-li-item a {
    color: var(--color-secondary-strong);
 }
 

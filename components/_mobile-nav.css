@@ -1,5 +1,5 @@
 /*--- Navigation  mobile---*/
-.header-nav-mobile {
+.header__nav-mobile {
    position: fixed;
    top: 0;
    left: 0;
@@ -9,11 +9,11 @@
    z-index: 99;
 }
 
-.header-nav-mobile.visible {
+.header__nav-mobile.visible {
    transform: translatex(0);
 }
 
-.nav-bg--orange {
+.header__nav-bg--orange {
    width: 30%;
    max-width: 290px;
    min-width: 270px;
@@ -32,7 +32,7 @@
    transition-delay: 0.05s;
 }
 
-.header-nav-mobile .logo {
+.header__nav-mobile .logo {
    height: 3rem;
 }
 
@@ -68,7 +68,7 @@
       margin-left: 2rem;
    }
 
-   .header-nav-mobile .logo {
+   .header__nav-mobile .logo {
       margin: 0;
    }
 
@@ -81,12 +81,12 @@
    }
 
    /* hide elements from the desktop menu */
-   .nav-desktop-ul li,
-   .nav-desktop-ul .header-nav-langBtns {
+   .header__nav-desktop li,
+   .header__nav-desktop .header-nav-langBtns {
       display: none;
    }
 
-   .nav-desktop-ul .desktop-li-item:not(:last-child) {
+   .header__nav-desktop .desktop-li-item:not(:last-child) {
       border: none;
    }
 }

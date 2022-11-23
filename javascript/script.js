@@ -79,7 +79,7 @@ function fixNav() {
 // menu mobile
 const openBtn = document.querySelector(".header__btn--openNav");
 const closeBtn = document.querySelector(".header__btn--closeNav");
-const navs = document.querySelectorAll(".header-nav-mobile");
+const navs = document.querySelectorAll(".header__nav-mobile");
 
 openBtn.addEventListener("click", function () {
    navs.forEach(function (nav) {
