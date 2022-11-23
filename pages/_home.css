@@ -806,10 +806,6 @@
    color: var(--color-tertiary);
 }
 
-.membership-plans .opacity {
-   opacity: 50%;
-}
-
 .plans {
    margin: 0 3rem;
    border-radius: 10px;
@@ -819,7 +815,7 @@
    background-color: var(--color-secondary);
 }
 
-.plans .benefitItem {
+.plans .membership-plans-li {
    text-align: left;
    position: relative;
 }
@@ -848,13 +844,13 @@ sup {
    color: var(--color-primary);
 }
 
-.disclaimer {
+.plans-box--disclaimer {
    font-size: 1rem;
    display: block;
    opacity: 50%;
 }
 
-.box--price {
+.plans-box--price {
    font-size: 4rem;
 }
 

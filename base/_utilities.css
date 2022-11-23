@@ -12,6 +12,11 @@
    transform: translateY(0);
 }
 
+/* To reduce visibility of some elements */
+.opacity {
+   opacity: 50%;
+}
+
 /*--- Main ---*/
 main {
    max-width: 180rem;
