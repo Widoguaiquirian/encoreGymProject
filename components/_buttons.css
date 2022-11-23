@@ -1,5 +1,5 @@
 /* Home - Hero btn cta */
-.btn-main {
+.header__btn--main {
    position: relative;
    display: inline-block;
    padding: 1rem 1.5rem;
@@ -11,7 +11,7 @@
    text-transform: uppercase;
 }
 
-.btn-main::after {
+.header__btn--main::after {
    content: "";
    width: 0%;
    height: 110%;
@@ -24,7 +24,7 @@
    z-index: -1;
 }
 
-.btn-main:hover::after {
+.header__btn--main:hover::after {
    width: 120%;
 }
 
@@ -57,7 +57,7 @@
 }
 
 /*--- MOBILE---*/
-.nav-btn {
+.header__icon-menu {
    border: none;
    background-color: transparent;
    cursor: pointer;
@@ -65,7 +65,7 @@
    display: none;
 }
 
-.btn--openNav {
+.header__btn--openNav {
    top: 10px;
    left: 10px;
 }
@@ -74,7 +74,7 @@
    color: white;
 }
 
-.btn--closeNav {
+.header__btn--closeNav {
    position: absolute;
    right: 12px;
    top: 12px;

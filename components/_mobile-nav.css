@@ -52,15 +52,15 @@
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
-   .header-nav {
+   .header__nav {
       justify-content: space-between;
    }
 
-   .nav-btn {
+   .header__icon-menu {
       display: block;
    }
 
-   .btn--openNav {
+   .header__btn--openNav {
       padding: 0;
    }
 

@@ -53,17 +53,17 @@
    <body class="body">
       <header class="header header--home">
          
-         <nav class="header-nav">
+         <nav class="header__nav">
 
             <!-- mobile -->
-            <button class="nav-btn btn--openNav">
+            <button class="header__icon-menu header__btn--openNav">
                <i class="fas fa-bars"></i>
             </button>                           
 
             <div class="header-nav-mobile nav-bg--orange">
 
                   <div class="header-nav-mobile nav-bg--white">
-                     <button class="nav-btn btn--closeNav">
+                     <button class="header__icon-menu header__btn--closeNav">
                         <i class="fas fa-times"></i>
                      </button>
 
@@ -119,13 +119,12 @@
             </div>
          </nav>
 
-         <!-- Hero title -->
-         <div class="header-content">
-            <h1>
-               <span class="header-content--title">The Encore gym</span>
-               <span class="header-content--subtitle">where healthy life happens</span>
+         <div class="header__content">
+            <h1 class="header__headline">
+               <span class="header__title">The Encore gym</span>
+               <span class="header__subtitle">where healthy life happens</span>
             </h1>
-            <a href="#" class="btn-main">Join now</a>
+            <a href="#" class="header__btn header__btn--main">Join now</a>
          </div>
       </header>
 
@@ -439,18 +438,20 @@
             </div>
          </section>
 
-         <div class="huincha-back block">
-            <div class="huincha">
-               <div class="huincha-content">
-                  <h2>⚡⚡ Flash promotion ⚡⚡</h2>
-                   <p class="info-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facilis beatae odit odio dolores eos facere rem, officiis assumenda amet quam qui modi omnis! se odit odio dolores eos facere rem, officiis assumenda amet quam qui mod.</p>
+         <div class="huincha block">
+            <div class="inner-huincha">
+               <div class="inner-huincha-content">
+                  <h2 class="huincha-content--title">⚡⚡ Flash promotion ⚡⚡</h2>
+                   <p class="huincha-content--info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facilis beatae odit odio dolores eos facere rem, officiis assumenda amet quam qui modi omnis! se odit odio dolores eos facere rem, officiis assumenda amet quam qui mod.</p>
                </div>
             </div>
          </div>
 
-         <section class="block bg-video">
+         <section class="bg-video block ">
+            
             <h2 class="heading-primary">All you need</h2>
             <p class="heading-secondary">In one place!</p>
+
             <div class="video-container">
                <video class="video-background" autoplay muted loop>
                   <source src="videos/promo.mp4" type="video/mp4" />
@@ -651,7 +652,7 @@
                </ul>
             </div>
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
-            <div class="social">
+            <div class="footer__social">
                <li class="desktop-li-item">
                   <a href="#"><i class="fab fa-instagram"></i></a
                ></li>

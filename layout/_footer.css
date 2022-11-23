@@ -25,12 +25,12 @@
 }
 
 /* MEDIUM  */
-.social {
+.footer__social {
    display: flex;
    margin: 2rem 0;
 }
 
-.social .desktop-li-item {
+.footer__social .desktop-li-item {
    margin: 0 2rem;
    font-size: 3rem;
 }

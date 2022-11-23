@@ -13,7 +13,7 @@
 }
 
 /* HERO HEADER SECTION */
-.header-content {
+.header__content {
    width: 100%;
    position: absolute;
    top: 50%;
@@ -25,7 +25,7 @@
    max-width: 90%;
 }
 
-.header-content--title {
+.header__title {
    font-size: 7rem;
    color: var(--color-primary);
    text-shadow: 1px 2px 3px rgba(221, 221, 221, 0.555);
@@ -34,7 +34,7 @@
    margin: 0 auto;
 }
 
-.header-content--subtitle {
+.header__subtitle {
    font-size: 3rem;
    font-weight: 500;
    letter-spacing: 0.3rem;
