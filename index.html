@@ -51,29 +51,30 @@
       <!-- ? FOR REGULAR COMMENTS -->
    </head>
    <body class="body">
-      <header class="header headerHome">
+      <header class="header header--home">
          
-         <nav class="navBar">
+         <nav class="header-nav">
+
             <!-- mobile -->
-            <button class="nav-btn openNav">
+            <button class="nav-btn btn--openNav">
                <i class="fas fa-bars"></i>
-            </button>
+            </button>                           
 
-            <div class="navMobile navBG-orange">
+            <div class="header-nav-mobile nav-bg--orange">
 
-                  <div class="navMobile navBG-white">
-                     <button class="nav-btn closeNav">
+                  <div class="header-nav-mobile nav-bg--white">
+                     <button class="nav-btn btn--closeNav">
                         <i class="fas fa-times"></i>
                      </button>
 
-                     <a class="logo-box" href="index.html">
+                     <a class="logo-container" href="index.html">
                         <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
                      </a>
 
-                     <ul class="mobileNav-list">
-                        <li><a class="listItem" href="index.html">Home</a></li>
-                        <li> <a class="listItem" href="locations.html">Locations</a></li>
-                        <ul class="innerMobileNav-list">
+                     <ul class="nav-mobile-ul">
+                        <li><a class="mobile-li-item" href="index.html">Home</a></li>
+                        <li><a class="mobile-li-item" href="locations.html">Locations</a></li>
+                        <ul class="nav-mobile--nested-ul">
                            <li>- 1160 Louder Miami</a></li>
                            <li>- 660 Way Miami</a></li>
                            <li>- 1123 Coral Miami</a></li>
@@ -81,279 +82,283 @@
                            <li>- 4660 Coral Miami</a></li>
                            <li>- 423 Coral Miami</a></li>
                         </ul>
-                        <li><a class="listItem" href="classes.html">Classes</a></li>
-                        <li><a class="listItem" href="membership.html">Membership</a></li>
-                        <li><a class="listItem" href="contact.html">contact us</a></li>
+                        <li><a class="mobile-li-item" href="classes.html">Classes</a></li>
+                        <li><a class="mobile-li-item" href="membership.html">Membership</a></li>
+                        <li><a class="mobile-li-item" href="contact.html">contact us</a></li>
                      </ul>
                   </div>
             </div>
 
             <!-- desktop -->
-            <a class="logo-box" href="index.html">
+            <a class="logo-container" href="index.html">
                <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
             </a>
 
-            <ul class="desktopNav-list">
-               <li> <a class="listItem categorie-selector" href="index.html">home</a></li>
-               <li> <a class="listItem" href="locations.html">Locations</a></li>
-               <li> <a class="listItem" href="classes.html">Classes</a></li>
-               <li> <a class="listItem" href="membership.html">Membership</a></li>
-               <li> <a class="listItem" href="contact.html">contact us</a></li>
+            <ul class="nav-desktop-ul">
+               <li> <a class="desktop-li-item cat--selector" href="index.html">home</a></li>
+               <li> <a class="desktop-li-item" href="locations.html">Locations</a></li>
+               <li> <a class="desktop-li-item" href="classes.html">Classes</a></li>
+               <li> <a class="desktop-li-item" href="membership.html">Membership</a></li>
+               <li> <a class="desktop-li-item" href="contact.html">contact us</a></li>
             </ul>
 
-            <div class="navLogin">
-               <ul class="desktopNav-list">
-                  <li class="listItem">
-                     <a href="#">
+            <div class="header-nav-login">
+               <ul class="nav-desktop-ul">
+                  <li>
+                     <a href="#" class="desktop-li-item">
                         Log in
                         <i class="fas fa-user"></i>
                      </a>
                   </li>
 
-                  <li class="listItem lagBtns">
-                     <a class="lagBtn engBtn" href="#">EN</a>
-                     <a class="lagBtn espBtn btnOpacity" href="#">ES</a>
+                  <li class="header-nav-langBtns">
+                     <a class="nav-langBtn lang-btn--eng" href="#">EN</a>
+                     <a class="nav-langBtn lang-btn--esp lang-btn--opacity" href="#">ES</a>
                   </li>
                </ul>
             </div>
          </nav>
 
          <!-- Hero title -->
-         <div class="heroTextContent">
+         <div class="header-content">
             <h1>
-               <span class="hero-title">The Encore gym</span>
-               <span class="hero-subtitle">where healthy life happens</span>
+               <span class="header-content--title">The Encore gym</span>
+               <span class="header-content--subtitle">where healthy life happens</span>
             </h1>
-            <a href="#" class="btn-cta">Join now</a>
+            <a href="#" class="btn-main">Join now</a>
          </div>
       </header>
 
       <!-- MAIN -->
       <main>
+
          <section class="schedules block">
             <h2 class="heading-primary">Schedules & hours</h2>
             <p class="heading-secondary">Check hours and days to find the best time for you!</p>
 
             <div class="schedule-content">
-               <div class="days-box">
+               <div class="schedule-days-box">
                   <h3>HOURS</h3>
-                  <ul>
-                     <li class="dayItem">Monday: 5:00 AM - 12:00 AM</li>
-                     <li class="dayItem">Tuesday: 24 HRS</li>
-                     <li class="dayItem">Wednesday: 24 HRS</li>
-                     <li class="dayItem">Thursday: 5:00 AM - 12:00 AM</li>
-                     <li class="dayItem">Friday: 7:00 AM - 09:00 PM</li>
-                     <li class="dayItem">Saturday: 5:00 AM - 12:00</li>
-                     <li class="dayItem">Sunday: 5:00 AM - 12:00</li>
+                  <ul class="schedule-ul">
+                     <li class="schedule-li">Monday: 5:00 AM - 12:00 AM</li>
+                     <li class="schedule-li">Tuesday: 24 HRS</li>
+                     <li class="schedule-li">Wednesday: 24 HRS</li>
+                     <li class="schedule-li">Thursday: 5:00 AM - 12:00 AM</li>
+                     <li class="schedule-li">Friday: 7:00 AM - 09:00 PM</li>
+                     <li class="schedule-li">Saturday: 5:00 AM - 12:00</li>
+                     <li class="schedule-li">Sunday: 5:00 AM - 12:00</li>
                   </ul>
                </div>
 
-               <div class="crowd-content">
+               <div class="crowd-container">
                   <h3>DAILY CROWD</h3>
-                  <div class="inner-crowd-content">
-                     <div class="crowd-top">
-                        <button class="tab-day tab-day-1 activeDay" data-tab="1">MON</button>
-                        <button class="tab-day tab-day-2" data-tab="2">TUE</button>
-                        <button class="tab-day tab-day-3" data-tab="3">WED</button>
-                        <button class="tab-day tab-day-4" data-tab="4">THU</button>
-                        <button class="tab-day tab-day-5" data-tab="5">FRI</button>
-                        <button class="tab-day tab-day-6" data-tab="6">SAT</button>
-                        <button class="tab-day tab-day-7" data-tab="7">SUN</button>
+
+                  <div class="inner-crowd-container">
+
+                     <div class="inner-crowd-container--top">
+                        <button class="crowd-tab-day tab-day--1 tab-day--active" data-tab="1">MON</button>
+                        <button class="crowd-tab-day tab-day--2" data-tab="2">TUE</button>
+                        <button class="crowd-tab-day tab-day--3" data-tab="3">WED</button>
+                        <button class="crowd-tab-day tab-day--4" data-tab="4">THU</button>
+                        <button class="crowd-tab-day tab-day--5" data-tab="5">FRI</button>
+                        <button class="crowd-tab-day tab-day--6" data-tab="6">SAT</button>
+                        <button class="crowd-tab-day tab-day--7" data-tab="7">SUN</button>
                      </div>
 
-                     <div class="crowd-medium grid-bar-1 grid-active">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                     <div class="inner-crowd-container--medium group-bar-1 group-bar--active">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
                      </div>
 
-                     <div class="crowd-medium grid-bar-2">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                     <div class="inner-crowd-container--medium group-bar-2">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
                      </div>
-                     <div class="crowd-medium grid-bar-3">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                     </div>
-                     <div class="crowd-medium grid-bar-4">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                     </div>
-                     <div class="crowd-medium grid-bar-5">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                     </div>
-                     <div class="crowd-medium grid-bar-6">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                     </div>
-                     <div class="crowd-medium grid-bar-7">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                     <div class="inner-crowd-container--medium group-bar-3">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
                      </div>
 
-                     <div class="crowd-bottom">
-                        <span class="tab-hours">6AM</span>
-                        <span class="tab-hours">9AM</span>
-                        <span class="tab-hours">12PM</span>
-                        <span class="tab-hours">3PM</span>
-                        <span class="tab-hours">6PM</span>
-                        <span class="tab-hours">9PM</span>
-                        <span class="tab-hours">12AM</span>
-                        <span class="tab-hours">3AM</span>
+                     <div class="inner-crowd-container--medium group-bar-4">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                     </div>
+                     <div class="inner-crowd-container--medium group-bar-5">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                     </div>
+                     <div class="inner-crowd-container--medium group-bar-6">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                     </div>
+                     <div class="inner-crowd-container--medium group-bar-7">
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                        <div class="crowd-bar"></div>
+                     </div>
+
+                     <div class="inner-crowd-container--bottom">
+                        <span class="crowd-tab-hour">6AM</span>
+                        <span class="crowd-tab-hour">9AM</span>
+                        <span class="crowd-tab-hour">12PM</span>
+                        <span class="crowd-tab-hour">3PM</span>
+                        <span class="crowd-tab-hour">6PM</span>
+                        <span class="crowd-tab-hour">9PM</span>
+                        <span class="crowd-tab-hour">12AM</span>
+                        <span class="crowd-tab-hour">3AM</span>
                         <span> * Info collected from the last 7 days</span>
                      </div>
                   </div>
@@ -361,17 +366,19 @@
             </div>
          </section>
 
-         <section class="memberships block" id="memberships">
+         <section class="memberships block">
             <h2 class="heading-primary">Memberships</h2>
-            <p class="heading-secondaryintro"
+            <p class="heading-secondary"
                >Check out our affordable gym memberships!</p
             >
 
-            <div class="memberships-plans">
-               <div class="plans planOne">
-                  <div class="text-box">
-                     <h3 class="plan--title">Gold member</h3>
-                     <h4 class="plan--subtitle">Unlimited locations</h4>
+            <div class="membership-plans">
+
+               <div class="plans membership-plans--gold">
+
+                  <div class="membership-plans-heading">
+                     <h3 class="plans-heading--title">Gold member</h3>
+                     <h4 class="plans-heading--subtitle">Unlimited locations</h4>
                   </div>
 
                   <div class="price-box">
@@ -399,10 +406,10 @@
                   </ul>
                </div>
 
-               <div class="plans planTwo">
-                  <div class="text-box">
-                     <h3 class="plan--title">Classic</h3>
-                     <h4 class="plan--subtitle">Limited locations</h4>
+               <div class="plans membership-plans--classic">
+                  <div class="membership-plans-heading">
+                     <h3 class="plans-heading--title">Classic</h3>
+                     <h4 class="plans-heading--subtitle">Limited locations</h4>
                   </div>
 
                   <div class="price-box">
@@ -633,25 +640,25 @@
       </div>
 
       <footer class="footer block">
-         <div class="footer-content">
+         <div class="footer__content">
             <div class="top">
                <ul class="footer-nav">
-                  <li class="listItem"> <a href="#">Rules</a></li>
-                  <li class="listItem"> <a href="#">About us</a></li>
-                  <li class="listItem"> <a href="#">Terms</a></li>
-                  <li class="listItem"> <a href="#">Policy</a></li>
-                  <li class="listItem"> <a href="#">Call now</a></li>
+                  <li class="desktop-li-item"> <a href="#">Rules</a></li>
+                  <li class="desktop-li-item"> <a href="#">About us</a></li>
+                  <li class="desktop-li-item"> <a href="#">Terms</a></li>
+                  <li class="desktop-li-item"> <a href="#">Policy</a></li>
+                  <li class="desktop-li-item"> <a href="#">Call now</a></li>
                </ul>
             </div>
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
             <div class="social">
-               <li class="listItem">
+               <li class="desktop-li-item">
                   <a href="#"><i class="fab fa-instagram"></i></a
                ></li>
-               <li class="listItem">
+               <li class="desktop-li-item">
                   <a href="#"><i class="fab fa-facebook"></i></a
                ></li>
-               <li class="listItem">
+               <li class="desktop-li-item">
                   <a href="#"><i class="fab fa-youtube"></i></a
                ></li>
             </div>

@@ -1,5 +1,5 @@
 /*--- Navigation ---*/
-.navBar {
+.header-nav {
    position: absolute;
    width: 100%;
    display: flex;
@@ -11,11 +11,11 @@
    margin: 0 auto;
 }
 
-.desktopNav-list {
+.nav-desktop-ul {
    display: flex;
 }
 
-.logo-box {
+.logo-container {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -25,11 +25,11 @@
    height: 4rem;
 }
 
-.desktopNav-list li:not(:last-child) {
+.nav-desktop-ul li:not(:last-child) {
    border-right: 3px solid #ec662dbd;
 }
 
-.desktopNav-list .listItem {
+.nav-desktop-ul .desktop-li-item {
    text-transform: uppercase;
    display: block;
    font-size: 1.6rem;
@@ -37,25 +37,25 @@
    color: var(--color-secondary-strong);
 }
 
-.listItem:hover {
+.desktop-li-item:hover {
    color: var(--color-primary);
    transition: 0.3s;
 }
 
 /* highlight the categorie where we are */
-.desktopNav-list .categorie-selector {
+.nav-desktop-ul .cat--selector {
    color: var(--color-primary);
    font-weight: bold;
 }
 
 /* Login bar */
-.navLogin .listItem a {
+.header-nav-login .desktop-li-item a {
    color: var(--color-secondary-strong);
 }
 
 /*--- Navigation  sticky---*/
 
-.navBar.active {
+.header-nav.active {
    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
    position: fixed;
    top: 0;

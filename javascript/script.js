@@ -14,31 +14,31 @@ document.querySelector(".btn-ok-cookie").addEventListener("click", function () {
 
 //Crowd meter
 //Clase que comparten los botones
-const tabsDays = document.querySelectorAll(".tab-day");
+const tabsDays = document.querySelectorAll(".crowd-tab-day");
 //Clase del container padre de los botones
-const tabsDaysContainer = document.querySelector(".crowd-top");
+const tabsDaysContainer = document.querySelector(".inner-crowd-container--top");
 //Clase que comparten los bloques de HTML a mostrar
-const contentBoxMedium = document.querySelectorAll(".crowd-medium");
+const contentBoxMedium = document.querySelectorAll(".inner-crowd-container--medium");
 
 // ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
 
 // CON WINDOW.ONLOAD EVITAMOS QUE JS SE EJECUTE DE PRIMERO Y TIRE ERRORES
 window.onload = function () {
    tabsDaysContainer.addEventListener("click", function (e) {
-      const clicked = e.target.closest(".tab-day");
+      const clicked = e.target.closest(".crowd-tab-day");
       if (!clicked) return;
 
       tabsDays.forEach(function (t) {
-         t.classList.remove("activeDay");
+         t.classList.remove("tab-day--active");
       });
 
       contentBoxMedium.forEach(function (c) {
-         c.classList.remove("grid-active");
+         c.classList.remove("group-bar--active");
       });
 
-      clicked.classList.add("activeDay");
+      clicked.classList.add("tab-day--active");
 
-      document.querySelector(`.grid-bar-${clicked.dataset.tab}`).classList.add("grid-active");
+      document.querySelector(`.group-bar-${clicked.dataset.tab}`).classList.add("group-bar--active");
    });
 };
 
@@ -64,7 +64,7 @@ window.onload = function () {
 // });
 
 //STICKY NAV
-const nav = document.querySelector(".navBar");
+const nav = document.querySelector(".header-nav");
 
 window.addEventListener("scroll", fixNav);
 
@@ -77,9 +77,9 @@ function fixNav() {
 }
 
 // menu mobile
-const openBtn = document.querySelector(".openNav");
-const closeBtn = document.querySelector(".closeNav");
-const navs = document.querySelectorAll(".navMobile");
+const openBtn = document.querySelector(".btn--openNav");
+const closeBtn = document.querySelector(".btn--closeNav");
+const navs = document.querySelectorAll(".header-nav-mobile");
 
 openBtn.addEventListener("click", function () {
    navs.forEach(function (nav) {

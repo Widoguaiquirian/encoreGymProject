@@ -4,7 +4,7 @@
    margin: 0;
 }
 
-.footer-content {
+.footer__content {
    display: flex;
    width: 100%;
    flex-direction: column;
@@ -30,7 +30,7 @@
    margin: 2rem 0;
 }
 
-.social .listItem {
+.social .desktop-li-item {
    margin: 0 2rem;
    font-size: 3rem;
 }

@@ -1,5 +1,5 @@
 /* Home - Hero btn cta */
-.btn-cta {
+.btn-main {
    position: relative;
    display: inline-block;
    padding: 1rem 1.5rem;
@@ -11,7 +11,7 @@
    text-transform: uppercase;
 }
 
-.btn-cta::after {
+.btn-main::after {
    content: "";
    width: 0%;
    height: 110%;
@@ -24,7 +24,7 @@
    z-index: -1;
 }
 
-.btn-cta:hover::after {
+.btn-main:hover::after {
    width: 120%;
 }
 
@@ -43,7 +43,7 @@
 }
 
 /* Home - Opacity for not selected language */
-.btnOpacity {
+.lang-btn--opacity {
    opacity: 50%;
    font-size: 1.2rem;
 }
@@ -71,7 +71,7 @@
    display: none;
 }
 
-.openNav {
+.btn--openNav {
    top: 10px;
    left: 10px;
 }
@@ -80,7 +80,7 @@
    color: white;
 }
 
-.closeNav {
+.btn--closeNav {
    position: absolute;
    right: 12px;
    top: 12px;
