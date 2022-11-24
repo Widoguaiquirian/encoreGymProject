@@ -52,29 +52,24 @@
    </head>
    <body class="body">
       <header class="header header--home">
-         
          <nav class="header__nav">
-
-            <!-- mobile -->
             <button class="header__icon-menu header__btn--openNav">
                <i class="fas fa-bars"></i>
             </button>                           
 
             <div class="header__nav-mobile header__nav-bg--orange">
-
-                  <div class="header__nav-mobile nav-bg--white">
+                  <div class="header__nav-mobile header__nav-bg--dark">
                      <button class="header__icon-menu header__btn--closeNav">
                         <i class="fas fa-times"></i>
                      </button>
-
                      <a class="header__logo" href="index.html">
                         <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
                      </a>
+                     <ul class="header__mobile-ul">
+                        <li><a class="header__link" href="index.html">Home</a></li>
+                        <li><a class="header__link" href="locations.html">Locations</a></li>
 
-                     <ul class="nav-mobile-ul">
-                        <li><a class="mobile-li-item" href="index.html">Home</a></li>
-                        <li><a class="mobile-li-item" href="locations.html">Locations</a></li>
-                        <ul class="nav-mobile--nested-ul">
+                        <ul class="header__mobile-ul--nested">
                            <li>- 1160 Louder Miami</a></li>
                            <li>- 660 Way Miami</a></li>
                            <li>- 1123 Coral Miami</a></li>
@@ -82,9 +77,9 @@
                            <li>- 4660 Coral Miami</a></li>
                            <li>- 423 Coral Miami</a></li>
                         </ul>
-                        <li><a class="mobile-li-item" href="classes.html">Classes</a></li>
-                        <li><a class="mobile-li-item" href="membership.html">Membership</a></li>
-                        <li><a class="mobile-li-item" href="contact.html">contact us</a></li>
+                        <li><a class="header__link" href="classes.html">Classes</a></li>
+                        <li><a class="header__link" href="membership.html">Membership</a></li>
+                        <li><a class="header__link" href="contact.html">contact us</a></li>
                      </ul>
                   </div>
             </div>
@@ -95,17 +90,17 @@
             </a>
 
             <ul class="header__nav-desktop">
-               <li> <a class="desktop-li-item cat--selector" href="index.html">home</a></li>
-               <li> <a class="desktop-li-item" href="locations.html">Locations</a></li>
-               <li> <a class="desktop-li-item" href="classes.html">Classes</a></li>
-               <li> <a class="desktop-li-item" href="membership.html">Membership</a></li>
-               <li> <a class="desktop-li-item" href="contact.html">contact us</a></li>
+               <li> <a class="header__link header__link--selector" href="index.html">home</a></li>
+               <li> <a class="header__link" href="locations.html">Locations</a></li>
+               <li> <a class="header__link" href="classes.html">Classes</a></li>
+               <li> <a class="header__link" href="membership.html">Membership</a></li>
+               <li> <a class="header__link" href="contact.html">contact us</a></li>
             </ul>
 
             <div class="header__nav-login">
                <ul class="header__nav-desktop">
                   <li>
-                     <a href="#" class="desktop-li-item">
+                     <a href="#" class="header__link">
                         Log in
                         <i class="fas fa-user"></i>
                      </a>
@@ -135,229 +130,229 @@
             <h2 class="heading-primary">Schedules & hours</h2>
             <p class="heading-secondary">Check hours and days to find the best time for you!</p>
 
-            <div class="schedule-content">
-               <div class="schedule-days-box">
+            <div class="schedule__content">
+
+               <div class="schedule__days">
                   <h3>HOURS</h3>
-                  <ul class="schedule-ul">
-                     <li class="schedule-li">Monday: 5:00 AM - 12:00 AM</li>
-                     <li class="schedule-li">Tuesday: 24 HRS</li>
-                     <li class="schedule-li">Wednesday: 24 HRS</li>
-                     <li class="schedule-li">Thursday: 5:00 AM - 12:00 AM</li>
-                     <li class="schedule-li">Friday: 7:00 AM - 09:00 PM</li>
-                     <li class="schedule-li">Saturday: 5:00 AM - 12:00</li>
-                     <li class="schedule-li">Sunday: 5:00 AM - 12:00</li>
+                  <ul class="schedule__ul">
+                     <li class="schedule__item">Monday: 5:00 AM - 12:00 AM</li>
+                     <li class="schedule__item">Tuesday: 24 HRS</li>
+                     <li class="schedule__item">Wednesday: 24 HRS</li>
+                     <li class="schedule__item">Thursday: 5:00 AM - 12:00 AM</li>
+                     <li class="schedule__item">Friday: 7:00 AM - 09:00 PM</li>
+                     <li class="schedule__item">Saturday: 5:00 AM - 12:00</li>
+                     <li class="schedule__item">Sunday: 5:00 AM - 12:00</li>
                   </ul>
                </div>
 
-               <div class="crowd-container">
+               <div class="schedule__crowd">
                   <h3>DAILY CROWD</h3>
 
-                  <div class="inner-crowd-container">
-
-                     <div class="inner-crowd-container--top">
-                        <button class="crowd-tab-day tab-day--1 tab-day--active" data-tab="1">MON</button>
-                        <button class="crowd-tab-day tab-day--2" data-tab="2">TUE</button>
-                        <button class="crowd-tab-day tab-day--3" data-tab="3">WED</button>
-                        <button class="crowd-tab-day tab-day--4" data-tab="4">THU</button>
-                        <button class="crowd-tab-day tab-day--5" data-tab="5">FRI</button>
-                        <button class="crowd-tab-day tab-day--6" data-tab="6">SAT</button>
-                        <button class="crowd-tab-day tab-day--7" data-tab="7">SUN</button>
+                  <div class="schedule__inner">
+                     <div class="schedule__inner-top">
+                        <button class="crowd__tab-day crowd__tab-day--1 crowd__tab-day--active" data-tab="1">MON</button>
+                        <button class="crowd__tab-day crowd__tab-day--2" data-tab="2">TUE</button>
+                        <button class="crowd__tab-day crowd__tab-day--3" data-tab="3">WED</button>
+                        <button class="crowd__tab-day crowd__tab-day--4" data-tab="4">THU</button>
+                        <button class="crowd__tab-day crowd__tab-day--5" data-tab="5">FRI</button>
+                        <button class="crowd__tab-day crowd__tab-day--6" data-tab="6">SAT</button>
+                        <button class="crowd__tab-day crowd__tab-day--7" data-tab="7">SUN</button>
                      </div>
 
-                     <div class="inner-crowd-container--medium group-bar-1 group-bar--active">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
+                     <div class="schedule__inner-medium group__bar-1 group__bar--active">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
                      </div>
 
-                     <div class="inner-crowd-container--medium group-bar-2">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
+                     <div class="schedule__inner-medium group__bar-2">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
                      </div>
-                     <div class="inner-crowd-container--medium group-bar-3">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                     </div>
-
-                     <div class="inner-crowd-container--medium group-bar-4">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                     </div>
-                     <div class="inner-crowd-container--medium group-bar-5">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                     </div>
-                     <div class="inner-crowd-container--medium group-bar-6">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                     </div>
-                     <div class="inner-crowd-container--medium group-bar-7">
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
-                        <div class="crowd-bar"></div>
+                     <div class="schedule__inner-medium group__bar-3">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
                      </div>
 
-                     <div class="inner-crowd-container--bottom">
-                        <span class="crowd-tab-hour">6AM</span>
-                        <span class="crowd-tab-hour">9AM</span>
-                        <span class="crowd-tab-hour">12PM</span>
-                        <span class="crowd-tab-hour">3PM</span>
-                        <span class="crowd-tab-hour">6PM</span>
-                        <span class="crowd-tab-hour">9PM</span>
-                        <span class="crowd-tab-hour">12AM</span>
-                        <span class="crowd-tab-hour">3AM</span>
+                     <div class="schedule__inner-medium group__bar-4">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                     </div>
+                     <div class="schedule__inner-medium group__bar-5">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                     </div>
+                     <div class="schedule__inner-medium group__bar-6">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                     </div>
+                     <div class="schedule__inner-medium group__bar-7">
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                        <div class="crowd__bar-meter"></div>
+                     </div>
+
+                     <div class="schedule__inner-bottom">
+                        <span class="schedule__tab-hour">6AM</span>
+                        <span class="schedule__tab-hour">9AM</span>
+                        <span class="schedule__tab-hour">12PM</span>
+                        <span class="schedule__tab-hour">3PM</span>
+                        <span class="schedule__tab-hour">6PM</span>
+                        <span class="schedule__tab-hour">9PM</span>
+                        <span class="schedule__tab-hour">12AM</span>
+                        <span class="schedule__tab-hour">3AM</span>
                         <span> * Info collected from the last 7 days</span>
                      </div>
                   </div>
@@ -366,171 +361,171 @@
          </section>
 
          <section class="memberships block">
+
             <h2 class="heading-primary">Memberships</h2>
             <p class="heading-secondary"
                >Check out our affordable gym memberships!</p
             >
 
-            <div class="membership-plans">
+            <div class="membership__content">
 
-               <div class="plans membership-plans--gold">
+               <div class="membership__plans membership__plans--gold">
 
-                  <div class="membership-plans-heading">
-                     <h3 class="plans-heading--title">Gold member</h3>
-                     <h4 class="plans-heading--subtitle">Unlimited locations</h4>
+                  <div class="membership__heading">
+                     <h3 class="membership__title">Gold member</h3>
+                     <h4 class="membership__subtitle">Unlimited locations</h4>
                   </div>
 
-                  <div class="membership-plans-box">
+                  <div class="membership__hero">
                      <sup>$</sup>
-                     <span class="plans-box--price">24.99/mo</span>
-                     <span class="plans-box--disclaimer">plus taxes and fees</span>
+                     <span class="membership__price">24.99/mo</span>
+                     <span class="membership__disclaimer">plus taxes and fees</span>
                   </div>
 
-                  <a href="#" class="membership-plans-btn">Select</a>
+                  <a href="#" class="membership__btn">Select</a>
 
-                  <ul class="membership-plans-ul">
-                     <li class="membership-plans-li"><i class="fas fa-check"></i> Unlimited Access to Home Club</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>PF App Workouts</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Free Fitness Training</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Free WiFi</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Use of Any Planet Fitness Worldwide</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Bring a Guest Anytime</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Use of HydroMassage</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Use of Tanning</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Use of Total Body Enhancement</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Use of Massage Chairs</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>50% Off Select Drinks</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Premium Perks: Partner & Rewards Discounts</li>
+                  <ul class="membership__ul">
+                     <li class="membership__item"><i class="fas fa-check"></i> Unlimited Access to Home Club</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>PF App Workouts</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Free Fitness Training</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Free WiFi</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Use of Any Planet Fitness Worldwide</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Bring a Guest Anytime</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Use of HydroMassage</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Use of Tanning</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Use of Total Body Enhancement</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Use of Massage Chairs</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>50% Off Select Drinks</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Premium Perks: Partner & Rewards Discounts</li>
                   </ul>
                </div>
 
-               <div class="plans membership-plans--classic">
-                  <div class="membership-plans-heading">
-                     <h3 class="plans-heading--title">Classic</h3>
-                     <h4 class="plans-heading--subtitle">Limited locations</h4>
+               <div class="membership__plans membership__plans--classic">
+                  <div class="membership__heading">
+                     <h3 class="membership__title">Classic</h3>
+                     <h4 class="membership__subtitle">Limited locations</h4>
                   </div>
 
-                  <div class="membership-plans-box">
+                  <div class="membership__hero">
                      <sup>$</sup>
-                     <span class="plans-box--price">10/mo</span>
-                     <span class="plans-box--disclaimer">plus taxes and fees</span>
+                     <span class="membership__price">10/mo</span>
+                     <span class="membership__disclaimer">plus taxes and fees</span>
                   </div>
 
-                  <a href="#" class="membership-plans-btn">Select</a>
+                  <a href="#" class="membership__btn">Select</a>
 
-                  <ul class="membership-plans-ul">
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Unlimited Access to Home Club</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>PF App Workouts</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Free Fitness Training</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Free WiFi</li>
-                     <li class="membership-plans-li"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
-                     <li class="membership-plans-li opacity"> <s> Use of Any Planet Fitness Worldwide </s></li>
-                     <li class="membership-plans-li opacity"> <s> Bring a Guest Anytime</s></li>
-                     <li class="membership-plans-li opacity"> <s> Use of HydroMassage</s></li>
-                     <li class="membership-plans-li opacity"> <s> Use of Tanning</s></li>
-                     <li class="membership-plans-li opacity"> <s> Use of Total Body Enhancement</s></li>
-                     <li class="membership-plans-li opacity"> <s> Use of Massage Chairs</s></li>
-                     <li class="membership-plans-li opacity"> <s> 50% Off Select Drinks</s></li>
-                     <li class="membership-plans-li opacity"> <s> Premium Perks: Partner & Rewards Discounts</s></li>
+                  <ul class="membership__ul">
+                     <li class="membership__item"><i class="fas fa-check"></i>Unlimited Access to Home Club</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>PF App Workouts</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Free Fitness Training</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Free WiFi</li>
+                     <li class="membership__item"><i class="fas fa-check"></i>Perks: Partner Rewards & Discounts</li>
+                     <li class="membership__item opacity"> <s> Use of Any Planet Fitness Worldwide </s></li>
+                     <li class="membership__item opacity"> <s> Bring a Guest Anytime</s></li>
+                     <li class="membership__item opacity"> <s> Use of HydroMassage</s></li>
+                     <li class="membership__item opacity"> <s> Use of Tanning</s></li>
+                     <li class="membership__item opacity"> <s> Use of Total Body Enhancement</s></li>
+                     <li class="membership__item opacity"> <s> Use of Massage Chairs</s></li>
+                     <li class="membership__item opacity"> <s> 50% Off Select Drinks</s></li>
+                     <li class="membership__item opacity"> <s> Premium Perks: Partner & Rewards Discounts</s></li>
                   </ul>
                </div>
             </div>
          </section>
 
          <div class="huincha block">
-            <div class="inner-huincha">
-               <div class="inner-huincha-content">
-                  <h2 class="huincha-content--title">⚡⚡ Flash promotion ⚡⚡</h2>
-                   <p class="huincha-content--info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facilis beatae odit odio dolores eos facere rem, officiis assumenda amet quam qui modi omnis! se odit odio dolores eos facere rem, officiis assumenda amet quam qui mod.</p>
+               <div class="huincha__content">
+                  <h2 class="huincha__title">⚡⚡ Flash promotion ⚡⚡</h2>
+                   <p class="huincha__info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facilis beatae odit odio dolores eos facere rem, officiis assumenda amet quam qui modi omnis! se odit odio dolores eos facere rem, officiis assumenda amet quam qui mod.</p>
                </div>
-            </div>
          </div>
 
-         <section class="bg-video block ">
+         <section class="background-video block ">
             
             <h2 class="heading-primary">All you need</h2>
             <p class="heading-secondary">In one place!</p>
 
-            <div class="video-container">
-               <video class="video-background" autoplay muted loop>
+            <div class="background-video__content">
+               <video class="video__background" autoplay muted loop>
                   <source src="videos/promo.mp4" type="video/mp4" />
                </video>
             </div>
          </section>
 
-         <section class="iamges-grid block">
-            <div class="gallery-grid">
-               <div class="grid-item">
-                  <div class="gallery-photos">
+         <section class="gallery block">
+
+            <div class="gallery__grid">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-1.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Pilates</h5>
-                     <p>Concentrates on strengthening the body with an emphasis on core strength.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Pilates</h5>
+                     <p class="info__text">Concentrates on strengthening the body with an emphasis on core strength.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-2.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Cardio</h5>
-                     <p>Is any rhythmic activity that raises your heart rate into your target heart rate zone.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Cardio</h5>
+                     <p class="info__text">Is any rhythmic activity that raises your heart rate into your target heart rate zone.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-3.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Hard work</h5>
-                     <p>Once you are exercising regularly, the hardest thing is to stop it.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Hard work</h5>
+                     <p class="info__text">Once you are exercising regularly, the hardest thing is to stop it.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-4.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Private training</h5>
-                     <p>Private classes and customized excersices for you.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Private training</h5>
+                     <p class="info__text">Private classes and customized excersices for you.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-5.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Crossfit</h5>
-                     <p>A form of high intensity interval training.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Crossfit</h5>
+                     <p class="info__text">A form of high intensity interval training.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-6.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Yoga classes</h5>
-                     <p>Focus on stretching, flexibility and learning simple poses.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Yoga classes</h5>
+                     <p class="info__text">Focus on stretching, flexibility and learning simple poses.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-7.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Crossfit PRO</h5>
-                     <p> More intense and highly hard work.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Crossfit PRO</h5>
+                     <p class="info__text"> More intense and highly hard work.</p>
                   </div>
                </div>
-               <div class="grid-item">
-                  <div class="gallery-photos">
+               <div class="gallery__element">
+                  <div class="gallery__photos">
                      <img src="/images/banners/gallery-9.jpg" alt="" />
                   </div>
-                  <div class="info-photos">
-                     <h5>Equipment</h5>
-                     <p>All the equipment needed to achieve your goals.</p>
+                  <div class="gallery__info">
+                     <h5 class="info__title">Equipment</h5>
+                     <p class="info__text">All the equipment needed to achieve your goals.</p>
                   </div>
                </div>
             </div>
@@ -620,12 +615,11 @@
          </section>
       </main>
 
-      <div class="newsLetter-back block">
-         <div class="newsletter">
-            <div class="newsletter-content">
-               <h2>Subscribe to our newsletter</h2>
-               <div class="form-row-newsletter">
-                  <input
+      <div class="newsletter block">
+         <div class="newsletter__content">
+               <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+               <div class="newsletter__form">
+                  <input class="newsletter__input"
                      type="email"
                      name="email"
                      id="email"
@@ -633,37 +627,40 @@
                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                      placeholder="Enter your email"
                   />
-                  <button class="newsletter-button">Subscribe</button>
+                  <button class="newsletter__button">Subscribe</button>
                </div>
-               <p>You will receive a welcoming email</p>
-            </div>
+               <p class="newsletter__text">You will receive a welcoming email</p>
          </div>
       </div>
 
       <footer class="footer block">
          <div class="footer__content">
-            <div class="top">
-               <ul class="footer-nav">
-                  <li class="desktop-li-item"> <a href="#">Rules</a></li>
-                  <li class="desktop-li-item"> <a href="#">About us</a></li>
-                  <li class="desktop-li-item"> <a href="#">Terms</a></li>
-                  <li class="desktop-li-item"> <a href="#">Policy</a></li>
-                  <li class="desktop-li-item"> <a href="#">Call now</a></li>
+
+            <div class="footer__top">
+               <ul class="footer__nav">
+                  <li class="footer__item"> <a href="#">Rules</a></li>
+                  <li class="footer__item"> <a href="#">About us</a></li>
+                  <li class="footer__item"> <a href="#">Terms</a></li>
+                  <li class="footer__item"> <a href="#">Policy</a></li>
+                  <li class="footer__item"> <a href="#">Call now</a></li>
                </ul>
             </div>
+
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
+
             <div class="footer__social">
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-instagram"></i></a
                ></li>
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-facebook"></i></a
                ></li>
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-youtube"></i></a
                ></li>
             </div>
-            <p class="copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
+
+            <p class="footer__copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
          </div>
       </footer>
 

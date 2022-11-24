@@ -61,7 +61,7 @@
 
             <div class="header__nav-mobile header__nav-bg--orange">
 
-                  <div class="header__nav-mobile nav-bg--white">
+                  <div class="header__nav-mobile header__nav-bg--dark">
                      <button class="header__icon-menu header__btn--closeNav">
                         <i class="fas fa-times"></i>
                      </button>
@@ -70,10 +70,10 @@
                         <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
                      </a>
 
-                     <ul class="nav-mobile-ul">
-                        <li><a class="mobile-li-item" href="#">Home</a></li>
-                        <li> <a class="mobile-li-item" href="locations.html">Locations</a></li>
-                        <ul class="nav-mobile--nested-ul">
+                     <ul class="header__mobile-ul">
+                        <li><a class="header__link" href="#">Home</a></li>
+                        <li> <a class="header__link" href="locations.html">Locations</a></li>
+                        <ul class="header__mobile-ul--nested">
                            <li>- 1160 Louder Miami</a></li>
                            <li>- 660 Way Miami</a></li>
                            <li>- 1123 Coral Miami</a></li>
@@ -81,9 +81,9 @@
                            <li>- 4660 Coral Miami</a></li>
                            <li>- 423 Coral Miami</a></li>
                         </ul>
-                        <li><a class="mobile-li-item" href="classes.html">Classes</a></li>
-                        <li><a class="mobile-li-item" href="membership.html">Membership</a></li>
-                        <li><a class="mobile-li-item" href="contact.html">contact us</a></li>
+                        <li><a class="header__link" href="classes.html">Classes</a></li>
+                        <li><a class="header__link" href="membership.html">Membership</a></li>
+                        <li><a class="header__link" href="contact.html">contact us</a></li>
                      </ul>
                   </div>
             </div>
@@ -94,23 +94,23 @@
             </a>
 
             <ul class="header__nav-desktop">
-               <li> <a class="desktop-li-item " href="index.html">home</a></li>
-               <li> <a class="desktop-li-item " href="locations.html">Locations</a></li>
-               <li> <a class="desktop-li-item cat--selector" href="classes.html">Classes</a></li>
-               <li> <a class="desktop-li-item " href="membership.html">Membership</a></li>
-               <li> <a class="desktop-li-item " href="contact.html">contact us</a></li>
+               <li> <a class="header__link " href="index.html">home</a></li>
+               <li> <a class="header__link " href="locations.html">Locations</a></li>
+               <li> <a class="header__link header__link--selector" href="classes.html">Classes</a></li>
+               <li> <a class="header__link " href="membership.html">Membership</a></li>
+               <li> <a class="header__link " href="contact.html">contact us</a></li>
             </ul>
 
             <div class="header__nav-login">
                <ul class="header__nav-desktop">
-                  <li class="desktop-li-item">
+                  <li class="header__link">
                      <a href="#">
                         Log in
                         <i class="fas fa-user"></i>
                      </a>
                   </li>
 
-                  <li class="desktop-li-item header-nav-langBtns">
+                  <li class="header__link header-nav-langBtns">
                      <a class="nav-langBtn lang-btn--eng" href="#">EN</a>
                      <a class="nav-langBtn lang-btn--esp lang-btn--opacity" href="#">ES</a>
                   </li>
@@ -121,12 +121,12 @@
       </header>
 
       <main> </main>
-      <div class="newsLetter-back">
-         <div class="newsletter">
-            <div class="newsletter-content">
-               <h2>Subscribe to our newsletter</h2>
-               <div class="form-row-newsletter">
-                  <input
+      
+      <div class="newsletter block">
+         <div class="newsletter__content">
+               <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+               <div class="newsletter__form">
+                  <input class="newsletter__input"
                      type="email"
                      name="email"
                      id="email"
@@ -134,37 +134,36 @@
                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                      placeholder="Enter your email"
                   />
-                  <button class="newsletter-button">Subscribe</button>
+                  <button class="newsletter__button">Subscribe</button>
                </div>
-               <p>You will receive a welcoming email</p>
-            </div>
+               <p class="newsletter__text">You will receive a welcoming email</p>
          </div>
       </div>
 
       <footer class="footer block">
          <div class="footer__content">
-            <div class="top">
-               <ul class="footer-nav">
-                  <li class="desktop-li-item"> <a href="#">Rules</a></li>
-                  <li class="desktop-li-item"> <a href="#">About us</a></li>
-                  <li class="desktop-li-item"> <a href="#">Terms</a></li>
-                  <li class="desktop-li-item"> <a href="#">Policy</a></li>
-                  <li class="desktop-li-item"> <a href="#">Call now</a></li>
+            <div class="footer__top">
+               <ul class="footer__nav">
+                  <li class="footer__item"> <a href="#">Rules</a></li>
+                  <li class="footer__item"> <a href="#">About us</a></li>
+                  <li class="footer__item"> <a href="#">Terms</a></li>
+                  <li class="footer__item"> <a href="#">Policy</a></li>
+                  <li class="footer__item"> <a href="#">Call now</a></li>
                </ul>
             </div>
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
             <div class="footer__social">
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-instagram"></i></a
                ></li>
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-facebook"></i></a
                ></li>
-               <li class="desktop-li-item">
+               <li class="footer__item">
                   <a href="#"><i class="fab fa-youtube"></i></a
                ></li>
             </div>
-            <p class="copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
+            <p class="footer__copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
          </div>
       </footer>
       <script src="javascript/script.js"></script>

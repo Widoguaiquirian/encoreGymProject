@@ -3,13 +3,7 @@
    width: 100%;
 }
 
-.inner-huincha {
-   width: 90%;
-   max-width: 1200px;
-   margin: auto;
-}
-
-.huincha-content--title {
+.huincha__title {
    color: var(--color-primary);
 }
 
@@ -20,11 +14,7 @@
       margin-bottom: 5rem;
    }
 
-   .inner-huincha {
-      padding: 1rem 0;
-   }
-
-   .huincha-content--title {
+   .huincha__title {
       color: var(--color-primary);
       font-size: 2rem;
    }

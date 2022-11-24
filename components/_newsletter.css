@@ -1,10 +1,10 @@
-.newsLetter-back {
+.newsletter {
    background-color: var(--color-bg-contrast);
    width: 100%;
    margin: 0;
 }
 
-.newsletter {
+.newsletter__content {
    width: 45%;
    max-width: 420px;
    margin: auto;
@@ -13,23 +13,23 @@
    flex-direction: column;
 }
 
-.newsletter p {
+.newsletter__text {
    font-size: 1.3rem;
    text-align: left;
    margin: 0 auto 0 6rem;
    width: 50%;
 }
 
-.newsletter h2 {
+.newsletter__title {
    margin-bottom: 1rem;
    font-size: 2rem;
 }
 
-.form-row-newsletter {
+.newsletter__form {
    margin-bottom: 1rem;
 }
 
-.form-row-newsletter input {
+.newsletter__input {
    background-color: transparent;
    border: 1px solid white;
    outline: none;
@@ -39,12 +39,12 @@
    text-align: center;
 }
 
-.form-row-newsletter input::placeholder {
+.newsletter__input::placeholder {
    color: white;
    text-align: center;
 }
 
-.newsletter-button {
+.newsletter__button {
    padding: 1rem;
    background-color: var(--color-primary);
    outline: none;
@@ -56,18 +56,18 @@
 }
 
 @media (max-width: 1050px) {
-   .newsletter {
+   .newsletter__content {
       padding: 1rem 0;
       width: 90%;
    }
 
-   .form-row-newsletter input {
+   .newsletter__input {
       max-width: 60%;
    }
 }
 
 @media (max-width: 490px) {
-   .newsletter p {
+   .newsletter__text {
       margin: 0 auto;
       width: 100%;
       text-align: center;

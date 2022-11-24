@@ -28,8 +28,8 @@
    width: 120%;
 }
 
-/* Home - Membership plans buttons */
-.membership-plans-btn {
+/* Home - Membership membership__plans buttons */
+.membership__btn {
    background-color: var(--color-primary);
    color: white;
    padding: 1rem 10rem;
@@ -38,7 +38,7 @@
    border-radius: 10px;
 }
 
-.membership-plans-btn:hover {
+.membership__btn:hover {
    background-color: #be4612;
 }
 
@@ -82,7 +82,7 @@
 
 /*--- Media Query ---*/
 @media (max-width: 350px) {
-   .membership-plans-btn {
+   .membership__btn {
       padding: 1rem 4rem;
    }
 }

@@ -14,31 +14,31 @@ document.querySelector(".btn-ok-cookie").addEventListener("click", function () {
 
 //Crowd meter
 //Clase que comparten los botones
-const tabsDays = document.querySelectorAll(".crowd-tab-day");
+const tabsDays = document.querySelectorAll(".crowd__tab-day");
 //Clase del container padre de los botones
-const tabsDaysContainer = document.querySelector(".inner-crowd-container--top");
+const tabsDaysContainer = document.querySelector(".schedule__inner-top");
 //Clase que comparten los bloques de HTML a mostrar
-const contentBoxMedium = document.querySelectorAll(".inner-crowd-container--medium");
+const contentBoxMedium = document.querySelectorAll(".schedule__inner-medium");
 
 // ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
 
 // CON WINDOW.ONLOAD EVITAMOS QUE JS SE EJECUTE DE PRIMERO Y TIRE ERRORES
 window.onload = function () {
    tabsDaysContainer.addEventListener("click", function (e) {
-      const clicked = e.target.closest(".crowd-tab-day");
+      const clicked = e.target.closest(".crowd__tab-day");
       if (!clicked) return;
 
       tabsDays.forEach(function (t) {
-         t.classList.remove("tab-day--active");
+         t.classList.remove("crowd__tab-day--active");
       });
 
       contentBoxMedium.forEach(function (c) {
-         c.classList.remove("group-bar--active");
+         c.classList.remove("group__bar--active");
       });
 
-      clicked.classList.add("tab-day--active");
+      clicked.classList.add("crowd__tab-day--active");
 
-      document.querySelector(`.group-bar-${clicked.dataset.tab}`).classList.add("group-bar--active");
+      document.querySelector(`.group__bar-${clicked.dataset.tab}`).classList.add("group__bar--active");
    });
 };
 

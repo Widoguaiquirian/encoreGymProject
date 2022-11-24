@@ -13,12 +13,12 @@
 }
 
 /* TOP */
-.footer-nav {
+.footer__nav {
    display: flex;
    margin: 2rem 0;
 }
 
-.footer-nav li a {
+.footer__item a {
    text-transform: uppercase;
    font-size: 2rem;
    margin: 0 1rem;
@@ -30,25 +30,25 @@
    margin: 2rem 0;
 }
 
-.footer__social .desktop-li-item {
+.footer__item {
    margin: 0 2rem;
    font-size: 3rem;
 }
 
 /* BOTTOM */
-.copy {
+.footer__copy {
    text-transform: uppercase;
    font-size: 0.7rem;
    letter-spacing: 2px;
 }
 
-.copy a {
+.footer__copy a {
    text-decoration: underline;
 }
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
-   .footer-nav li a {
+   .footer__nav li a {
       font-size: 1.2rem;
    }
 }

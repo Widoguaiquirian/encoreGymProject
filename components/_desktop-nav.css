@@ -29,7 +29,7 @@
    border-right: 3px solid #ec662dbd;
 }
 
-.header__nav-desktop .desktop-li-item {
+.header__nav-desktop .header__link {
    text-transform: uppercase;
    display: block;
    font-size: 1.6rem;
@@ -37,19 +37,19 @@
    color: var(--color-secondary-strong);
 }
 
-.desktop-li-item:hover {
+.header__link:hover {
    color: var(--color-primary);
    transition: 0.3s;
 }
 
 /* highlight the categorie where we are */
-.header__nav-desktop .cat--selector {
+.header__nav-desktop .header__link--selector {
    color: var(--color-primary);
    font-weight: bold;
 }
 
 /* Login bar */
-.header__nav-login .desktop-li-item a {
+.header__nav-login .header__link a {
    color: var(--color-secondary-strong);
 }
 
