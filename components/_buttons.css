@@ -2,6 +2,7 @@
 .header__btn--main {
    position: relative;
    display: inline-block;
+   margin-top: 2rem;
    padding: 1rem 1.5rem;
    font-size: 2rem;
    color: var(--color-secondary);
