@@ -11,10 +11,6 @@
    margin: 0 auto;
 }
 
-.header__nav-desktop {
-   display: flex;
-}
-
 .header__logo {
    display: flex;
    align-items: center;
@@ -23,6 +19,10 @@
 
 .logo {
    height: 4rem;
+}
+
+.header__nav-desktop {
+   display: flex;
 }
 
 .header__nav-desktop li:not(:last-child) {
@@ -48,13 +48,7 @@
    font-weight: bold;
 }
 
-/* Login bar */
-.header__nav-login .header__link a {
-   color: var(--color-secondary-strong);
-}
-
 /*--- Navigation  sticky---*/
-
 .header__nav.active {
    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.582);
    position: fixed;
@@ -64,4 +58,23 @@
    right: 0;
    z-index: 9;
    max-width: 1800px;
+}
+
+/* log in */
+
+.header__login-ul {
+   display: flex;
+}
+
+.header__nav-log {
+   border-right: 3px solid #ec662dbd;
+   padding-right: 1rem;
+}
+
+.header__nav-langBtns {
+   margin-left: 1rem;
+}
+
+.notSelected {
+   font-size: 1.2rem;
 }

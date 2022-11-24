@@ -82,6 +82,10 @@
 }
 
 /*--- Media Query ---*/
+
+@media (max-width: 1050px) {
+}
+
 @media (max-width: 350px) {
    .membership__btn {
       padding: 1rem 4rem;

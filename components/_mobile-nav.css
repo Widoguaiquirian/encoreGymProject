@@ -52,41 +52,11 @@
 
 /*--- Media Query ---*/
 @media (max-width: 1050px) {
-   .header__nav {
-      justify-content: space-between;
+   .header__nav-desktop .header__link {
+      display: none;
    }
 
    .header__icon-menu {
       display: block;
-   }
-
-   .header__btn--openNav {
-      padding: 0;
-   }
-
-   .logo {
-      margin-left: 2rem;
-   }
-
-   .header__nav-mobile .logo {
-      margin: 0;
-   }
-
-   .header__login a {
-      font-size: 1.6rem;
-   }
-
-   .header__login .header__link {
-      padding: 0;
-   }
-
-   /* hide elements from the desktop menu */
-   .header__nav-desktop li,
-   .header__nav-desktop .header-nav-langBtns {
-      display: none;
-   }
-
-   .header__nav-desktop .header__link:not(:last-child) {
-      border: none;
    }
 }
