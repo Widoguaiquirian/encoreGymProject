@@ -142,7 +142,7 @@ sliderGrid();
 
 // CONTACT MODAL
 const modal = document.querySelector(".modal");
-const btnOpenModal = document.querySelector(".modal__btn--open");
+const btnsOpenModal = document.querySelectorAll(".modal__btn--open");
 const btnCloseModal = document.querySelector(".modal__btn--close");
 const overlay = document.querySelector(".modal__overlay");
 
@@ -158,5 +158,6 @@ const closeModal = function (e) {
    modal.classList.add("modal__hidden");
 };
 
-btnOpenModal.addEventListener("click", openModal);
 btnCloseModal.addEventListener("click", closeModal);
+
+btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
