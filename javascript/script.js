@@ -94,51 +94,53 @@ closeBtn.addEventListener("click", function () {
 });
 
 // carrousel of experiences
-const sliderGrid = function () {
-   const slidesGrid = document.querySelectorAll(".feed__slider");
-   const btnLeftGrid = document.querySelector(".feed_btn--left");
-   const btnRightGrid = document.querySelector(".feed_btn--right");
+window.onload = function () {
+   const sliderGrid = function () {
+      const slidesGrid = document.querySelectorAll(".feed__slider");
+      const btnLeftGrid = document.querySelector(".feed_btn--left");
+      const btnRightGrid = document.querySelector(".feed_btn--right");
 
-   let curSlideGrid = 0;
-   // ? PARA QUE EL MAXIMO SEA EL NUMERO DE SLIDES USADOS //
-   const maxSlideGrid = slidesGrid.length;
+      let curSlideGrid = 0;
+      // ? PARA QUE EL MAXIMO SEA EL NUMERO DE SLIDES USADOS //
+      const maxSlideGrid = slidesGrid.length;
 
-   const goToSlide = function (slide) {
-      slidesGrid.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`));
+      const goToSlide = function (slide) {
+         slidesGrid.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`));
+      };
+
+      // Next slide
+      const nextSlide = function () {
+         if (curSlideGrid === maxSlideGrid - 1) {
+            curSlideGrid = 0;
+         } else {
+            curSlideGrid++;
+         }
+
+         goToSlide(curSlideGrid);
+      };
+
+      const prevSlide = function () {
+         if (curSlideGrid === 0) {
+            curSlideGrid = maxSlideGrid - 1;
+         } else {
+            curSlideGrid--;
+         }
+         goToSlide(curSlideGrid);
+      };
+
+      const init = function () {
+         goToSlide(0);
+      };
+
+      init();
+
+      // Event handlers
+      btnRightGrid.addEventListener("click", nextSlide);
+      btnLeftGrid.addEventListener("click", prevSlide);
    };
 
-   // Next slide
-   const nextSlide = function () {
-      if (curSlideGrid === maxSlideGrid - 1) {
-         curSlideGrid = 0;
-      } else {
-         curSlideGrid++;
-      }
-
-      goToSlide(curSlideGrid);
-   };
-
-   const prevSlide = function () {
-      if (curSlideGrid === 0) {
-         curSlideGrid = maxSlideGrid - 1;
-      } else {
-         curSlideGrid--;
-      }
-      goToSlide(curSlideGrid);
-   };
-
-   const init = function () {
-      goToSlide(0);
-   };
-
-   init();
-
-   // Event handlers
-   btnRightGrid.addEventListener("click", nextSlide);
-   btnLeftGrid.addEventListener("click", prevSlide);
+   sliderGrid();
 };
-
-sliderGrid();
 
 // CONTACT MODAL
 const modal = document.querySelector(".modal");
