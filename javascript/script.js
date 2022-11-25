@@ -139,3 +139,24 @@ const sliderGrid = function () {
 };
 
 sliderGrid();
+
+// CONTACT MODAL
+const modal = document.querySelector(".modal");
+const btnOpenModal = document.querySelector(".modal__btn--open");
+const btnCloseModal = document.querySelector(".modal__btn--close");
+const overlay = document.querySelector(".modal__overlay");
+
+const openModal = function (e) {
+   e.preventDefault();
+   overlay.classList.remove("modal__hidden");
+   modal.classList.remove("modal__hidden");
+};
+
+const closeModal = function (e) {
+   e.preventDefault();
+   overlay.classList.add("modal__hidden");
+   modal.classList.add("modal__hidden");
+};
+
+btnOpenModal.addEventListener("click", openModal);
+btnCloseModal.addEventListener("click", closeModal);

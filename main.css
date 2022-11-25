@@ -12,6 +12,7 @@
 @import url(components/_desktop-nav.css);
 @import url(components/_huincha.css);
 @import url(components/_mobile-nav.css);
+@import url(components/_modal_contact.css);
 @import url(components/_newsletter.css);
 
 @import url(layout/_header.css);

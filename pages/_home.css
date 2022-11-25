@@ -98,11 +98,8 @@
    position: relative;
 }
 
-.schedule__inner-bottom span:last-child {
-   position: absolute;
-   left: 0;
+.detail__info--yellow {
    bottom: -30px;
-   font-size: 1.4rem;
    color: var(--color-info);
 }
 

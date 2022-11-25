@@ -18,7 +18,13 @@
    opacity: 50%;
 }
 
-/*--- Main ---*/
+/* Detail info */
+.detail__info {
+   position: absolute;
+   font-size: 1.4rem;
+   left: 0;
+}
+
 main {
    max-width: 180rem;
    padding: 1rem;
