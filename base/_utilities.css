@@ -7,6 +7,19 @@
    transform: translateY(-3rem);
 }
 
+.text-section {
+   text-align: left;
+   background-color: var(--color-secondary);
+   color: var(--color-tertiary);
+   width: 90%;
+   border-radius: 5px;
+   padding: 2rem;
+}
+
+.text-section .heading-secondary {
+   font-weight: bold;
+}
+
 /* To generate de faded effect */
 .block--hidden {
    opacity: 0;
@@ -23,6 +36,11 @@
    position: absolute;
    font-size: 1.4rem;
    left: 0;
+}
+
+/* regular text */
+.regular-text {
+   margin: 2rem auto;
 }
 
 main {

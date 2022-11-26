@@ -183,38 +183,62 @@
          </section>
       </main>
 
-            <!-- MODAL CONTACT -->
-            <div class="modal modal__hidden">
-               <button class="modal__btn--close">&times;</button>
-               <h2 class="modal__title">Contact us</h2>
-               <form class="modal__form">
-                  <div class="modal__row">
-                     <label class="modal__label" for="fName">Name:</label>
-                     <input class="modal__input" type="text" id="fName" name="fName" />
-                  </div>
-         
-                  <div class="modal__row">
-                     <label class="modal__label" for="email">Email:</label>
-                     <input class="modal__input" type="email" id="email" name="email" />
-                  </div>
-                  
-                  <div class="modal__row">
-                     <label class="modal__label" for="phone">Phone:</label>
-                     <input class="modal__input" type="phone" id="phone" name="phone" placeholder="+58 1234 5678" />
-                  </div>
-      
-                  <div class="modal__row modal__row--textArea">
-                     <label class="modal__label" for="phone"></label>
-                     <textarea class="modal__textArea" placeholder="Write your message here..."></textarea>
-                  </div>
-         
-                  <div class="modal__row">
-                     <button class="modal__btn">Send message </button>
-                  </div>
-               </form>
-               <span class="detail__info detail__info--orange"> * We will not share your personal info.</span>
+      <!-- MODAL CONTACT -->
+      <div class="modal modal__hidden">
+         <button class="modal__btn--close">&times;</button>
+         <form class="modal__form">
+            <div class="modal__row">
+               <span class="row__title">email Us 📧</span>
+               <div class="row__mail">
+                  <a class="row__maills" href="mailto:testing@gmail.com">info@encore.com</a>
+                  <a class="row__maills" href="mailto:testing@gmail.com">concierge@encore.com</a>
+               </div>
             </div>
-            <div class="modal__overlay modal__hidden "></div>
+            <div class="modal__row">
+               <span class="row__title">Say hello ✋</span>
+               <div class="row__socials">
+                     <a href="#"><i class="row__icons fab fa-instagram"></i></a>
+                     <a href="#"><i class="row__icons fab fa-linkedin"></i></a>
+                     <a href="#"><i class="row__icons fab fa-twitter"></i></a>
+                     <a href="#"><i class="row__icons fab fa-whatsapp"></i></a>
+                     <a href="#"><i class="row__icons fab fa-facebook"></i></a>
+                     <a href="#"><i class="row__icons fab fa-youtube"></i></a>
+               </div>
+            </div>
+
+            <div class="modal__row">
+               <span class="row__title">Call us 📞</span>
+
+               <div class="modal__grid">
+               <div class="row__phones">
+                  <p class="row__address"> 1160 Louder Miami, FL, 365 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 660 Way Miami, FL, United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 4660 Coral Miami, FL, 33325 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 9660 Coral Way Miami, FL, 33165 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 12 Coral Hall Miami, FL, United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 345 Dolphin Miami, FL, 33165 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+            </div>
+            </div>
+         </form>
+      </div>
+      <div class="modal__overlay modal__hidden "></div>
 
       <div class="newsletter block">
          <div class="newsletter__content">
@@ -236,16 +260,17 @@
 
       <footer class="footer block">
          <div class="footer__content">
-            <div class="footer__top">
+
                <ul class="footer__nav">
                   <li class="footer__item"> <a href="#">Rules</a></li>
                   <li class="footer__item"> <a href="#">About us</a></li>
                   <li class="footer__item"> <a href="#">Terms</a></li>
-                  <li class="footer__item"> <a href="#">Policy</a></li>
+                  <li class="footer__item"> <a href="policies.html">Policies</a></li>
                   <li class="footer__item modal__btn--open"> <a href="#">Contact us</a></li>
                </ul>
-            </div>
+
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
+
             <div class="footer__social">
                <li class="footer__item">
                   <a href="#"><i class="fab fa-instagram"></i></a
@@ -257,6 +282,7 @@
                   <a href="#"><i class="fab fa-youtube"></i></a
                ></li>
             </div>
+
             <p class="footer__copy">Encore gym website @2022 by: &nbsp; &nbsp;<a href="#">Luis Guaiquirian</a></p>
          </div>
       </footer>
