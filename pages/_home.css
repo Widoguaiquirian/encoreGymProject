@@ -810,6 +810,20 @@
    padding: 2rem 4rem;
    min-width: 470px;
    background-color: var(--color-secondary);
+   position: relative;
+}
+
+.membership__icon-detail {
+   position: absolute;
+   right: 80px;
+   top: 5px;
+   font-size: 5rem;
+   transition: all 0.3s ease;
+   opacity: 0;
+}
+
+.membership__plans--gold:hover .membership__icon-detail {
+   opacity: 1;
 }
 
 .membership__plans .membership__item {
@@ -1040,6 +1054,10 @@ sup {
    .membership__plans {
       margin: 2rem 0;
       min-width: 100%;
+   }
+
+   .membership__icon-detail {
+      display: none;
    }
 
    /* Gallery of classes  */

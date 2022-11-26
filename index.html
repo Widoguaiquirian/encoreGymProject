@@ -102,10 +102,7 @@
 
                <ul class="header__login-ul">
                   <li class="header__nav-log">
-                     <a href="#" class="header__link">
-                        LOG IN
-                        <i class="fas fa-user"></i>
-                     </a>
+                     <a href="#" class="header__link">LOG IN</a>
                   </li>
                   <li class="header__nav-langBtns">
                      <a class="header__langBtn lang-btn--eng" href="#">EN</a>
@@ -371,7 +368,7 @@
             <div class="membership__content">
 
                <div class="membership__plans membership__plans--gold">
-
+                  <div class="membership__icon-detail">👌</div>
                   <div class="membership__heading">
                      <h3 class="membership__title">Gold member</h3>
                      <h4 class="membership__subtitle">Unlimited locations</h4>
@@ -619,33 +616,57 @@
       <!-- MODAL CONTACT -->
       <div class="modal modal__hidden">
          <button class="modal__btn--close">&times;</button>
-         <h2 class="modal__title">Contact us</h2>
          <form class="modal__form">
             <div class="modal__row">
-               <label class="modal__label" for="fName">Name:</label>
-               <input class="modal__input" type="text" id="fName" name="fName" />
+               <span class="row__title">email Us 📧</span>
+               <div class="row__mail">
+                  <a class="row__maills" href="mailto:testing@gmail.com">info@encore.com</a>
+                  <a class="row__maills" href="mailto:testing@gmail.com">concierge@encore.com</a>
+               </div>
             </div>
-   
             <div class="modal__row">
-               <label class="modal__label" for="email">Email:</label>
-               <input class="modal__input" type="email" id="email" name="email" />
-            </div>
-            
-            <div class="modal__row">
-               <label class="modal__label" for="phone">Phone:</label>
-               <input class="modal__input" type="phone" id="phone" name="phone" placeholder="+58 1234 5678" />
+               <span class="row__title">Say hello ✋</span>
+               <div class="row__socials">
+                     <a href="#"><i class="row__icons fab fa-instagram"></i></a>
+                     <a href="#"><i class="row__icons fab fa-linkedin"></i></a>
+                     <a href="#"><i class="row__icons fab fa-twitter"></i></a>
+                     <a href="#"><i class="row__icons fab fa-whatsapp"></i></a>
+                     <a href="#"><i class="row__icons fab fa-facebook"></i></a>
+                     <a href="#"><i class="row__icons fab fa-youtube"></i></a>
+               </div>
             </div>
 
-            <div class="modal__row modal__row--textArea">
-               <label class="modal__label" for="phone"></label>
-               <textarea class="modal__textArea" placeholder="Write your message here..."></textarea>
-            </div>
-   
             <div class="modal__row">
-               <button class="modal__btn">Send message </button>
+               <span class="row__title">Call us 📞</span>
+
+               <div class="modal__grid">
+               <div class="row__phones">
+                  <p class="row__address"> 1160 Louder Miami, FL, 365 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 660 Way Miami, FL, United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 4660 Coral Miami, FL, 33325 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 9660 Coral Way Miami, FL, 33165 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 12 Coral Hall Miami, FL, United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+               <div class="row__phones">
+                  <p class="row__address"> 345 Dolphin Miami, FL, 33165 United States</p>
+                  <a class="row__phone" href="#">(786) 497-8200</a>
+               </div>
+            </div>
             </div>
          </form>
-         <span class="detail__info detail__info--orange"> * We will not share your personal info.</span>
       </div>
       <div class="modal__overlay modal__hidden "></div>
 
@@ -675,7 +696,7 @@
                   <li class="footer__item"> <a href="#">About us</a></li>
                   <li class="footer__item"> <a href="#">Terms</a></li>
                   <li class="footer__item"> <a href="#">Policy</a></li>
-                  <li class="footer__item"> <a href="#">Call now</a></li>
+                  <li class="footer__item modal__btn--open"> <a href="#">Contact us</a></li>
                </ul>
 
             <img src="/images/logos/logo.png" class="logo" alt="logo-brand" />
