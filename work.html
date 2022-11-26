@@ -93,8 +93,8 @@
             </a>
 
             <ul class="header__nav-desktop">
-               <li> <a class="header__link " href="index.html">home</a></li>
-               <li> <a class="header__link header__link--selector" href="locations.html">Locations</a></li>
+               <li> <a class="header__link" href="index.html">home</a></li>
+               <li> <a class="header__link" href="locations.html">Locations</a></li>
                <li> <a class="header__link" href="classes.html">Classes</a></li>
                <li> <a class="header__link" href="membership.html">Membership</a></li>
                <li> <a class="header__link modal__btn--open" href="#">contact us</a></li>
@@ -116,70 +116,34 @@
       </header>
 
       <main>
-         <section class="locations block">
-            <h2 class="heading-primary">FIND THE BEST LOCAL FOR YOU</h2>
-            <p class="heading-secondary"> Our locals are equipped with the best tools and equipment to help you reaching your goals</p>
-            <div class="locals-grid">
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-1.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">1160 Louder Miami, FL, 365 United States.</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
+         <section class="work block">
+            <h2 class="heading-primary">Come and work with Encore Gym!</h2>
 
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-2.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">660 Way Miami, FL, United States.</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
-
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-3.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">4660 Coral Miami, FL, 33325 United States</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
-
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-4.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">9660 Coral Way Miami, FL, 33165 United States.</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
-
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-5.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">12 Coral Hall Miami, FL, United States.</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
-
-               <div class="local local-1">
-                  <div class="gallery-locals">
-                     <img src="/images/banners/local-6.jpg" alt="" />
-                  </div>
-                  <div class="info-local">
-                     <p class="info-gyms">345 Dolphin Miami, FL, 33165 United States.</p>
-                  </div>
-                  <a href="#" class="btn-local">Sign now</a>
-               </div>
+            <form class="modal__form">
+            <div class="modal__row">
+               <label class="modal__label" for="fName">Name:</label>
+               <input class="modal__input" type="text" id="fName" name="fName" />
             </div>
+
+            <div class="modal__row">
+               <label class="modal__label" for="email">Email:</label>
+               <input class="modal__input" type="email" id="email" name="email" />
+            </div>
+
+            <div class="modal__row">
+               <label class="modal__label" for="phone">Phone:</label>
+               <input class="modal__input" type="phone" id="phone" name="phone" placeholder="+58 1234 5678" />
+            </div>
+
+            <div class="modal__row modal__row--textArea">
+               <label class="modal__label" for="phone"></label>
+               <textarea class="modal__textArea" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <div class="modal__row">
+               <button class="modal__btn">Send message </button>
+            </div>
+         </form>
          </section>
       </main>
 
