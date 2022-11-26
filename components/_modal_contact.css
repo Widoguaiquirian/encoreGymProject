@@ -94,3 +94,9 @@
    visibility: hidden;
    opacity: 0;
 }
+
+@media (max-width: 600px) {
+   .row__mail {
+      flex-direction: column;
+   }
+}
