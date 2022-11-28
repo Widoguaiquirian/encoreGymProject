@@ -165,3 +165,23 @@ window.onload = function () {
 
    btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 };
+
+//! Login modal
+window.onload = function () {
+   const loginModal = document.querySelector(".header__login-box");
+   const hoverModalActive = document.querySelector(".header__link--login");
+   const hoverModalDesactive = document.querySelector(".header__link--login");
+
+   const openLoginModal = function (e) {
+      e.preventDefault();
+      loginModal.classList.remove("header__login-box-hide");
+   };
+
+   const closeLoginModal = function (e) {
+      e.preventDefault();
+      loginModal.classList.add("header__login-box-hide");
+   };
+
+   hoverModalActive.addEventListener("mouseover", openLoginModal);
+   hoverModalDesactive.addEventListener("mouseout", closeLoginModal);
+};
