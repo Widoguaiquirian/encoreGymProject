@@ -1,8 +1,9 @@
 "use strict";
+
+//! Cookie messages
 const body = document.querySelector(".body");
 const message = document.createElement("div");
 
-// Cookie messages
 message.classList.add("cookie-message");
 message.innerHTML = `We use cookies for improved functionality and analytics. <button class="btn-ok-cookie"> I UNDERSTAND! </button> <button class="btn-no-cookie"> NO! </button>`;
 
@@ -12,18 +13,17 @@ document.querySelector(".btn-ok-cookie").addEventListener("click", function () {
    message.remove();
 });
 
-//Crowd meter
-//Clase que comparten los botones
-const tabsDays = document.querySelectorAll(".crowd__tab-day");
-//Clase del container padre de los botones
-const tabsDaysContainer = document.querySelector(".schedule__inner-top");
-//Clase que comparten los bloques de HTML a mostrar
-const contentBoxMedium = document.querySelectorAll(".schedule__inner-medium");
+//! Crowd meter
+document.addEventListener("DOMContentLoaded", () => {
+   //Clase que comparten los botones
+   const tabsDays = document.querySelectorAll(".crowd__tab-day");
+   //Clase del container padre de los botones
+   const tabsDaysContainer = document.querySelector(".schedule__inner-top");
+   //Clase que comparten los bloques de HTML a mostrar
+   const contentBoxMedium = document.querySelectorAll(".schedule__inner-medium");
 
-// ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
+   // ? AGREGAMOS EVENTO AL PADRE DE LOS BOTONES //
 
-// CON WINDOW.ONLOAD EVITAMOS QUE JS SE EJECUTE DE PRIMERO Y TIRE ERRORES
-window.onload = function () {
    tabsDaysContainer.addEventListener("click", function (e) {
       const clicked = e.target.closest(".crowd__tab-day");
       if (!clicked) return;
@@ -40,9 +40,9 @@ window.onload = function () {
 
       document.querySelector(`.group__bar-${clicked.dataset.tab}`).classList.add("group__bar--active");
    });
-};
+});
 
-// SCROLL REVEALING
+//! Scroll revealing
 // const allRevealSections = document.querySelectorAll(".block");
 
 // const revealSection = function (entries, oberserver) {
@@ -63,7 +63,7 @@ window.onload = function () {
 //    section.classList.add("block--hidden");
 // });
 
-//STICKY NAV
+//! Sticky nav
 const nav = document.querySelector(".header__nav");
 
 window.addEventListener("scroll", fixNav);
@@ -76,7 +76,7 @@ function fixNav() {
    }
 }
 
-// menu mobile
+//! Menu mobile
 const openBtn = document.querySelector(".header__btn--openNav");
 const closeBtn = document.querySelector(".header__btn--closeNav");
 const navs = document.querySelectorAll(".header__nav-mobile");
@@ -93,71 +93,75 @@ closeBtn.addEventListener("click", function () {
    });
 });
 
-// carrousel of experiences
-const sliderGrid = function () {
-   const slidesGrid = document.querySelectorAll(".feed__slider");
-   const btnLeftGrid = document.querySelector(".feed_btn--left");
-   const btnRightGrid = document.querySelector(".feed_btn--right");
+//! Carrousel of experience
+window.onload = function () {
+   const sliderGrid = function () {
+      const slidesGrid = document.querySelectorAll(".feed__slider");
+      const btnLeftGrid = document.querySelector(".feed_btn--left");
+      const btnRightGrid = document.querySelector(".feed_btn--right");
 
-   let curSlideGrid = 0;
-   // ? PARA QUE EL MAXIMO SEA EL NUMERO DE SLIDES USADOS //
-   const maxSlideGrid = slidesGrid.length;
+      let curSlideGrid = 0;
+      // ? PARA QUE EL MAXIMO SEA EL NUMERO DE SLIDES USADOS //
+      const maxSlideGrid = slidesGrid.length;
 
-   const goToSlide = function (slide) {
-      slidesGrid.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`));
+      const goToSlide = function (slide) {
+         slidesGrid.forEach((s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`));
+      };
+
+      // Next slide
+      const nextSlide = function () {
+         if (curSlideGrid === maxSlideGrid - 1) {
+            curSlideGrid = 0;
+         } else {
+            curSlideGrid++;
+         }
+
+         goToSlide(curSlideGrid);
+      };
+
+      const prevSlide = function () {
+         if (curSlideGrid === 0) {
+            curSlideGrid = maxSlideGrid - 1;
+         } else {
+            curSlideGrid--;
+         }
+         goToSlide(curSlideGrid);
+      };
+
+      const init = function () {
+         goToSlide(0);
+      };
+
+      init();
+
+      // Event handlers
+      btnRightGrid.addEventListener("click", nextSlide);
+      btnLeftGrid.addEventListener("click", prevSlide);
    };
 
-   // Next slide
-   const nextSlide = function () {
-      if (curSlideGrid === maxSlideGrid - 1) {
-         curSlideGrid = 0;
-      } else {
-         curSlideGrid++;
-      }
-
-      goToSlide(curSlideGrid);
-   };
-
-   const prevSlide = function () {
-      if (curSlideGrid === 0) {
-         curSlideGrid = maxSlideGrid - 1;
-      } else {
-         curSlideGrid--;
-      }
-      goToSlide(curSlideGrid);
-   };
-
-   const init = function () {
-      goToSlide(0);
-   };
-
-   init();
-
-   // Event handlers
-   btnRightGrid.addEventListener("click", nextSlide);
-   btnLeftGrid.addEventListener("click", prevSlide);
+   sliderGrid();
 };
 
-sliderGrid();
+//! Contact modal
+window.onload = function () {
+   const modal = document.querySelector(".modal");
+   const btnsOpenModal = document.querySelectorAll(".modal__btn--open");
+   const btnCloseModal = document.querySelector(".modal__btn--close");
+   const overlay = document.querySelector(".modal__overlay");
 
-// CONTACT MODAL
-const modal = document.querySelector(".modal");
-const btnsOpenModal = document.querySelectorAll(".modal__btn--open");
-const btnCloseModal = document.querySelector(".modal__btn--close");
-const overlay = document.querySelector(".modal__overlay");
+   const openModal = function (e) {
+      e.preventDefault();
+      overlay.classList.remove("modal__hidden");
+      modal.classList.remove("modal__hidden");
+   };
 
-const openModal = function (e) {
-   e.preventDefault();
-   overlay.classList.remove("modal__hidden");
-   modal.classList.remove("modal__hidden");
+   const closeModal = function (e) {
+      e.preventDefault();
+      overlay.classList.add("modal__hidden");
+      modal.classList.add("modal__hidden");
+   };
+
+   btnCloseModal.addEventListener("click", closeModal);
+
+   btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
 };
-
-const closeModal = function (e) {
-   e.preventDefault();
-   overlay.classList.add("modal__hidden");
-   modal.classList.add("modal__hidden");
-};
-
-btnCloseModal.addEventListener("click", closeModal);
-
-btnsOpenModal.forEach((btn) => btn.addEventListener("click", openModal));
