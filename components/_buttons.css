@@ -7,6 +7,11 @@
    padding: 1rem 10rem;
    border: none;
    cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.btn:hover {
+   color: var(--color-tertiary);
 }
 
 /* Home - Hero btn cta */
@@ -19,6 +24,10 @@
    border: 5px solid var(--color-secondary);
    border-radius: 10px;
    overflow: hidden;
+   background-color: transparent;
+}
+
+.btn--main:hover {
    background-color: transparent;
 }
 
