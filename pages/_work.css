@@ -28,12 +28,6 @@
    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
 }
 
-.work__icon {
-   color: var(--color-primary);
-   font-size: 3rem;
-   margin-left: 1rem;
-}
-
 .work__form {
    width: 80%;
    margin: 0 auto;
@@ -97,10 +91,6 @@
 
    .work__form {
       width: 100%;
-   }
-
-   .work__icon {
-      font-size: 2rem;
    }
 
    .work__item {

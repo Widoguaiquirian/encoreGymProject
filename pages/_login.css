@@ -1,0 +1,99 @@
+.account {
+   color: var(--color-tertiary);
+   padding: 5rem;
+   background-color: var(--color-secondary);
+   display: flex;
+   justify-content: center;
+}
+
+.heading-primary--account {
+   border-bottom: 2px solid var(--color-primary);
+   padding: 0;
+}
+
+.primary__text {
+   font-size: 1.6rem;
+   text-transform: none;
+   font-weight: normal;
+   display: block;
+   margin-bottom: 3rem;
+   color: var(--color-tertiary);
+}
+
+.account__block {
+   margin: 0 4rem;
+   text-align: left;
+   width: 600px;
+}
+
+.account__form {
+   width: 90%;
+}
+
+.account__row {
+   margin: 1rem 0;
+}
+
+.account__input {
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   padding: 1rem;
+}
+
+.account__item {
+   list-style: circle;
+   text-align: left;
+   padding: 1rem 0;
+   font-weight: bold;
+}
+
+.account__btn {
+   background-color: var(--color-primary);
+   margin-top: 1rem;
+   width: 160px;
+   text-transform: uppercase;
+   border: none;
+   color: var(--color-secondary);
+   border-radius: 5px;
+   margin-top: 3rem;
+   cursor: pointer;
+   padding: 1rem;
+   transition: all 0.3s ease;
+   display: inline-block;
+}
+
+.link__password {
+   font-size: 1.4rem;
+   color: var(--color-tertiary);
+   margin-left: 2rem;
+   text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+   .account {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 95%;
+      padding: 2rem;
+   }
+
+   .account__block {
+      margin: 0 0 5rem 0;
+      max-width: 95%;
+   }
+
+   .primary__text {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+   }
+
+   .account__form {
+      width: 100%;
+   }
+
+   .account__btn {
+      width: 100%;
+   }
+}
