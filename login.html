@@ -105,8 +105,8 @@
                <li class="header__nav-log">
                   <a href="login.html" class="header__link header__link--login">SIGN IN
                      <div class="header__login-box header__login-box-hide">
-                        <button class="login__btn login__btn--sign">Sign in</button>
-                        <button class="login__btn login__btn--new">New customer</button>
+                        <button class="btn login__btn">Sign in</button>
+                        <button class="btn login__btn">New customer</button>
                      </div>
                   </a>
                </li>
@@ -137,8 +137,12 @@
                      <label class="account__label" for="password">Password *</label>
                      <input class="account__input" type="password" id="password" name="password" />
                   </div>
+                  <div class="account__row account__row--checkbox">
+                     <input class="account__input account__input--checkbox" type="checkbox" id="checkbox" name="checkbox" />
+                     <label class="account__label account__label--checkbox" for="checkbox">Show password</label>
+                  </div>
                </form>
-               <button class="account__btn">Sign in</button>
+               <button class="btn account__btn">Sign in</button>
                <a href="#" class="link__password">Forgot your password?</a>
 
             </div>
@@ -153,7 +157,7 @@
                   <li class="account__item">Tracking order.</li>
                   <li class="account__item">Call center.</li>
                </ul>
-               <button class="account__btn">New account</button>
+               <button class="btn account__btn">Create account</button>
             </div>
          </section>
       </main>

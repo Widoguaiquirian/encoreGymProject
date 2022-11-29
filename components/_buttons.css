@@ -1,18 +1,28 @@
+/* default settings for buttons 1*/
+.btn {
+   border-radius: 5px;
+   color: var(--color-secondary);
+   background-color: var(--color-primary);
+   text-transform: uppercase;
+   padding: 1rem 10rem;
+   border: none;
+   cursor: pointer;
+}
+
 /* Home - Hero btn cta */
-.header__btn--main {
+.btn--main {
    position: relative;
    display: inline-block;
    margin-top: 2rem;
    padding: 1rem 1.5rem;
    font-size: 2rem;
-   color: var(--color-secondary);
    border: 5px solid var(--color-secondary);
    border-radius: 10px;
    overflow: hidden;
-   text-transform: uppercase;
+   background-color: transparent;
 }
 
-.header__btn--main::after {
+.btn--main::after {
    content: "";
    width: 0%;
    height: 110%;
@@ -25,25 +35,56 @@
    z-index: -1;
 }
 
-.header__btn--main:hover::after {
+.btn--main:hover::after {
    width: 120%;
 }
 
-/* Home - Membership membership__plans buttons */
-.membership__btn {
-   background-color: var(--color-primary);
-   color: white;
-   padding: 1rem 10rem;
+/* Home - Membership section buttons */
+.btn--memberships {
    display: inline-block;
    margin: 1rem 0 3rem 0;
-   border-radius: 10px;
 }
 
-.membership__btn:hover {
-   background-color: #be4612;
+/* Home - Feed section buttons */
+.feed_btn {
+   position: absolute;
+   top: 50%;
+   height: 5.5rem;
+   width: 4rem;
+   padding: 1rem;
+   font-size: 3.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-/* Close contact modal */
+.feed_btn--left {
+   left: 10%;
+   transform: translate(-50%, -50%);
+}
+
+.feed_btn--right {
+   right: 10%;
+   transform: translate(50%, -50%);
+}
+
+/* Locations - local btns */
+.btn--local {
+   width: 100%;
+   display: inline-block;
+   transition: all 0.3s ease;
+   border-radius: 0px 0px 5px 5px;
+}
+
+/* Create account - form btns */
+.account__btn {
+   width: 190px;
+   margin-top: 3rem;
+   padding: 1rem;
+   transition: all 0.3s ease;
+}
+
+/* Close contact modal buttons */
 .modal__btn--close {
    position: absolute;
    right: 7px;
@@ -63,18 +104,14 @@
    border: 1px solid var(--color-primary);
 }
 
-/* Locations - local btns */
-.btn-local {
-   background-color: var(--color-primary);
-   width: 100%;
-   display: inline-block;
-   text-transform: uppercase;
-   padding: 1rem;
-   transition: all 0.3s ease-in-out;
-}
-
-.local:hover .btn-local {
-   background-color: #d64e13;
+/* Login user buttons */
+.login__btn {
+   margin-bottom: 0.5rem;
+   display: block;
+   width: 90%;
+   padding: 1rem 2rem;
+   letter-spacing: 1px;
+   margin: 1rem auto;
 }
 
 /*--- MOBILE---*/
@@ -91,10 +128,6 @@
    left: 10px;
 }
 
-.fas {
-   color: white;
-}
-
 .header__btn--closeNav {
    position: absolute;
    right: 12px;
@@ -104,10 +137,34 @@
 /*--- Media Query ---*/
 
 @media (max-width: 1050px) {
+   /* Create account - form btns */
+   .account__btn {
+      width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   /* Home - Feed section buttons */
+   .feed_btn--left {
+      left: 5%;
+      transform: translate(-50%, -50%);
+   }
+
+   .feed_btn--right {
+      right: 5%;
+      transform: translate(50%, -50%);
+   }
+
+   .feed_btn {
+      height: 3.5rem;
+      width: 3rem;
+      font-size: 2rem;
+   }
 }
 
 @media (max-width: 350px) {
-   .membership__btn {
+   /* Home - Membership section buttons */
+   .btn--memberships {
       padding: 1rem 4rem;
    }
 }

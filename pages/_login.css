@@ -4,6 +4,7 @@
    background-color: var(--color-secondary);
    display: flex;
    justify-content: center;
+   border-radius: 5px;
 }
 
 .heading-primary--account {
@@ -44,23 +45,8 @@
 .account__item {
    list-style: circle;
    text-align: left;
-   padding: 1rem 0;
+   padding: 0.2rem 0;
    font-weight: bold;
-}
-
-.account__btn {
-   background-color: var(--color-primary);
-   margin-top: 1rem;
-   width: 160px;
-   text-transform: uppercase;
-   border: none;
-   color: var(--color-secondary);
-   border-radius: 5px;
-   margin-top: 3rem;
-   cursor: pointer;
-   padding: 1rem;
-   transition: all 0.3s ease;
-   display: inline-block;
 }
 
 .link__password {
@@ -68,6 +54,15 @@
    color: var(--color-tertiary);
    margin-left: 2rem;
    text-decoration: underline;
+}
+
+.account__input--checkbox {
+   width: fit-content;
+   margin-right: 1rem;
+}
+
+.account__label--checkbox {
+   font-size: 1.6rem;
 }
 
 @media (max-width: 1050px) {
@@ -80,7 +75,7 @@
    }
 
    .account__block {
-      margin: 0 0 5rem 0;
+      margin: 0 0 8rem 0;
       max-width: 95%;
    }
 
@@ -90,10 +85,6 @@
    }
 
    .account__form {
-      width: 100%;
-   }
-
-   .account__btn {
       width: 100%;
    }
 }

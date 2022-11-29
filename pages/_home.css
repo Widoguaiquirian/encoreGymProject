@@ -988,33 +988,6 @@ sup {
    margin: 1rem 0;
 }
 
-/* HOME - Hall of fame */
-.feed_btn {
-   position: absolute;
-   top: 50%;
-   border: none;
-   height: 5.5rem;
-   background-color: var(--color-primary);
-   width: 4rem;
-   color: var(--color-secondary);
-   font-size: 3.25rem;
-   cursor: pointer;
-}
-
-.feed_btn:hover {
-   background-color: #be4612;
-}
-
-.feed_btn--left {
-   left: 10%;
-   transform: translate(-50%, -50%);
-}
-
-.feed_btn--right {
-   right: 10%;
-   transform: translate(50%, -50%);
-}
-
 @media (max-width: 1050px) {
    /* Gym schedule */
    .schedule__content {
@@ -1067,25 +1040,6 @@ sup {
 
    .feed__post-item-3 {
       display: none;
-   }
-
-   .feed_btn--left {
-      left: 5%;
-      transform: translate(-50%, -50%);
-   }
-
-   .feed_btn--right {
-      right: 5%;
-      transform: translate(50%, -50%);
-   }
-
-   .feed_btn {
-      height: 3.5rem;
-      background-color: var(--color-primary);
-      width: 3rem;
-      color: var(--color-secondary);
-      font-size: 2rem;
-      cursor: pointer;
    }
 
    .feed_user {
