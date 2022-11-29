@@ -93,6 +93,11 @@
    transition: all 0.3s ease;
 }
 
+/* Work with us - send info button */
+.work__btn {
+   width: 100%;
+}
+
 /* Close contact modal buttons */
 .modal__btn--close {
    position: absolute;
