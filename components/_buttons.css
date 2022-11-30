@@ -95,6 +95,12 @@
    text-align: center;
 }
 
+/* New account - form btn */
+.new-account--btn {
+   display: inline-block;
+   margin-top: 2rem;
+}
+
 /* Work with us - send info button */
 .work__btn {
    width: 100%;
@@ -182,5 +188,10 @@
    /* Home - Membership section buttons */
    .btn--memberships {
       padding: 1rem 4rem;
+   }
+
+   /* New account - form btn */
+   .new-account--btn {
+      padding: 1rem 5rem;
    }
 }

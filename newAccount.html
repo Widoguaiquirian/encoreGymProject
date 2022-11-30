@@ -143,18 +143,21 @@
                      <label class="new-account__label" for="email">Email </label>
                      <input class="new-account__input" type="email" id="email" name="email" required
                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                     <div class="error__message">Enter a valid email.</div>
                   </div>
 
-                  <div class="new-account__row">
+                  <div class="new-account__row new-account__row--message">
                      <label class="new-account__label" for="password">Password </label>
                      <input class="new-account__input" type="password" id="password" name="password" required
                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"/>
+                     <div class="error__message">Your password should contain at least 6 characters,1 uppercase, 1 lowercase and 1 number.</div>
                   </div>
 
-                  <div class="new-account__row">
+                  <div class="new-account__row new-account__row--message">
                      <label class="new-account__label" for="password">Confirm password </label>
                      <input class="new-account__input" type="password" id="password" name="password" required
                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
+                     <div class="error__message">Your password should contain at least 6 characters,1 uppercase, 1 lowercase and 1 number.</div>
                   </div>
                    <a href="#" class="btn new-account--btn">Create</a>
                </form>
