@@ -122,46 +122,43 @@
 
       <main>
 
-         <section class="account block">
-            <div class="account__block account__block--signIn">
-               <h2 class="heading-primary heading-primary--account">Sign in
+         <section class="new-account block">
+               <h2 class="heading-primary heading--new-account">Create a new account
                </h2>
-               <span class="primary__text">If you already have an account, login with your email.</span>
 
-               <form class="account__form">
-                  <div class="account__row">
-                     <label class="account__label" for="email">Email *</label>
-                     <input class="account__input" type="email" id="email" name="email" required
-                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+               <form class="new-account__form">
+
+                  <div class="new-account__row">
+                     <label class="new-account__label" for="name">Name: </label>
+                     <input class="new-account__input" type="name" id="name" name="name" required pattern=".{3,}" />
                   </div>
-                  <div class="account__row">
-                     <label class="account__label" for="password">Password *</label>
-                     <input class="account__input" type="password" id="password" name="password" required
+
+                  <div class="new-account__row">
+                     <label class="new-account__label" for="name">Last name: </label>
+                     <input class="new-account__input" type="name" id="name" name="name" required pattern=".{3,}"/>
+                  </div>
+
+
+                  <div class="new-account__row">
+                     <label class="new-account__label" for="email">Email </label>
+                     <input class="new-account__input" type="email" id="email" name="email" required
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                  </div>
+
+                  <div class="new-account__row">
+                     <label class="new-account__label" for="password">Password </label>
+                     <input class="new-account__input" type="password" id="password" name="password" required
                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"/>
                   </div>
-                  <div class="account__row account__row--checkbox">
-                     <input class="account__input account__input--checkbox" type="checkbox" id="checkbox" name="checkbox" />
-                     <label class="account__label account__label--checkbox" for="checkbox">Show password</label>
+
+                  <div class="new-account__row">
+                     <label class="new-account__label" for="password">Confirm password </label>
+                     <input class="new-account__input" type="password" id="password" name="password" required
+                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
                   </div>
+                   <a href="#" class="btn new-account--btn">Create</a>
                </form>
-               <a href="#" class="btn account__btn">Sign in</a>
-               <a href="#" class="link__password">Forgot your password?</a>
 
-            </div>
-
-            <div class="account__block account__block--newClient">
-               <h2 class="heading-primary heading-primary--account">Create account
-               </h2>
-               <span class="primary__text">Creating a new account has many benefits.</span>
-               <ul class="account__ul">
-                  <li class="account__item">Easy pay.</li>
-                  <li class="account__item">Tracking order.</li>
-                  <li class="account__item">Call center.</li>
-                  <li class="account__item">User history.</li>
-                  <li class="account__item">Notifications.</li>
-               </ul>
-               <a href="newAccount.html" class="btn account__btn">Create account</a>
-            </div>
          </section>
       </main>
 

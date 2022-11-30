@@ -21,3 +21,11 @@ li {
    padding: 0;
    list-style: none;
 }
+
+input {
+   outline: none;
+}
+
+input:valid {
+   background-color: rgba(168, 228, 168, 0.589);
+}

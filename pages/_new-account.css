@@ -1,0 +1,48 @@
+.new-account {
+   margin: 4rem auto;
+   padding: 2rem;
+   border-radius: 5px;
+   background-color: var(--color-secondary);
+}
+
+.new-account__form {
+   border: 2px solid var(--color-primary);
+   border-radius: 5px;
+   width: 600px;
+   max-width: 95%;
+   padding: 2rem 4rem;
+   margin: 3rem auto;
+   color: var(--color-tertiary);
+}
+
+.new-account__row {
+   border: none;
+   margin: 1rem 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.new-account__label {
+   text-align: left;
+   margin-left: 3rem;
+   position: relative;
+}
+
+.new-account__label::after {
+   position: absolute;
+   content: "*";
+   color: red;
+}
+
+.new-account__input {
+   width: 90%;
+   margin: 0 auto;
+   padding: 1rem;
+   border-radius: 5px;
+   border: none;
+}
+
+.new-account--btn {
+   display: inline-block;
+   margin-top: 2rem;
+}

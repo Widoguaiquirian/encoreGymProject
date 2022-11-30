@@ -91,6 +91,8 @@
    margin-top: 3rem;
    padding: 1rem;
    transition: all 0.3s ease;
+   display: inline-block;
+   text-align: center;
 }
 
 /* Work with us - send info button */
