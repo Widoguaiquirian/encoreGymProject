@@ -1,0 +1,70 @@
+.header__nav--mode {
+   margin-left: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.switch {
+   background-color: var(--color-primary);
+   border-radius: 50px;
+   border: none;
+   cursor: pointer;
+   position: relative;
+   display: flex;
+   width: 60px;
+   align-items: center;
+   height: 25px;
+   outline: none;
+   display: flex;
+   justify-content: space-between;
+}
+
+.switch::after {
+   content: "";
+   display: block;
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   background-color: var(--color-secondary-strong);
+   top: 0;
+   left: unset;
+   right: 0;
+   border-radius: 100px;
+   transition: all 0.5s ease all;
+}
+
+.switch.active {
+   background-color: rgb(66, 66, 66);
+}
+
+.switch.active::after {
+   right: unset;
+   left: 0;
+}
+
+.switch span {
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+   display: block;
+   background-color: none;
+   color: white;
+}
+
+.fas {
+   color: var(--color-secondary-strong);
+}
+
+/* dark stlye */
+body.dark {
+   background-color: var(--color-secondary);
+}
+
+.header__nav.dark {
+   background-color: var(--color-secondary);
+}
+
+.schedules.dark {
+   color: var(--color-tertiary);
+}

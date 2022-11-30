@@ -1,5 +1,4 @@
 "use strict";
-
 //! Contact modal
 const modal = document.querySelector(".modal");
 const btnsOpenModal = document.querySelectorAll(".modal__btn--open");
@@ -102,3 +101,14 @@ closeBtn.addEventListener("click", function () {
 //    sectionOberserver.observe(section);
 //    section.classList.add("block--hidden");
 // });
+
+// ! Dark mode
+const btnSwitch = document.querySelector(".switch");
+const scheduleSection = document.querySelector(".schedules");
+
+btnSwitch.addEventListener("click", () => {
+   document.body.classList.toggle("dark");
+   btnSwitch.classList.toggle("active");
+   nav.classList.toggle("dark");
+   scheduleSection.classList.toggle("dark");
+});

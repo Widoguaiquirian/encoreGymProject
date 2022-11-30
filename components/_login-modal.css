@@ -6,7 +6,7 @@
    position: absolute;
    z-index: 99;
    left: -100px;
-   bottom: -160px;
+   bottom: -155px;
    display: flex;
    flex-direction: column;
    border-radius: 5px;
@@ -19,8 +19,8 @@
 .header__login-box::after {
    width: 0;
    height: 0;
-   border-left: 10px solid transparent;
-   border-right: 10px solid transparent;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
    border-bottom: 10px solid var(--color-secondary);
    content: "";
    right: 55px;
