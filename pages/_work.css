@@ -55,6 +55,10 @@
    border: none;
 }
 
+.work__input--file:valid {
+   background-color: transparent;
+}
+
 @media (max-width: 1050px) {
    .work {
       padding: 1rem;

@@ -18,7 +18,7 @@
 }
 
 .logo {
-   height: 4rem;
+   height: 3rem;
 }
 
 .header__nav-desktop {
@@ -68,13 +68,23 @@
 
 .header__nav-log {
    border-right: 3px solid #ec662dbd;
-   padding-right: 1rem;
+   padding-right: 0.3rem;
 }
 
 .header__nav-langBtns {
-   margin-left: 1rem;
+   margin-left: 0.3rem;
 }
 
 .notSelected {
    font-size: 1.2rem;
+}
+
+@media (max-width: 350px) {
+   .header__nav {
+      justify-content: space-between;
+   }
+
+   .logo {
+      height: 2.5rem;
+   }
 }

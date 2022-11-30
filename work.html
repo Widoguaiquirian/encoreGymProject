@@ -133,27 +133,28 @@
                <p class="heading-secondary">Send your info.</p>
                <div class="work__row">
                   <label class="work__label" for="fName">Name:</label>
-                  <input class="work__input" type="text" id="fName" name="fName" />
+                  <input class="work__input" type="text" id="fName" name="fName" required pattern=".{3,}"/>
                </div>
 
                <div class="work__row">
                   <label class="work__label" for="email">Email:</label>
-                  <input class="work__input" type="email" id="email" name="email" />
+                  <input class="work__input" type="email" id="email" name="email" required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
                </div>
 
                <div class="work__row">
                   <label class="work__label" for="phone">Phone:</label>
-                  <input class="work__input" type="phone" id="phone" name="phone" placeholder="+58 1234 5678" />
+                  <input class="work__input" type="phone" id="phone" name="phone" placeholder="+58 1234 5678" required pattern=".{3,}" />
                </div>
 
                <div class="work__row">
                   <label class="work__label" for="address">Address:</label>
-                  <input class="work__input" type="text" id="address" name="address" />
+                  <input class="work__input" type="text" id="address" name="address" required pattern=".{3,}"/>
                </div>
 
                <div class="work__row">
                   <label class="work__label" for="phone">Your CV:</label>
-                  <input class="work__input" type="file" id="file" name="file" />
+                  <input class="work__input work__input--file" type="file" id="file" name="file" />
                </div>
 
                <div class="work__row">

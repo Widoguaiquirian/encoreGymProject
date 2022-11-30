@@ -56,6 +56,10 @@
       display: none;
    }
 
+   .header__nav-desktop {
+      display: none;
+   }
+
    .header__icon-menu {
       display: block;
    }

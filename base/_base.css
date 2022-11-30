@@ -29,3 +29,7 @@ input {
 input:valid {
    background-color: rgba(168, 228, 168, 0.589);
 }
+
+.fas {
+   color: var(--color-secondary);
+}
