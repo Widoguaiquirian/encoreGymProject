@@ -111,6 +111,7 @@ const headerLinks = document.querySelectorAll(".header__nav-desktop .header__lin
 const tabDay = document.querySelectorAll(".schedule__inner-top .crowd__tab-day");
 const subtitle = document.querySelectorAll(".heading-secondary");
 const membershipBox = document.querySelectorAll(".membership__plans");
+const faBars = document.querySelectorAll(".fa-bars");
 
 btnSwitch.addEventListener("click", () => {
    document.body.classList.toggle("light");
@@ -135,6 +136,14 @@ btnSwitch.addEventListener("click", () => {
    });
 
    membershipBox.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   subtitle.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   faBars.forEach(function (e) {
       e.classList.toggle("light");
    });
 });
