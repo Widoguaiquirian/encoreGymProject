@@ -34,11 +34,11 @@
    transition: all 0.5s ease all;
 }
 
-.switch.active {
+.switch.light {
    background-color: rgb(66, 66, 66);
 }
 
-.switch.active::after {
+.switch.light::after {
    right: unset;
    left: 0;
 }
@@ -56,15 +56,31 @@
    color: var(--color-secondary-strong);
 }
 
-/* dark stlye */
-body.dark {
+/* Light & Dark mode stlye */
+body.light {
    background-color: var(--color-secondary);
 }
 
-.header__nav.dark {
+.header__nav.light {
    background-color: var(--color-secondary);
 }
 
-.schedules.dark {
+.schedules.light {
+   color: var(--color-tertiary);
+}
+
+.detail__info.light {
+   color: var(--color-tertiary);
+}
+
+.crowd__bar-meter.light {
+   background-image: linear-gradient(var(--color-primary), black);
+}
+
+.schedule__inner-top .crowd__tab-day.light {
+   color: var(--color-tertiary);
+}
+
+.header__nav-desktop .header__link.light {
    color: var(--color-tertiary);
 }

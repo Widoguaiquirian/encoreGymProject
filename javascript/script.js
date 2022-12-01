@@ -106,9 +106,30 @@ closeBtn.addEventListener("click", function () {
 const btnSwitch = document.querySelector(".switch");
 const scheduleSection = document.querySelector(".schedules");
 
+const detailInfo = document.querySelectorAll(".detail__info");
+const crowdBar = document.querySelectorAll(".crowd__bar-meter");
+const headerLinks = document.querySelectorAll(".header__nav-desktop .header__link");
+const tabDay = document.querySelectorAll(".schedule__inner-top .crowd__tab-day");
+
 btnSwitch.addEventListener("click", () => {
-   document.body.classList.toggle("dark");
-   btnSwitch.classList.toggle("active");
-   nav.classList.toggle("dark");
-   scheduleSection.classList.toggle("dark");
+   document.body.classList.toggle("light");
+   btnSwitch.classList.toggle("light");
+   nav.classList.toggle("light");
+   scheduleSection.classList.toggle("light");
+
+   detailInfo.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   crowdBar.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   tabDay.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   headerLinks.forEach(function (e) {
+      e.classList.toggle("light");
+   });
 });
