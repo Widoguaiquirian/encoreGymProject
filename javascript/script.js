@@ -105,11 +105,12 @@ closeBtn.addEventListener("click", function () {
 // ! Dark mode
 const btnSwitch = document.querySelector(".switch");
 const scheduleSection = document.querySelector(".schedules");
-
 const detailInfo = document.querySelectorAll(".detail__info");
 const crowdBar = document.querySelectorAll(".crowd__bar-meter");
 const headerLinks = document.querySelectorAll(".header__nav-desktop .header__link");
 const tabDay = document.querySelectorAll(".schedule__inner-top .crowd__tab-day");
+const subtitle = document.querySelectorAll(".heading-secondary");
+const membershipBox = document.querySelectorAll(".membership__plans");
 
 btnSwitch.addEventListener("click", () => {
    document.body.classList.toggle("light");
@@ -130,6 +131,10 @@ btnSwitch.addEventListener("click", () => {
    });
 
    headerLinks.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   membershipBox.forEach(function (e) {
       e.classList.toggle("light");
    });
 });
