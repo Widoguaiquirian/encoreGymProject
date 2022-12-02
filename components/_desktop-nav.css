@@ -25,10 +25,6 @@
    display: flex;
 }
 
-.header__nav-desktop li:not(:last-child) {
-   border-right: 3px solid #ec662dbd;
-}
-
 .header__nav-desktop .header__link {
    text-transform: uppercase;
    display: block;
@@ -37,15 +33,25 @@
    color: var(--color-secondary-strong);
 }
 
+.header__link--bg {
+   background-color: var(--color-primary);
+   border-radius: 5px;
+   color: var(--color-primary);
+}
+
 .header__link:hover {
    color: var(--color-primary);
    transition: 0.3s;
+   /* font-weight: normal; */
+}
+
+.header__link--bg:hover {
+   color: var(--color-tertiary);
 }
 
 /* highlight the categorie where we are */
 .header__nav-desktop .header__link--selector {
    color: var(--color-primary);
-   font-weight: bold;
 }
 
 /*--- Navigation  sticky---*/
