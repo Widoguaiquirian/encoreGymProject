@@ -61,12 +61,13 @@ body.light {
    background-color: var(--color-secondary);
 }
 
-.header__nav.light {
+a.light {
    background-color: var(--color-secondary);
 }
 
-.schedules.light {
-   color: var(--color-tertiary);
+.header__nav.active.light {
+   background-color: var(--color-secondary);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.582);
 }
 
 .detail__info.light {
@@ -94,5 +95,9 @@ body.light {
 }
 
 .fa-bars.light {
+   color: var(--color-tertiary);
+}
+
+.header__link--login.light {
    color: var(--color-tertiary);
 }
