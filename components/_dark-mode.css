@@ -59,10 +59,12 @@
 /* Light & Dark mode stlye */
 body.light {
    background-color: var(--color-secondary);
+   color: var(--color-tertiary);
 }
 
-a.light {
+.header__nav.light {
    background-color: var(--color-secondary);
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.582);
 }
 
 .header__nav.active.light {
