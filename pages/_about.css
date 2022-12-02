@@ -2,3 +2,25 @@
    max-width: 100%;
    border-radius: 5px;
 }
+
+.history {
+   max-width: 1200px;
+   padding: 0;
+}
+
+.values {
+   max-width: 1200px;
+}
+
+.values__grid {
+   display: grid;
+   background-color: var(--color-secondary);
+   grid-template-columns: 1fr 1fr 1fr;
+   border-radius: 5px;
+}
+
+.values__block {
+   display: flex;
+   flex-direction: column;
+   color: red;
+}
