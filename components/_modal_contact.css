@@ -68,10 +68,6 @@
    text-transform: capitalize;
 }
 
-.row__icons {
-   font-size: 3rem;
-}
-
 .modal__grid {
    width: 100%;
    display: grid;
