@@ -31,14 +31,10 @@ input:valid {
    background-color: rgba(168, 228, 168, 0.589);
 }
 
-.fas {
-   color: var(--color-secondary);
-}
-
 .svg__sprite {
    width: 3rem;
    height: 3rem;
-   fill: white;
+   fill: var(--color-secondary);
    line-height: 0;
    display: flex;
    align-items: center;

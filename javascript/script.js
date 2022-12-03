@@ -111,7 +111,7 @@ const headerLinks = document.querySelectorAll(".header__nav-desktop .header__lin
 const tabDay = document.querySelectorAll(".schedule__inner-top .crowd__tab-day");
 const subtitle = document.querySelectorAll(".heading-secondary");
 const membershipBox = document.querySelectorAll(".membership__plans");
-const faBars = document.querySelectorAll(".fa-bars");
+const faBars = document.querySelectorAll(".svg__sprite--hamburguer");
 
 btnSwitch.addEventListener("click", () => {
    document.body.classList.toggle("light");

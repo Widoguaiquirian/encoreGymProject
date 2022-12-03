@@ -64,3 +64,10 @@
       display: block;
    }
 }
+
+@media (max-width: 500px) {
+   .svg__sprite--user {
+      display: none;
+      visibility: hidden;
+   }
+}

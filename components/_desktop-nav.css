@@ -77,8 +77,16 @@
    padding-right: 1rem;
 }
 
-.notSelected {
-   font-size: 1.2rem;
+.header__link--login {
+   position: relative;
+}
+
+.svg__sprite--user {
+   position: absolute;
+   width: 2rem;
+   height: 2rem;
+   top: 0;
+   left: -25px;
 }
 
 @media (max-width: 350px) {

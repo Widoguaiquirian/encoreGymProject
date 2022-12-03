@@ -20,29 +20,24 @@
 
 .contact__block-icon {
    position: relative;
-   font-size: 6rem;
-   color: var(--color-primary);
+   width: 6rem;
+   height: 6rem;
+   fill: var(--color-primary);
    transition: all 0.3s ease;
+   margin: 0 auto;
+}
+
+.contact__block-icon::after {
+   content: "dfasd";
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 999;
+   width: 100%;
 }
 
 .contact__box:hover .contact__block-icon {
    transform: scale(1.3) rotate(-4deg);
-}
-
-.contact__box:hover .contact__block-icon::after {
-   height: 0;
-   transition: all 0.1s ease;
-}
-
-.contact__block-icon::after {
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: -8px;
-   background-color: #3416901f;
-   width: 100%;
-   border-radius: 60%;
-   height: 5px;
 }
 
 .heading-secondary--contact {
@@ -80,8 +75,7 @@
 }
 
 .contact__icons {
-   color: var(--color-bg-contrast);
-   font-size: 3rem;
+   fill: var(--color-bg-contrast);
 }
 
 .contact__box--bottom--mail {

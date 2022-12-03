@@ -55,14 +55,18 @@
          <nav class="header__nav">
             <!-- mobile -->
             <button class="header__icon-menu header__btn--openNav">
-               <i class="fas fa-bars"></i>
+               <svg class="svg__sprite svg__sprite--hamburguer">
+                  <use xlink:href="images/icons/_svg/sprite.svg#icon-menu"></use>
+                </svg>
             </button>
 
             <div class="header__nav-mobile header__nav-bg--orange">
 
                   <div class="header__nav-mobile header__nav-bg--dark">
                      <button class="header__icon-menu header__btn--closeNav">
-                        <i class="fas fa-times"></i>
+                        <svg class="svg__sprite svg__sprite--times">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-times"></use>
+                         </svg>
                      </button>
 
                      <a class="header__logo" href="index.html">
@@ -106,9 +110,17 @@
                   <a href="#" class="header__link">SIGN IN</a>
                </li>
                <li class="header__nav--mode">
-                  <button class="switch" >
-                     <span> <i class="fas fa-sun"></i></span>
-                     <span> <i class="fas fa-moon"></i></span>
+                                    <button class="switch">
+                     <span> 
+                        <svg class="svg__sprite switch__icons">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-brightness-contrast"></use>
+                         </svg>
+                     </span>
+                     <span> 
+                        <svg class="svg__sprite switch__icons">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-moon"></use>
+                         </svg>
+                     </span>
                   </button>
                </li>
             </ul>
@@ -179,19 +191,44 @@
                </div>
             </div>
             <div class="modal__row">
-               <span class="row__title">Say hello ✋</span>
+               <span class="row__title">Say hello</span>
                <div class="row__socials">
-                     <a href="#"><i class="row__icons fab fa-instagram"></i></a>
-                     <a href="#"><i class="row__icons fab fa-linkedin"></i></a>
-                     <a href="#"><i class="row__icons fab fa-twitter"></i></a>
-                     <a href="#"><i class="row__icons fab fa-whatsapp"></i></a>
-                     <a href="#"><i class="row__icons fab fa-facebook"></i></a>
-                     <a href="#"><i class="row__icons fab fa-youtube"></i></a>
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--instagram">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-instagram"></use>
+                         </svg>
+                     </a>
+                     
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--linkedin">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-linkedin"></use>
+                         </svg> 
+                     </a>
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--twitter">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-twitter"></use>
+                         </svg> 
+                     </a>
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--whatsapp">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-whatsapp"></use>
+                         </svg> 
+                     </a>
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--facebook">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-facebook2"></use>
+                         </svg> 
+                     </a>
+                     <a href="#">
+                        <svg class="svg__sprite svg__sprite--youtube">
+                           <use xlink:href="images/icons/_svg/sprite.svg#icon-youtube"></use>
+                         </svg> 
+                     </a>
                </div>
             </div>
 
             <div class="modal__row">
-               <span class="row__title">Call us 📞</span>
+               <span class="row__title">Call us</span>
 
                <div class="modal__grid">
                <div class="row__phones">
