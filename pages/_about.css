@@ -16,11 +16,46 @@
    display: grid;
    background-color: var(--color-secondary);
    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
    border-radius: 5px;
+   margin-top: 5rem;
 }
 
 .values__block {
    display: flex;
+   align-items: center;
+   padding: 2rem;
+   color: var(--color-tertiary);
    flex-direction: column;
-   color: red;
+}
+
+.values__icon {
+   fill: var(--color-tertiary);
+   width: 10rem;
+   height: 10rem;
+}
+
+.values__heading {
+   margin: 1rem 0;
+   font-weight: 400;
+}
+
+@media (max-width: 600px) {
+   .values__icon {
+      fill: var(--color-tertiary);
+      width: 5rem;
+      height: 5rem;
+   }
+
+   .values__grid {
+      display: grid;
+      background-color: var(--color-secondary);
+      grid-template-columns: 1fr;
+      border-radius: 5px;
+      margin-top: 5rem;
+   }
+
+   .values__block {
+      padding: 1rem;
+   }
 }
