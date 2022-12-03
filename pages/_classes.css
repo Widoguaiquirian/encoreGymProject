@@ -1,0 +1,26 @@
+.class__block {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   column-gap: 5rem;
+   max-width: 1200px;
+   margin: 10rem auto;
+}
+
+.class__figure {
+   padding: 0;
+   margin: 0;
+   border-radius: 5px;
+   box-shadow: 10px 10px 1px var(--color-bg-contrast);
+}
+
+.class__picture {
+   width: 100%;
+   border-radius: 5px;
+   height: 100%;
+}
+
+.class__title {
+   margin: 0;
+   font-size: 4rem;
+   color: var(--color-primary);
+}
