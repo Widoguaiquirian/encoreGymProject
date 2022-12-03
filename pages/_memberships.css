@@ -1,39 +1,29 @@
 .membership__contact {
+   align-content: center;
    background-color: var(--color-secondary);
-   width: 90%;
    border-radius: 5px;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr;
    justify-items: center;
-   align-content: center;
    padding: 2rem 0;
+   width: 90%;
 }
 
 .contact__block {
+   align-items: center;
+   display: flex;
+   justify-content: center;
    padding: 1rem 0;
    width: 80%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 .contact__block-icon {
-   position: relative;
-   width: 6rem;
-   height: 6rem;
    fill: var(--color-primary);
-   transition: all 0.3s ease;
+   height: 6rem;
    margin: 0 auto;
-}
-
-.contact__block-icon::after {
-   content: "dfasd";
-   position: absolute;
-   left: 0;
-   top: 0;
-   z-index: 999;
-   width: 100%;
+   transition: all 0.3s ease;
+   width: 6rem;
 }
 
 .contact__box:hover .contact__block-icon {
@@ -46,15 +36,15 @@
 }
 
 .contact__box {
-   width: 100%;
-   padding: 1rem 0;
    border-radius: 5px;
    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.122);
+   padding: 1rem 0;
+   width: 100%;
 }
 
 .contact__box--bottom {
-   margin-top: 2rem;
    font-weight: bold;
+   margin-top: 2rem;
 }
 
 .contact__link {
@@ -63,9 +53,9 @@
 }
 
 .contact__box--bottom {
+   align-items: center;
    display: flex;
    justify-content: center;
-   align-items: center;
 }
 
 .socials__box {
@@ -84,9 +74,9 @@
 
 @media (max-width: 1050px) {
    .membership__contact {
-      width: 95%;
       grid-template-columns: 1fr;
       grid-template-rows: 3fr;
       padding: 1rem 0;
+      width: 95%;
    }
 }

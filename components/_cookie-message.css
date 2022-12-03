@@ -1,32 +1,32 @@
 /* COOKIE MESSAGE */
 .cookie-message {
    background-color: var(--color-secondary);
-   color: var(--color-tertiary);
-   position: fixed;
    bottom: 0;
+   color: var(--color-tertiary);
    padding: 0.4rem 0;
-   width: 100%;
+   position: fixed;
    text-align: center;
    text-transform: uppercase;
+   width: 100%;
 }
 
 .btn-ok-cookie {
    background-color: var(--color-primary);
-   color: var(--color-secondary-strong);
-   outline: none;
    border-radius: 5px;
    border: none;
+   color: var(--color-secondary-strong);
    cursor: pointer;
+   outline: none;
    padding: 0.5rem 2rem;
 }
 
 .btn-no-cookie {
    background-color: var(--color-bg-contrast);
-   color: var(--color-secondary);
-   outline: none;
    border-radius: 5px;
    border: none;
+   color: var(--color-secondary);
    cursor: pointer;
+   outline: none;
    padding: 0.5rem 2rem;
 }
 

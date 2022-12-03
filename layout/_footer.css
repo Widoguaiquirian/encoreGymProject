@@ -5,19 +5,19 @@
 }
 
 .footer__content {
+   align-items: center;
    display: flex;
-   width: 100%;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   width: 100%;
 }
 
 .footer__nav {
    display: flex;
-   width: 360px;
-   max-width: 90%;
    justify-content: space-between;
    margin-bottom: 2rem;
+   max-width: 90%;
+   width: 360px;
 }
 
 .footer__social {
@@ -31,7 +31,7 @@
 }
 
 .footer__copy {
-   text-transform: uppercase;
    font-size: 1rem;
    letter-spacing: 2px;
+   text-transform: uppercase;
 }

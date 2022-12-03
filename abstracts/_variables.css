@@ -1,10 +1,9 @@
 :root {
-   --color-primary: #ec672d;
-   --color-secondary: #e7dfdd;
-   --color-secondary-strong: white;
-   --color-tertiary: #0a0519;
-
-   --color-info: yellow;
-   --color-info-secondary: #ec672d;
    --color-bg-contrast: #2c1d58;
+   --color-info-secondary: #ec672d;
+   --color-info: yellow;
+   --color-primary: #ec672d;
+   --color-secondary-strong: white;
+   --color-secondary: #e7dfdd;
+   --color-tertiary: #0a0519;
 }

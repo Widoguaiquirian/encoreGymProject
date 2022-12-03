@@ -1,36 +1,36 @@
 .class__block {
+   column-gap: 5rem;
    display: grid;
    grid-template-columns: 35% 65%;
-   column-gap: 5rem;
-   max-width: 1200px;
    margin: 10rem auto;
+   max-width: 1200px;
 }
 
 .class__figure {
-   padding: 0;
-   margin: 0;
    border-radius: 5px;
    box-shadow: 10px 10px 1px var(--color-bg-contrast);
+   margin: 0;
+   padding: 0;
 }
 
 .class__picture {
-   width: 100%;
    border-radius: 5px;
+   cursor: pointer;
    height: 100%;
    object-fit: cover;
-   cursor: pointer;
    transition: all 0.2s ease;
+   width: 100%;
 }
 
 .class__figure:hover .class__picture {
-   transform: translateX(-5px) translateY(-5px);
    box-shadow: 7px 7px 5px var(--color-primary);
+   transform: translateX(-5px) translateY(-5px);
 }
 
 .class__title {
-   margin: 0;
-   font-size: 4rem;
    color: var(--color-primary);
+   font-size: 4rem;
+   margin: 0;
 }
 
 .regular-text {
@@ -38,11 +38,11 @@
 }
 
 .class__schedules {
-   width: 100%;
-   padding: 1rem 0.5rem;
-   display: grid;
    border-radius: 5px;
+   display: grid;
    grid-template-columns: repeat(3, 1fr);
+   padding: 1rem 0.5rem;
+   width: 100%;
 }
 
 .class__days {
@@ -51,9 +51,9 @@
 }
 
 .class__hours {
-   font-size: 1.5rem;
    display: flex;
    flex-direction: column;
+   font-size: 1.5rem;
 }
 
 .class_hour {
@@ -61,8 +61,8 @@
 }
 
 .class__btn {
-   padding: 0.5rem 1rem;
    font-size: 1.4rem;
+   padding: 0.5rem 1rem;
 }
 
 @media (max-width: 800px) {

@@ -3,29 +3,29 @@
 }
 
 .header__login-box {
-   position: absolute;
-   z-index: 99;
-   left: -100px;
+   background-color: var(--color-secondary);
+   border-radius: 5px;
    bottom: -155px;
    display: flex;
    flex-direction: column;
-   border-radius: 5px;
-   width: 200px;
-   padding: 1rem;
    font-size: 1.5rem;
-   background-color: var(--color-secondary);
+   left: -100px;
+   padding: 1rem;
+   position: absolute;
+   width: 200px;
+   z-index: 99;
 }
 
 .header__login-box::after {
-   width: 0;
-   height: 0;
+   border-bottom: 10px solid var(--color-secondary);
    border-left: 15px solid transparent;
    border-right: 15px solid transparent;
-   border-bottom: 10px solid var(--color-secondary);
    content: "";
+   height: 0;
+   position: absolute;
    right: 55px;
    top: -10px;
-   position: absolute;
+   width: 0;
 }
 
 .header__login-box-hide {

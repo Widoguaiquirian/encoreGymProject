@@ -8,15 +8,15 @@
 }
 
 .huincha__info {
-   width: 60%;
    margin: 0 auto;
+   width: 60%;
 }
 
 @media (max-width: 1050px) {
    /* flash promotion */
    .huincha {
-      padding: 2rem 0;
       margin-bottom: 5rem;
+      padding: 2rem 0;
    }
 
    .huincha__title {
@@ -25,7 +25,7 @@
    }
 
    .huincha__info {
-      width: 90%;
       margin: 0 auto;
+      width: 90%;
    }
 }

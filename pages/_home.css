@@ -1,45 +1,45 @@
 /* Unico para el home */
 .header--home {
-   height: 95vh;
-   max-height: 900px;
    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.884) 20%, rgba(255, 255, 255, 0)),
       url(/images/sliders/hero-images.jpg);
    background-position: 70%;
    background-repeat: no-repeat;
    background-size: cover;
-   position: relative;
-   max-width: 180rem;
+   height: 95vh;
    margin: 0 auto;
+   max-height: 900px;
+   max-width: 180rem;
+   position: relative;
 }
 
 /* HERO HEADER SECTION */
 .header__content {
-   width: 100%;
-   position: absolute;
-   top: 50%;
-   text-align: center;
    left: 50%;
-   transform: translate(-50%, -50%);
-   text-transform: uppercase;
-   text-align: center;
    max-width: 90%;
+   position: absolute;
+   text-align: center;
+   text-align: center;
+   text-transform: uppercase;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
 }
 
 .header__title {
-   font-size: 7rem;
-   color: var(--color-primary);
-   text-shadow: 1px 2px 3px rgba(221, 221, 221, 0.555);
-   display: block;
    animation: moveInLeft 1s ease-in-out;
+   color: var(--color-primary);
+   display: block;
+   font-size: 7rem;
    margin: 0 auto;
+   text-shadow: 1px 2px 3px rgba(221, 221, 221, 0.555);
 }
 
 .header__subtitle {
+   animation: moveInRight 1s ease-in-out;
+   color: var(--color-secondary-strong);
    font-size: 3rem;
    font-weight: 500;
    letter-spacing: 0.3rem;
-   color: var(--color-secondary-strong);
-   animation: moveInRight 1s ease-in-out;
    margin: 0 auto;
 }
 
@@ -66,17 +66,17 @@
 }
 
 .schedule__inner-top .crowd__tab-day {
-   margin: 0 2rem;
-   color: white;
    background-color: transparent;
-   cursor: pointer;
    border: none;
+   color: white;
+   cursor: pointer;
+   margin: 0 2rem;
 }
 
 .schedule__inner-top .crowd__tab-day--active {
-   transition: all 0.5s ease;
    background-color: var(--color-primary);
    border-radius: 3px;
+   transition: all 0.5s ease;
 }
 
 /* OCULTAR LOS QUE NO ESTEN ACTIVE */
@@ -85,13 +85,13 @@
 }
 
 .group__bar--active {
-   display: flex;
-   min-height: 110px;
    align-items: flex-end;
+   border-bottom: 2px dashed var(--color-primary);
+   display: flex;
    justify-content: space-around;
    margin: 0.8rem 0;
+   min-height: 110px;
    padding-bottom: 0.5rem;
-   border-bottom: 2px dashed var(--color-primary);
 }
 
 .schedule__inner-bottom {
@@ -109,11 +109,11 @@
 
 /* BAR LINES */
 .crowd__bar-meter {
-   height: 10rem;
-   border-radius: 3px;
-   width: 2rem;
    background-image: linear-gradient(rgba(255, 166, 0, 0.753) 10%, white);
+   border-radius: 3px;
+   height: 10rem;
    margin: 0 0.4rem;
+   width: 2rem;
 }
 
 /* ? DAY 1 */
@@ -797,34 +797,34 @@
 
 /* MEMBERSHIPS SECTION */
 .membership__content {
-   text-align: center;
+   color: var(--color-tertiary);
    display: flex;
    justify-content: center;
-   color: var(--color-tertiary);
+   text-align: center;
 }
 
 .membership__plans {
-   margin: 0 3rem;
+   background-color: var(--color-secondary);
    border-radius: 10px;
    margin: 0 3rem;
-   padding: 2rem 4rem;
+   margin: 0 3rem;
    min-width: 470px;
-   background-color: var(--color-secondary);
+   padding: 2rem 4rem;
    position: relative;
 }
 
 .membership__plans .membership__item {
-   text-align: left;
    position: relative;
+   text-align: left;
 }
 
 .svg__sprite--checkMark {
    fill: var(--color-primary);
-   width: 1.5rem;
    height: 1.5rem;
    position: absolute;
    top: 50%;
    transform: translate(-120%, -50%);
+   width: 1.5rem;
 }
 
 .membership__title {
@@ -838,13 +838,13 @@
 }
 
 sup {
-   font-size: 2rem;
    color: var(--color-primary);
+   font-size: 2rem;
 }
 
 .membership__disclaimer {
-   font-size: 1rem;
    display: block;
+   font-size: 1rem;
    opacity: 50%;
 }
 
@@ -859,73 +859,73 @@ sup {
 }
 
 .background-video__content {
-   width: 80%;
    height: 400px;
-   max-height: 500px;
    margin: auto;
+   max-height: 500px;
    position: relative;
+   width: 80%;
 }
 
 .video__background {
-   width: 100%;
-   height: 400px;
-   object-fit: cover;
-   margin: auto;
-   opacity: 60%;
    border-radius: 10px;
+   height: 400px;
+   margin: auto;
+   object-fit: cover;
+   opacity: 60%;
+   width: 100%;
 }
 
 /* GALLERY SECTION */
 .gallery__grid {
+   column-gap: 1.3rem;
    display: grid;
-   margin: 0 auto;
    grid-template-columns: repeat(4, 20%);
    grid-template-rows: repeat(2, 50%);
    justify-content: center;
-   column-gap: 1.3rem;
-   row-gap: 1.3rem;
+   margin: 0 auto;
    max-width: 100%;
    padding: 1rem;
+   row-gap: 1.3rem;
 }
 
 .gallery__element {
+   height: 200px;
    overflow: hidden;
    position: relative;
-   height: 200px;
 }
 
 .gallery__photos {
-   height: 200px;
    cursor: pointer;
+   height: 200px;
 }
 
 .gallery__photos img {
+   border-radius: 5px;
    height: 100%;
    object-fit: cover;
-   border-radius: 5px;
    object-position: center;
    width: 100%;
 }
 
 .gallery__info {
    background-color: rgba(255, 255, 255, 0.692);
-   color: var(--color-tertiary);
-   text-align: left;
-   padding: 1rem;
-   max-height: 100%;
-   position: absolute;
    border-radius: 0 0 5px 5px;
-   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-   opacity: 0;
-   left: 0;
-   right: 0;
    bottom: 0;
+   color: var(--color-tertiary);
+   left: 0;
+   max-height: 100%;
+   opacity: 0;
+   padding: 1rem;
+   position: absolute;
+   right: 0;
+   text-align: left;
    transform: translateY(100%);
+   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .gallery__element:hover .gallery__info {
-   transform: translateY(0);
    opacity: 1;
+   transform: translateY(0);
 }
 
 .info__title {
@@ -938,37 +938,37 @@ sup {
 
 /* feed SECTION */
 .feed__carrousel {
-   max-width: 1800px;
    height: 40rem;
    margin: 0 auto;
-   position: relative;
+   max-width: 1800px;
    overflow: hidden;
+   position: relative;
 }
 
 .feed__slider {
-   position: absolute;
-   top: 0;
-   width: 100%;
+   /* THIS creates the animation! */
+   align-items: center;
    display: flex;
    height: 40rem;
-   align-items: center;
    justify-content: center;
-   /* THIS creates the animation! */
+   position: absolute;
+   top: 0;
    transition: transform 1s;
+   width: 100%;
 }
 
 /* the sections for each grid */
 .feed__slider-section {
-   display: grid;
    column-gap: 3rem;
+   display: grid;
    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-   width: 100%;
    max-width: 1800px;
+   width: 100%;
 }
 
 .feed__post {
-   border: 2px solid var(--color-primary);
    border-radius: 5px;
+   border: 2px solid var(--color-primary);
    padding: 0.2rem;
 }
 
@@ -977,10 +977,10 @@ sup {
 }
 
 .feed_photo img {
-   width: 100%;
-   height: 100%;
    border-radius: 5px 5px 0 0;
+   height: 100%;
    object-fit: cover;
+   width: 100%;
 }
 
 .feed_user {
@@ -1002,8 +1002,8 @@ sup {
    }
 
    .schedule__inner-bottom .schedule__tab-hour {
-      margin: 0rem;
       font-size: 1.2rem;
+      margin: 0rem;
    }
 
    /* Memberships section */
@@ -1025,8 +1025,8 @@ sup {
 
    .gallery__info {
       background-color: rgba(255, 255, 255, 0.534);
-      padding: 0.5rem;
       opacity: 1;
+      padding: 0.5rem;
       transform: translateY(0);
    }
 }

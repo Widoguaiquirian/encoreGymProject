@@ -1,12 +1,12 @@
 /* default settings for buttons 1*/
 .btn {
-   border-radius: 5px;
-   color: var(--color-secondary);
    background-color: var(--color-primary);
-   text-transform: uppercase;
-   padding: 1rem 10rem;
+   border-radius: 5px;
    border: none;
+   color: var(--color-secondary);
    cursor: pointer;
+   padding: 1rem 10rem;
+   text-transform: uppercase;
    transition: all 0.3s ease;
 }
 
@@ -16,15 +16,15 @@
 
 /* Home - Hero btn cta */
 .btn--main {
-   position: relative;
-   display: inline-block;
-   margin-top: 2rem;
-   padding: 1rem 1.5rem;
-   font-size: 2rem;
-   border: 5px solid var(--color-secondary);
-   border-radius: 10px;
-   overflow: hidden;
    background-color: transparent;
+   border-radius: 10px;
+   border: 5px solid var(--color-secondary);
+   display: inline-block;
+   font-size: 2rem;
+   margin-top: 2rem;
+   overflow: hidden;
+   padding: 1rem 1.5rem;
+   position: relative;
 }
 
 .btn--main:hover {
@@ -32,15 +32,15 @@
 }
 
 .btn--main::after {
-   content: "";
-   width: 0%;
-   height: 110%;
-   border-radius: 10px;
-   left: -10px;
-   top: 0;
    background-color: var(--color-primary);
+   border-radius: 10px;
+   content: "";
+   height: 110%;
+   left: -10px;
    position: absolute;
+   top: 0;
    transition: all 0.5s ease;
+   width: 0%;
    z-index: -1;
 }
 
@@ -56,15 +56,15 @@
 
 /* Home - Feed section buttons */
 .feed_btn {
+   align-items: center;
+   display: flex;
+   font-size: 3.25rem;
+   height: 5.5rem;
+   justify-content: center;
+   padding: 1rem;
    position: absolute;
    top: 50%;
-   height: 5.5rem;
    width: 4rem;
-   padding: 1rem;
-   font-size: 3.25rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
 .feed_btn--left {
@@ -79,20 +79,20 @@
 
 /* Locations - local btns */
 .btn--local {
-   width: 100%;
+   border-radius: 0px 0px 5px 5px;
    display: inline-block;
    transition: all 0.3s ease;
-   border-radius: 0px 0px 5px 5px;
+   width: 100%;
 }
 
 /* Create account - form btns */
 .account__btn {
-   width: 190px;
+   display: inline-block;
    margin-top: 3rem;
    padding: 1rem;
-   transition: all 0.3s ease;
-   display: inline-block;
    text-align: center;
+   transition: all 0.3s ease;
+   width: 190px;
 }
 
 /* New account - form btn */
@@ -108,46 +108,46 @@
 
 /* Close contact modal buttons */
 .modal__btn--close {
+   border-radius: 5px;
+   border: 1px solid transparent;
+   border: none;
+   color: var(--color-primary);
+   cursor: pointer;
+   font-size: 2rem;
    position: absolute;
    right: 7px;
    top: 30px;
-   border-radius: 5px;
-   border: none;
-   cursor: pointer;
-   width: 3rem;
-   font-size: 2rem;
-   color: var(--color-primary);
-   border: 1px solid transparent;
    transition: all 0.2s ease;
+   width: 3rem;
 }
 
 .modal__btn--close:hover {
-   transform: scale(1.1);
    border: 1px solid var(--color-primary);
+   transform: scale(1.1);
 }
 
 /* Login user buttons */
 .login__btn {
-   margin-bottom: 0.5rem;
    display: block;
-   width: 90%;
-   padding: 1rem 2rem;
    letter-spacing: 1px;
+   margin-bottom: 0.5rem;
    margin: 1rem auto;
+   padding: 1rem 2rem;
+   width: 90%;
 }
 
 /*--- MOBILE---*/
 .header__icon-menu {
-   border: none;
    background-color: transparent;
+   border: none;
    cursor: pointer;
-   font-size: 3rem;
    display: none;
+   font-size: 3rem;
 }
 
 .header__btn--openNav {
-   top: 10px;
    left: 10px;
+   top: 10px;
 }
 
 .header__btn--closeNav {
@@ -178,9 +178,9 @@
    }
 
    .feed_btn {
+      font-size: 2rem;
       height: 3.5rem;
       width: 3rem;
-      font-size: 2rem;
    }
 }
 

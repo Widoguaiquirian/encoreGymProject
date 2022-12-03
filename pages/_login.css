@@ -1,10 +1,10 @@
 .account {
-   color: var(--color-tertiary);
-   padding: 5rem;
    background-color: var(--color-secondary);
+   border-radius: 5px;
+   color: var(--color-tertiary);
    display: flex;
    justify-content: center;
-   border-radius: 5px;
+   padding: 5rem;
 }
 
 .heading-primary--account {
@@ -13,12 +13,12 @@
 }
 
 .primary__text {
-   font-size: 1.6rem;
-   text-transform: none;
-   font-weight: normal;
-   display: block;
-   margin-bottom: 3rem;
    color: var(--color-tertiary);
+   display: block;
+   font-size: 1.6rem;
+   font-weight: normal;
+   margin-bottom: 3rem;
+   text-transform: none;
 }
 
 .account__block {
@@ -36,29 +36,29 @@
 }
 
 .account__input {
-   width: 100%;
    border-radius: 5px;
    border: none;
    padding: 1rem;
+   width: 100%;
 }
 
 .account__item {
-   list-style: circle;
-   text-align: left;
-   padding: 0.2rem 0;
    font-weight: bold;
+   list-style: circle;
+   padding: 0.2rem 0;
+   text-align: left;
 }
 
 .link__password {
-   font-size: 1.4rem;
    color: var(--color-tertiary);
+   font-size: 1.4rem;
    margin-left: 2rem;
    text-decoration: underline;
 }
 
 .account__input--checkbox {
-   width: fit-content;
    margin-right: 1rem;
+   width: fit-content;
 }
 
 .account__label--checkbox {
@@ -67,11 +67,11 @@
 
 @media (max-width: 1050px) {
    .account {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       justify-content: center;
-      width: 95%;
       padding: 2rem;
+      width: 95%;
    }
 
    .account__block {

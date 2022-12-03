@@ -7,8 +7,8 @@ html {
 }
 
 body {
-   margin: 0 auto;
    background-color: var(--color-tertiary);
+   margin: 0 auto;
    transition: all 0.3s ease;
 }
 
@@ -18,9 +18,9 @@ img {
 
 ul,
 li {
+   list-style: none;
    margin: 0;
    padding: 0;
-   list-style: none;
 }
 
 input {
@@ -32,11 +32,11 @@ input:valid {
 }
 
 .svg__sprite {
-   width: 3rem;
-   height: 3rem;
-   fill: var(--color-secondary);
-   line-height: 0;
-   display: flex;
    align-items: center;
+   display: flex;
+   fill: var(--color-secondary);
+   height: 3rem;
    justify-content: center;
+   line-height: 0;
+   width: 3rem;
 }

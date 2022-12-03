@@ -1,8 +1,8 @@
 body {
-   font-size: 1.8rem;
-   font-family: "Outfit", sans-serif;
-   line-height: 1.6;
    color: var(--color-secondary);
+   font-family: "Outfit", sans-serif;
+   font-size: 1.8rem;
+   line-height: 1.6;
 }
 
 p::selection,
@@ -17,15 +17,15 @@ h1 {
 }
 
 a {
-   text-decoration: none;
    color: var(--color-secondary);
+   text-decoration: none;
 }
 
 .heading-primary {
-   text-transform: uppercase;
    font-size: 4rem;
-   text-align: center;
    margin: 2rem;
+   text-align: center;
+   text-transform: uppercase;
 }
 
 .heading-primary::selection {

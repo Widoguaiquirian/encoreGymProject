@@ -1,9 +1,9 @@
 /*--- Navigation  mobile---*/
 .header__nav-mobile {
+   height: 100vh;
+   left: 0;
    position: fixed;
    top: 0;
-   left: 0;
-   height: 100vh;
    transform: translatex(-350px);
    transition: transform 0.2s ease-in-out;
    z-index: 99;
@@ -14,18 +14,18 @@
 }
 
 .header__nav-bg--orange {
-   width: 30%;
+   background-color: var(--color-primary);
    max-width: 290px;
    min-width: 270px;
-   background-color: var(--color-primary);
+   width: 30%;
 }
 
 .header__nav-bg--dark {
-   width: 95%;
-   position: relative;
-   padding: 3rem 1.5rem;
    background-color: var(--color-tertiary);
+   padding: 3rem 1.5rem;
+   position: relative;
    text-transform: uppercase;
+   width: 95%;
 }
 
 .header__nav-bg--dark.visible {
