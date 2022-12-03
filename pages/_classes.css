@@ -1,6 +1,6 @@
 .class__block {
    display: grid;
-   grid-template-columns: 40% 60%;
+   grid-template-columns: 35% 65%;
    column-gap: 5rem;
    max-width: 1200px;
    margin: 10rem auto;
@@ -17,10 +17,69 @@
    width: 100%;
    border-radius: 5px;
    height: 100%;
+   object-fit: cover;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.class__figure:hover .class__picture {
+   transform: translateX(-5px) translateY(-5px);
+   box-shadow: 7px 7px 5px var(--color-primary);
 }
 
 .class__title {
    margin: 0;
    font-size: 4rem;
    color: var(--color-primary);
+}
+
+.regular-text {
+   text-align: left;
+}
+
+.class__schedules {
+   width: 100%;
+   padding: 1rem 0.5rem;
+   display: grid;
+   border-radius: 5px;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.class__days {
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.class__hours {
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.class_hour {
+   display: block;
+}
+
+.class__btn {
+   padding: 0.5rem 1rem;
+   font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
+   .class__block {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 5rem auto;
+   }
+
+   .class__title {
+      font-size: 3rem;
+      margin-top: 1rem;
+   }
+
+   .class__btn {
+      display: block;
+      margin: 1rem auto;
+      width: 100px;
+   }
 }
