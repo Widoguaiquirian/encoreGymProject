@@ -11,16 +11,6 @@
    width: 100%;
 }
 
-.header__logo {
-   align-items: center;
-   display: flex;
-   justify-content: center;
-}
-
-.logo {
-   height: 3rem;
-}
-
 .header__nav-desktop {
    display: flex;
 }
