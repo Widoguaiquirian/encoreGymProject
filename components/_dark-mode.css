@@ -17,7 +17,8 @@
    justify-content: space-between;
    outline: none;
    position: relative;
-   width: 60px;
+   overflow: hidden;
+   width: 70px;
 }
 
 .switch::after {
@@ -35,7 +36,11 @@
 }
 
 .switch.light {
-   background-color: rgb(66, 66, 66);
+   background-color: var(--color-tertiary);
+}
+
+.switch.light span {
+   transform: translateX(-20px);
 }
 
 .switch.light::after {
@@ -46,15 +51,8 @@
 .switch span {
    background-color: none;
    color: white;
-   display: block;
-   height: 20px;
-   line-height: 20px;
-   width: 20px;
-}
-
-.switch__icons {
-   height: 2rem;
-   width: 2rem;
+   font-size: 1.5rem;
+   margin-right: 1rem;
 }
 
 /* Light & Dark mode stlye */
