@@ -137,12 +137,17 @@ const subtitle = document.querySelectorAll(".heading-secondary");
 const membershipBox = document.querySelectorAll(".membership__plans");
 const faBars = document.querySelectorAll(".svg__sprite--hamburguer");
 const logo = document.querySelectorAll(".logo");
+const headersignin = document.querySelectorAll(".header__nav-log .header__link--login");
 
 btnSwitch.addEventListener("click", () => {
    document.body.classList.toggle("light");
    btnSwitch.classList.toggle("light");
    nav.classList.toggle("light");
    scheduleSection.classList.toggle("light");
+
+   headersignin.forEach(function (e) {
+      e.classList.toggle("light");
+   });
 
    detailInfo.forEach(function (e) {
       e.classList.toggle("light");

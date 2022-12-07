@@ -99,10 +99,10 @@ body.light {
    fill: var(--color-tertiary);
 }
 
-.header__link--login.light {
+.logo.light {
    color: var(--color-tertiary);
 }
 
-.logo.light {
+.header__link--login.light {
    color: var(--color-tertiary);
 }
