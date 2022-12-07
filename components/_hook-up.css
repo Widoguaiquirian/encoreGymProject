@@ -1,0 +1,33 @@
+.svg__sprite--hookUp {
+   width: 5rem;
+   height: 5rem;
+   fill: var(--color-primary);
+}
+
+#button-up {
+   position: fixed;
+   bottom: 3rem;
+   right: 5rem;
+   cursor: pointer;
+   border-radius: 50%;
+   display: flex;
+   transition: all 0.1s ease-in;
+   align-items: center;
+   justify-content: center;
+   transform: scale(0);
+   z-index: 99;
+}
+
+#button-up:hover .svg__sprite--hookUp {
+   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+   #button-up {
+      right: 2rem;
+   }
+   .svg__sprite--hookUp {
+      width: 3rem;
+      height: 3rem;
+   }
+}

@@ -7,6 +7,10 @@
    transition: transform 1s, opacity 1s;
 }
 
+.divisor {
+   border-bottom: 3px solid rgba(128, 128, 128, 0.151);
+}
+
 .text-section {
    background-color: var(--color-secondary);
    border-radius: 5px;

@@ -1,4 +1,28 @@
 "use strict";
+
+//! Hook up
+const btnUp = document.getElementById("button-up");
+
+btnUp.addEventListener("click", scrollUp);
+
+function scrollUp() {
+   let currentScroll = document.documentElement.scrollTop;
+
+   if (currentScroll > 0) {
+      window.requestAnimationFrame(scrollUp);
+      window.scrollTo(0, currentScroll - currentScroll / 10);
+   }
+}
+
+window.onscroll = function () {
+   let scroll = document.documentElement.scrollTop;
+   if (scroll > 200) {
+      btnUp.style.transform = "scale(1)";
+   } else if (scroll < 200) {
+      btnUp.style.transform = "scale(0)";
+   }
+};
+
 //! Contact modal
 const modal = document.querySelector(".modal");
 const btnsOpenModal = document.querySelectorAll(".modal__btn--open");
@@ -112,6 +136,7 @@ const tabDay = document.querySelectorAll(".schedule__inner-top .crowd__tab-day")
 const subtitle = document.querySelectorAll(".heading-secondary");
 const membershipBox = document.querySelectorAll(".membership__plans");
 const faBars = document.querySelectorAll(".svg__sprite--hamburguer");
+const logo = document.querySelectorAll(".logo");
 
 btnSwitch.addEventListener("click", () => {
    document.body.classList.toggle("light");
@@ -124,6 +149,10 @@ btnSwitch.addEventListener("click", () => {
    });
 
    crowdBar.forEach(function (e) {
+      e.classList.toggle("light");
+   });
+
+   logo.forEach(function (e) {
       e.classList.toggle("light");
    });
 

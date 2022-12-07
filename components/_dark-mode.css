@@ -102,3 +102,7 @@ body.light {
 .header__link--login.light {
    color: var(--color-tertiary);
 }
+
+.logo.light {
+   color: var(--color-tertiary);
+}
