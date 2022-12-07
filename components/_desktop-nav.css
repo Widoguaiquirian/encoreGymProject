@@ -15,6 +15,14 @@
    display: flex;
 }
 
+.logo {
+   font-size: 3rem;
+}
+
+.logo span {
+   color: var(--color-primary);
+}
+
 .header__nav-desktop .header__link {
    color: var(--color-secondary-strong);
    display: block;
@@ -82,9 +90,5 @@
 @media (max-width: 350px) {
    .header__nav {
       justify-content: space-between;
-   }
-
-   .logo {
-      height: 2.5rem;
    }
 }

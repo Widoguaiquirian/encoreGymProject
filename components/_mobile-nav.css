@@ -32,10 +32,6 @@
    transition-delay: 0.05s;
 }
 
-.header__nav-mobile .logo {
-   height: 3rem;
-}
-
 .header__mobile-ul {
    display: block;
    padding-top: 3rem;
@@ -69,5 +65,18 @@
    .svg__sprite--user {
       display: none;
       visibility: hidden;
+   }
+
+   .header__link {
+      font-size: 1.4rem;
+   }
+
+   .header__nav-log {
+      padding-right: 0.5rem;
+   }
+
+   .logo {
+      font-size: 2rem;
+      margin-right: 0.9rem;
    }
 }
